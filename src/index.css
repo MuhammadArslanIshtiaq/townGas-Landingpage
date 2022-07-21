@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body { 
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-shadow-primary { 
+  text-shadow: 0.15rem 0.15rem 0.5rem #135E7C;
+}

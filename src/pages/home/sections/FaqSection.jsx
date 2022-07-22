@@ -68,7 +68,7 @@ const FaqSection = () => {
   ];
 
   return (
-    <div id='faqs' className='relative z-20 mt-12'>
+    <div id='commonProblem' className='relative z-20 mt-12'>
       <div className='lg:max-w-7xl px-6 mx-auto text-center'>
         <ScrollAnimation
           duration={1}

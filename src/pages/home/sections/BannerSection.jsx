@@ -23,7 +23,7 @@ const BannerSection = () => {
                   <div className='mt-6'>
                     <Link
                       to
-                      className='bg-secondary hover:bg-secondary-600 text-white inline-flex justify-center items-center gap-4 py-4 px-8 rounded-xl text-2xl'
+                      className='bg-primary hover:bg-primary-600 text-white inline-flex justify-center items-center gap-4 py-4 px-8 rounded-xl text-2xl'
                     >
                       <span className='block h-12 min-w-[2.8rem]'>
                         <img

@@ -9,87 +9,59 @@ const HeroSection = () => {
         <div className='px-6 lg:px-16 relative'>
           <div className='grid grid-cols-4 gap-6 h-full items-center'>
             <div className='col-span-4 lg:col-span-2 transition-all duration-300'>
-              <ScrollAnimation
-                duration={1}
-                animateIn='fadeInLeft'
-                animateOut='fadeOutLeft'
-                initiallyVisible={true}
-              >
-                <div className='mb-8 animated fadeInLeft'>
-                  <div>
-                    <img
-                      className='block h-full w-full'
-                      src='/assets/images/hero-image.png'
-                      alt='..'
-                    />
-                  </div>
+              <div className='mb-8 animated fadeInLeft'>
+                <div>
+                  <img
+                    className='block h-full w-full'
+                    src='/assets/images/hero-image.png'
+                    alt='..'
+                  />
                 </div>
-              </ScrollAnimation>
+              </div>
             </div>
             <div className='col-span-4 lg:col-span-2'>
               <div>
-                <ScrollAnimation
-                  duration={1}
-                  animateIn='fadeInDown'
-                  animateOut='fadeOuUp'
-                  initiallyVisible={true}
-                >
-                  <div className='animated fadeInDown'>
-                    <img
-                      className='block h-full w-full'
-                      src='/assets/images/hero-title.png'
-                      alt='...'
-                    />
-                  </div>
-                </ScrollAnimation>
+                <div className='animated fadeInDown'>
+                  <img
+                    className='block h-full w-full'
+                    src='/assets/images/hero-title.png'
+                    alt='...'
+                  />
+                </div>
               </div>
               <div className='grid grid-cols-3 gap-3 items-center mt-6'>
                 <div className='col-span-3 sm:col-span-2'>
-                  <ScrollAnimation
-                    duration={2}
-                    animateIn='fadeInLeft'
-                    animateOut='fadeOutLeft'
-                    initiallyVisible={true}
-                  >
-                    <div className='flex items-center justify-center gap-3 animated fadeInLeft'>
-                      <h4 className='uppercase text-2xl md:text-3x1 text-gray font-bold'>
-                        2022.8.11
-                        <br />
-                        Hkt 00:00
-                      </h4>
-                      <span className='w-[7rem]'>
-                        <img
-                          className='block h-full w-full'
-                          src='/assets/images/arrow.png'
-                          alt='...'
-                        />
-                      </span>
-                      <h4 className='uppercase text-2xl md:text-3x1 text-gray font-bold'>
-                        2022.9.11
-                        <br />
-                        Hkt 23:59
-                      </h4>
-                    </div>
-                    <div className='mt-4 flex justify-center animated fadeInLeft'>
-                      <PrimaryButton />
-                    </div>
-                  </ScrollAnimation>
-                </div>
-                <div className='col-span-3 sm:col-span-1'>
-                  <ScrollAnimation
-                    duration={2}
-                    animateIn='fadeInRight'
-                    animateOut='fadeOutRight'
-                    initiallyVisible={true}
-                  >
-                    <div className='animated fadeInRight'>
+                  <div className='flex items-center justify-center gap-3 animated fadeInLeft'>
+                    <h4 className='uppercase text-2xl md:text-3x1 text-gray font-bold'>
+                      2022.8.11
+                      <br />
+                      Hkt 00:00
+                    </h4>
+                    <span className='w-[7rem]'>
                       <img
                         className='block h-full w-full'
-                        src='/assets/images/160gift.png'
+                        src='/assets/images/arrow.png'
                         alt='...'
                       />
-                    </div>
-                  </ScrollAnimation>
+                    </span>
+                    <h4 className='uppercase text-2xl md:text-3x1 text-gray font-bold'>
+                      2022.9.11
+                      <br />
+                      Hkt 23:59
+                    </h4>
+                  </div>
+                  <div className='mt-4 flex justify-center animated fadeInLeft'>
+                    <PrimaryButton />
+                  </div>
+                </div>
+                <div className='col-span-3 sm:col-span-1'>
+                  <div className='animated fadeInRight'>
+                    <img
+                      className='block h-full w-full'
+                      src='/assets/images/160gift.png'
+                      alt='...'
+                    />
+                  </div>
                 </div>
               </div>
             </div>

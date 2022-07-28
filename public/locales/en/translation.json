@@ -89,6 +89,15 @@
     "9" : "Please tick to get additional NFT if you purchased gas appliances。",
     "10" : "Order No:",
     "11" : "Purchase Date:"
+},
+
+"Thankyou":{
+    "1" : "Thank you for your participation in Towngas 160th Anniversary NFT Lucky Draw.",
+    "2" : "Your NFT will be sent to the provided wallet address. ,",
+    "3" : "Please check it on MetaMask.",
+    "4" : ""
 }
+
+
 
 }

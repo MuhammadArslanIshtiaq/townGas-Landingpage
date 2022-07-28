@@ -2,9 +2,11 @@ import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import PrimaryButton from "../../../components/buttons/PrimaryButton";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const HeroSection = () => {
   const { t } = useTranslation();
+  let cl = i18next.language;
 
   return (
     <>
@@ -25,11 +27,19 @@ const HeroSection = () => {
             <div className="col-span-4 lg:col-span-2">
               <div>
                 <div className="animated fadeInDown">
-                  <img
-                    className="block h-full w-full"
-                    src="/assets/images/hero-title.png"
-                    alt="..."
-                  />
+                  {cl === "ch" ? (
+                    <img
+                      className="block h-full w-full"
+                      src="/assets/images/hero-title.png"
+                      alt="..."
+                    />
+                  ) : (
+                    <img
+                      className="block h-full w-full"
+                      src="/assets/images/hero-title.png"
+                      alt="..."
+                    />
+                  )}
                 </div>
               </div>
               <div className="grid grid-cols-3 gap-3 items-center mt-6">

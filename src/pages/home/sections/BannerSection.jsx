@@ -64,14 +64,14 @@ const BannerSection = () => {
                   <p>
                     {t("Step.5")}
                     <a
-                      href
+                      href="#"
                       className="cursor-pointer text-primary hover:opacity-80 mx-2"
                     >
                       {t("Step.6")}
                     </a>
                     {t("Step.7")}
                     <a
-                      href
+                      href="#"
                       className="cursor-pointer text-primary hover:opacity-80 mx-1"
                     >
                       {t("Step.8")}

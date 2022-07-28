@@ -10,7 +10,9 @@
 "Button":{
     "1":"REDEEM NFT NOW",
     "2a":"Free redemption",
-    "2b":"Gas 160th Anniversary NFT"
+    "2b":"Gas 160th Anniversary NFT",
+    "3":"Submit"
+    
 },
 
 "About" : "Founded in 1862, The Hong Kong and China Gas Company Limited (Towngas) is Hong Kong's first public utility with a focus on innovation and environmental friendliness, maintaining this position as Asia’s leading clean energy supplier and quality service provider. 2022 marks a new milestone for Towngas with its 160th anniversary. In line with our philosophy of “Smart Energy for a Brighter Future“, Towngas is the first Hong Kong public utility launching a free NFT project with an initial release of 10,000 unique commemorative NFTs, thus an anniversary lucky draw to give away 160 fabulous prizes!",
@@ -73,6 +75,20 @@
     "A9":"Yes, you can transfer your Towngas 160th Anniversary NFT and trade it on the NFT marketplace, OpenSea after prize redemption. If you transfer or sell your NFT before the lucky draw, you will not be eligible to participate in the 'Towngas 160th Anniversary Smart Energy for a Brighter Future NFT Lucky Draw'. Winners should contain the commemorative NFT in their registered virtual wallet address at the time of prize collection. ",
     "Q10":"Which blockchain is Towngas 160th Anniversary NFTs on?",
     "A10":"Polygon"
+},
+
+"Form":{
+    "1" : "Name (same as HKID card):",
+    "2" : "Email Address",
+    "3" : "Phone Number",
+    "4" : "MetaMask Wallet Address (Please add screen cap instruction to teach ppl how to find it):",
+    "5" : " How to find MetaMask Wallet Address :",
+    "6" : "1) Open METAMASK",
+    "7" : "2) Copy Wallet Address",
+    "8" : "3) Complete",
+    "9" : "Please tick to get additional NFT if you purchased gas appliances。",
+    "10" : "Order No:",
+    "11" : "Purchase Date:"
 }
 
 }

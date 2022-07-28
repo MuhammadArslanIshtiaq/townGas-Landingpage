@@ -2,9 +2,11 @@ import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import PrizeCard from "../../../components/cards/PrizeCard";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const PrizeSection = () => {
   const { t } = useTranslation();
+  let cl = i18next.language;
 
   const prizeList = [
     {
@@ -77,11 +79,19 @@ const PrizeSection = () => {
       <div className="lg:max-w-7xl px-6 mx-auto text-center">
         <ScrollAnimation duration={1} animateIn="fadeInUp">
           <h2 className="inline-block h-24 mb-8">
-            <img
-              className="block h-full w-full"
-              src="/assets/images/title-3.png"
-              alt=".."
-            />
+            {cl === "ch" ? (
+              <img
+                className="block h-full w-full"
+                src="/assets/images/title-3.png"
+                alt=".."
+              />
+            ) : (
+              <img
+                className="block h-full w-full"
+                src="/assets/images/prize.png"
+                alt="..."
+              />
+            )}
           </h2>
         </ScrollAnimation>
 

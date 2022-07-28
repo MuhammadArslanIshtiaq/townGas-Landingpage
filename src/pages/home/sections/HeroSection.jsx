@@ -36,7 +36,7 @@ const HeroSection = () => {
                   ) : (
                     <img
                       className="block h-full w-full"
-                      src="/assets/images/hero-title.png"
+                      src="/assets/images/hero-heading.png"
                       alt="..."
                     />
                   )}
@@ -69,11 +69,19 @@ const HeroSection = () => {
                 </div>
                 <div className="col-span-3 sm:col-span-1">
                   <div className="animated fadeInRight">
-                    <img
-                      className="block h-full w-full"
-                      src="/assets/images/160gift.png"
-                      alt="..."
-                    />
+                    {cl === "ch" ? (
+                      <img
+                        className="block h-full w-full"
+                        src="/assets/images/160-gift.png"
+                        alt="..."
+                      />
+                    ) : (
+                      <img
+                        className="block h-full w-full"
+                        src="/assets/images/160-coin.png"
+                        alt="..."
+                      />
+                    )}
                   </div>
                 </div>
               </div>
@@ -104,11 +112,19 @@ const HeroSection = () => {
                     animateIn="fadeInRight"
                   >
                     <span className="block h-24 w-[17rem]">
-                      <img
-                        className="block h-full w-full"
-                        src="/assets/images/title-1.png"
-                        alt=".."
-                      />
+                      {cl === "ch" ? (
+                        <img
+                          className="block h-full w-full"
+                          src="/assets/images/title-1.png"
+                          alt=".."
+                        />
+                      ) : (
+                        <img
+                          className="block h-full w-full"
+                          src="/assets/images/about.png"
+                          alt="..."
+                        />
+                      )}
                     </span>
                     <p className="text-gray-400 text-lg mt-4 line-clamp-6">
                       {t("About")}

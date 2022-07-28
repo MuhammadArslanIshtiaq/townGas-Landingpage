@@ -3,9 +3,12 @@ import { Disclosure } from "@headlessui/react";
 import { MinusIcon, PlusIcon } from "@heroicons/react/outline";
 import ScrollAnimation from "react-animate-on-scroll";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const FaqSection = () => {
   const { t } = useTranslation();
+  let cl = i18next.language;
+
   const faqs = [
     {
       number: "Q01.",
@@ -64,11 +67,19 @@ const FaqSection = () => {
       <div className="lg:max-w-7xl px-6 mx-auto text-center">
         <ScrollAnimation duration={1} animateIn="fadeInUp">
           <h2 className="inline-block h-28 mb-8">
-            <img
-              className="block h-full w-full"
-              src="/assets/images/title-5.png"
-              alt=".."
-            />
+            {cl === "ch" ? (
+              <img
+                className="block h-full w-full"
+                src="/assets/images/title-5.png"
+                alt=".."
+              />
+            ) : (
+              <img
+                className="block h-full w-full"
+                src="/assets/images/faq.png"
+                alt="..."
+              />
+            )}
           </h2>
         </ScrollAnimation>
         <div>

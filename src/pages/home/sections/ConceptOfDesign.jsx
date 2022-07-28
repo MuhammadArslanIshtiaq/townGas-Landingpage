@@ -2,9 +2,11 @@ import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import PrimaryButton from "../../../components/buttons/PrimaryButton";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const ConceptOfDesign = () => {
   const { t } = useTranslation();
+  let cl = i18next.language;
   return (
     <section
       id="conceptOfDesign"
@@ -16,11 +18,19 @@ const ConceptOfDesign = () => {
             <ScrollAnimation duration={1} animateIn="fadeInLeft">
               <div>
                 <span className="block h-24 w-[17rem]">
-                  <img
-                    className="block h-full w-full"
-                    src="/assets/images/title-1.png"
-                    alt=".."
-                  />
+                  {cl === "ch" ? (
+                    <img
+                      className="block h-full w-full"
+                      src="/assets/images/title-1.png"
+                      alt=".."
+                    />
+                  ) : (
+                    <img
+                      className="block h-full w-full"
+                      src="/assets/images/design-concept.png"
+                      alt="..."
+                    />
+                  )}
                 </span>
                 <p className="text-gray-400 text-lg mt-4 line-clamp-6">
                   {t("COD")}

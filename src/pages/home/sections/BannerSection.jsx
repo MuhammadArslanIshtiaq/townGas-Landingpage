@@ -3,9 +3,11 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { Link } from "react-router-dom";
 import FaqSection from "./FaqSection";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const BannerSection = () => {
   const { t } = useTranslation();
+  let cl = i18next.language;
 
   return (
     <section className="relative z-20 bg-layerThree bg-cover py-16">
@@ -16,11 +18,19 @@ const BannerSection = () => {
               <div className="col-span-2 lg:col-span-1 text-center">
                 <div>
                   <h2 className="inline-block h-48">
-                    <img
-                      className="block h-full w-full"
-                      src="/assets/images/title-4.png"
-                      alt=".."
-                    />
+                    {cl === "ch" ? (
+                      <img
+                        className="block h-full w-full"
+                        src="/assets/images/title-4.png"
+                        alt=".."
+                      />
+                    ) : (
+                      <img
+                        className="block h-full w-full"
+                        src="/assets/images/banner-heading.png"
+                        alt="..."
+                      />
+                    )}
                   </h2>
 
                   <div className="mt-6">

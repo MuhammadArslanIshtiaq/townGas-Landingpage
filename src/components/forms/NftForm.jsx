@@ -27,12 +27,12 @@ const NftForm = () => {
       const resp = axios.post(
         url,
         {
-          name,
-          email,
-          phone,
-          metaAddress,
-          orderNum,
-          orderDate,
+          name: name,
+          email: email,
+          phone: phone,
+          wallet_address: metaAddress,
+          order_no: orderNum,
+          purchase_date: orderDate,
         },
         {
           crossdomain: true,

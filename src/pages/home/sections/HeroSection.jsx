@@ -1,4 +1,5 @@
 import React from 'react';
+
 import ScrollAnimation from 'react-animate-on-scroll';
 import PrimaryButton from '../../../components/buttons/PrimaryButton';
 import { useTranslation } from 'react-i18next';

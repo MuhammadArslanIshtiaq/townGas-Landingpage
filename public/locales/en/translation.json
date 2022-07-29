@@ -96,6 +96,12 @@
     "2" : "Your NFT will be sent to the provided wallet address. ,",
     "3" : "Please check it on MetaMask.",
     "4" : ""
+},
+
+"Footer":{
+    "1" : "Privacy Policy | Disclaimer and Terms of Use | Promotion Competition Licence No.: XXXXX",
+    "2" : "© 2022 All rights reserved. TGC"
+    
 }
 
 

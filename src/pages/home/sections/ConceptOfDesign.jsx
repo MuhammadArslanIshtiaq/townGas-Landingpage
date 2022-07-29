@@ -60,7 +60,7 @@ const ConceptOfDesign = () => {
                     <div>
                       <img
                         className="block h-full w-full"
-                        src="/assets/images/DC-image.png"
+                        src="/assets/images/cod-01.png"
                         alt="..."
                       />
                     </div>
@@ -81,7 +81,7 @@ const ConceptOfDesign = () => {
                 <div>
                   <img
                     className="block h-full w-full"
-                    src="/assets/images/DC-image.png"
+                    src="/assets/images/cod-01.png"
                     alt="..."
                   />
                 </div>

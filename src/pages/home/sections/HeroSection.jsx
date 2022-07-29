@@ -65,7 +65,7 @@ const HeroSection = () => {
                 <div>
                   <img
                     className="block h-full w-full"
-                    src="/assets/images/hero-image.png"
+                    src="/assets/images/hero-image-02.png"
                     alt=".."
                   />
                 </div>

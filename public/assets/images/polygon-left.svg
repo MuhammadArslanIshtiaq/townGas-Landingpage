@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="114.096" height="111.031" viewBox="0 0 114.096 111.031">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_96" data-name="Rectangle 96" width="89.74" height="94.075" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="polygon" transform="matrix(-0.259, -0.966, 0.966, -0.259, 23.226, 111.031)" opacity="0.6">
+    <g id="Group_489" data-name="Group 489" transform="translate(0 0)">
+      <g id="Group_488" data-name="Group 488" clip-path="url(#clip-path)">
+        <path id="Path_3152" data-name="Path 3152" d="M43.618,0,83.092,16.389l6.284,40.262L73.052,83.223,34.69,93.785,5.579,66.666,0,15.627Z" transform="translate(0.115 0.114)" fill="none" stroke="#abd202" stroke-width="1"/>
+        <line id="Line_42" data-name="Line 42" x1="38.04" y2="66.666" transform="translate(5.694 0.114)" fill="none" stroke="#abd202" stroke-width="1"/>
+      </g>
+    </g>
+    <line id="Line_43" data-name="Line 43" x1="61.092" y2="21.32" transform="translate(22.116 16.503)" fill="none" stroke="#abd202" stroke-width="1"/>
+    <g id="Group_491" data-name="Group 491" transform="translate(0 0)">
+      <g id="Group_490" data-name="Group 490" clip-path="url(#clip-path)">
+        <path id="Path_3153" data-name="Path 3153" d="M22,22.082,89.376,41.024,34.69,78.158,22,22.082,0,0" transform="translate(0.115 15.741)" fill="none" stroke="#abd202" stroke-width="1"/>
+      </g>
+    </g>
+    <line id="Line_44" data-name="Line 44" x2="51.051" y2="45.514" transform="translate(22.116 37.824)" fill="none" stroke="#abd202" stroke-width="1"/>
+    <g id="Group_493" data-name="Group 493" transform="translate(0 0)">
+      <g id="Group_492" data-name="Group 492" clip-path="url(#clip-path)">
+        <line id="Line_45" data-name="Line 45" x1="83.797" y2="10.016" transform="translate(5.693 56.765)" fill="none" stroke="#abd202" stroke-width="1"/>
+        <line id="Line_46" data-name="Line 46" y1="93.785" x2="8.929" transform="translate(34.804 0.114)" fill="none" stroke="#abd202" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

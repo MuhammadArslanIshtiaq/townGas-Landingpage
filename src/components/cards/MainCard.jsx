@@ -6,10 +6,10 @@ const MainCard = ({ item }) => {
     <div className='py-3'>
       <Link
         to
-        className='block relative p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-95'
+        className='block relative p-3 md:p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-95'
       >
         <span
-          className='rounded-full px-8 py-3 absolute top-0 right-0 text-white font-bold'
+          className='rounded-full p-2 text-xs md:text-base md:px-8 md:py-3 absolute top-0 right-0 text-white font-bold'
           style={{ backgroundColor: `${item.btnColor}` }}
         >
           #2098

@@ -65,7 +65,7 @@ const HeroSection = () => {
                 <div>
                   <img
                     className="block h-full w-full"
-                    src="/assets/images/hero-image-01.png"
+                    src="/assets/images/hero-image.png"
                     alt=".."
                   />
                 </div>
@@ -225,7 +225,7 @@ const HeroSection = () => {
                         />
                       )}
                     </span>
-                    <p className="text-gray-400 text-lg mt-4 line-clamp-6 ">
+                    <p className="text-gray-400 text-base mt-4 ">
                       {t("About")}
                     </p>
                   </ScrollAnimation>

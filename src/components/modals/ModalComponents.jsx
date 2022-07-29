@@ -1,25 +1,43 @@
-import React from 'react';
-import NftForm from '../forms/NftForm';
-import SubmitThankYou from '../forms/SubmitThankYou';
-import Modal from './Modal';
+import React from "react";
+import NftForm from "../forms/NftForm";
+import SubmitThankYou from "../forms/SubmitThankYou";
+import PrivacyPolicy from "../forms/PrivacyPolicy";
+import PrivacyPolicyEn from "../forms/PrivacyPolicyEn";
+import Modal from "./Modal";
 
 const ModalComponents = (props) => {
   return (
     <>
       <Modal
-        sizeClass='max-w-2xl'
-        show={props.show === 'formModal'}
+        sizeClass="max-w-2xl"
+        show={props.show === "formModal"}
         onClose={props.onClose}
       >
         <NftForm />
       </Modal>
 
       <Modal
-        sizeClass='max-w-2xl'
-        show={props.show === 'SubmitThankYou'}
+        sizeClass="max-w-2xl"
+        show={props.show === "SubmitThankYou"}
         onClose={props.onClose}
       >
         <SubmitThankYou />
+      </Modal>
+
+      <Modal
+        sizeClass="max-w-2xl"
+        show={props.show === "PrivacyPolicyEn"}
+        onClose={props.onClose}
+      >
+        <PrivacyPolicyEn />
+      </Modal>
+
+      <Modal
+        sizeClass="max-w-2xl"
+        show={props.show === "PrivacyPolicy"}
+        onClose={props.onClose}
+      >
+        <PrivacyPolicy />
       </Modal>
     </>
   );

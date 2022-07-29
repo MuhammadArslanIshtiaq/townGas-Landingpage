@@ -102,7 +102,8 @@
 },
 
 "Footer":{
-    "1" : "Privacy Policy | Disclaimer and Terms of Use | Promotion Competition Licence No.: XXXXX",
+    "0": "Privacy Policy",
+    "1" : " | Disclaimer and Terms of Use | Promotion Competition Licence No.: XXXXX",
     "2" : "© 2022 All rights reserved. TGC"
     
 }

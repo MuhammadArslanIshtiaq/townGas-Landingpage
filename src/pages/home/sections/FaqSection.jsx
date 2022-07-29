@@ -96,7 +96,7 @@ const FaqSection = () => {
                     animateIn="fadeInUp"
                     className="h-full"
                   >
-                    <div className="h-full bg-white rounded-lg border-2 border-primary p-4 text-left">
+                    <div className=" bg-white rounded-lg border-2 border-primary p-4 text-left">
                       <dt className="text-lg">
                         <Disclosure.Button className="text-left w-full flex justify-between items-baseline text-gray-400">
                           <div className="flex gap-2 items-baseline">

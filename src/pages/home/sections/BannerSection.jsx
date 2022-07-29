@@ -33,28 +33,31 @@ const BannerSection = () => {
                     )}
                   </h2>
 
-                  <div className="mt-6">
-                    <Link
-                      to
-                      className="bg-1 transform duration-300 hover:scale-95 active:scale-95 text-white inline-flex justify-center items-center gap-4 py-4 px-8 rounded-xl text-2xl"
-                    >
-                      <span className="block h-12 min-w-[2.8rem]">
-                        <img
-                          className="block w-full h-full"
-                          src="/assets/images/sign.svg"
-                          alt="..."
-                        />
-                      </span>
-                      <span className="line-clamp-2">
-                        {t("Button.2a")}
-                        <br />
-                        {t("Button.2b")}
-                      </span>
-                    </Link>
+                  {/* hide on mobile */}
+                  <div className="hidden md:block">
+                    <div className="mt-6">
+                      <Link
+                        to
+                        className="bg-1 transform duration-300 hover:scale-95 active:scale-95 text-white inline-flex justify-center items-center gap-4 py-4 px-8 rounded-xl text-2xl"
+                      >
+                        <span className="block h-12 min-w-[2.8rem]">
+                          <img
+                            className="block w-full h-full"
+                            src="/assets/images/sign.svg"
+                            alt="..."
+                          />
+                        </span>
+                        <span className="line-clamp-2">
+                          {t("Button.2a")}
+                          <br />
+                          {t("Button.2b")}
+                        </span>
+                      </Link>
+                    </div>
+                    <h1 className="mt-6 text-secondary text-xl font-black">
+                      {t("Prize.total")}
+                    </h1>
                   </div>
-                  <h1 className="mt-6 text-secondary text-xl font-black">
-                    {t("Prize.total")}
-                  </h1>
                 </div>
               </div>
               <div className="col-span-2 lg:col-span-1">
@@ -95,6 +98,31 @@ const BannerSection = () => {
                     {t("Step.9")}
                   </p>
                   <p className="my-3">{t("Step.11")}</p>
+                </div>
+
+                {/* hide on larger devices */}
+                <div className="block md:hidden">
+                  <div className="mt-6 ">
+                    <Link
+                      to
+                      className="bg-1 transform duration-300 hover:scale-95 active:scale-95 text-white flex justify-center items-center gap-4 py-4 px-8 rounded-xl text-2xl"
+                    >
+                      <span className="text-center">
+                        <img
+                          className="w-50 m-auto"
+                          src="/assets/images/sign.svg"
+                          alt="..."
+                        />
+
+                        {t("Button.2a")}
+                        <br />
+                        {t("Button.2b")}
+                      </span>
+                    </Link>
+                  </div>
+                  <h1 className="mt-6 text-secondary text-xl font-black text-center">
+                    {t("Prize.total")}
+                  </h1>
                 </div>
               </div>
             </div>

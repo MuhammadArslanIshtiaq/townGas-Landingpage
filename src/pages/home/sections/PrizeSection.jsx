@@ -25,7 +25,7 @@ const PrizeSection = () => {
       imageUrl: "/assets/images/prize-item-1.png",
       text: t("Prize.d2"),
       text1: t("Prize.d2a"),
-      text2: t("Prize.d2a"),
+      text2: t("Prize.d2b"),
     },
     {
       delay: 750,

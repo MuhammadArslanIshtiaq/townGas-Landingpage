@@ -37,3 +37,7 @@ background: #E4E9F9 0% 0% no-repeat padding-box;
 .vh-90{
   height: 90vh;
 }
+
+.bg-size-400{
+  background-size: 95vw;
+}

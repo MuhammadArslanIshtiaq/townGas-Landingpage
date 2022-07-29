@@ -144,7 +144,7 @@ const HeroSection = () => {
             />
           </span>
           <ScrollAnimation duration={1} animateIn="fadeInDown">
-            <div className="bg-hero2M xl:bg-hero2 bg-center bg-cover xl:bg-contain bg-no-repeat xl:max-w-7xl px-6 h-[60rem] md:h-auto sm:m-[2rem] md:mx-auto">
+            <div className="bg-hero2M bg-size-400 md:bg-hero2 bg-center bg-cover md:bg-contain bg-no-repeat xl:max-w-7xl px-6 h-[60rem] md:h-auto sm:m-[2rem] md:mx-auto">
               {/* mobile view */}
               <div className="p-6 space-y-6 h-full flex flex-col justify-center items-center xl:hidden">
                 <div>
@@ -225,7 +225,7 @@ const HeroSection = () => {
                         />
                       )}
                     </span>
-                    <p className="text-gray-400 text-base mt-4 ">
+                    <p className="text-gray-400 md:text-base text-xs mt-4 ">
                       {t("About")}
                     </p>
                   </ScrollAnimation>

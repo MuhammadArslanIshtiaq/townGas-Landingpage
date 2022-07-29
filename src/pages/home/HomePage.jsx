@@ -8,7 +8,7 @@ import PrizeSection from './sections/PrizeSection';
 
 const HomePage = () => {
   return (
-    <main id='home'>
+    <main id='home' className='text-center lg:text-left'>
       <HeroSection />
       <ConceptOfDesign />
       <CardsSection />

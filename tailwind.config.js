@@ -6,6 +6,7 @@ module.exports = {
       backgroundImage: {
         heroD: "url('/public/assets/images/bg-hero-d.png')",
         hero2: "url('/public/assets/images/bg-hero-2.png')",
+        hero2M: "url('/public/assets/images/bg-hero-2-sm.png')",
         layerOne: "url('/public/assets/images/bg-layer-1.png')",
         layerTwo: "url('/public/assets/images/bg-layer-2.png')",
         layerThree: "url('/public/assets/images/bg-layer-3.png')",

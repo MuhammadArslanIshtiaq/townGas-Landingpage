@@ -64,6 +64,22 @@ const FaqSection = () => {
 
   return (
     <div id="commonProblem" className="relative z-20 mt-12">
+      {/* == */}
+      <span className="md:hidden absolute left-[-4rem] top-[-2rem]">
+        <img
+          className="block h-full w-full"
+          src="/assets/images/polygon-left.svg"
+          alt=".."
+        />
+      </span>
+      <span className="md:hidden absolute right-[0rem] top-[0rem]">
+        <img
+          className="block h-full w-full"
+          src="/assets/images/balls.svg"
+          alt=".."
+        />
+      </span>
+      {/* == */}
       <div className="lg:max-w-7xl px-6 mx-auto text-center">
         <ScrollAnimation duration={1} animateIn="fadeInUp">
           <h2 className="inline-block h-28 mb-8">
@@ -96,10 +112,10 @@ const FaqSection = () => {
                     animateIn="fadeInUp"
                     className="h-full"
                   >
-                    <div className=" bg-white rounded-lg border-2 border-primary p-4 text-left">
+                    <div className="min-h-[6.4rem] bg-white rounded-lg border-2 border-primary p-4 text-left">
                       <dt className="text-lg">
                         <Disclosure.Button className="text-left w-full flex justify-between items-baseline text-gray-400">
-                          <div className="flex gap-2 items-baseline">
+                          <div className="flex flex-col lg:flex-row gap-2 items-baseline">
                             <h1 className="text-3xl font-semibold text-shadow-primary text-white">
                               {faq.number}
                             </h1>

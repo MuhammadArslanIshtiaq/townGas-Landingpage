@@ -33,3 +33,7 @@ height: 7.9375rem;
 border-radius: 0 0 8rem;
 background: #E4E9F9 0% 0% no-repeat padding-box;
 }
+
+.vh-90{
+  height: 90vh;
+}

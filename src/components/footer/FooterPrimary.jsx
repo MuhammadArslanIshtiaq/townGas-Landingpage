@@ -22,20 +22,32 @@ export default function FooterPrimary() {
           <div className="py-6 flex flex-wrap gap-4 md:items-center">
             <p className="text-lg text-white mx-auto lg:ml-0 lg:mr-auto">
               {cl === "ch" ? (
-                <span
-                  className="hover:cursor-pointer"
-                  onClick={() => setIsOpen("PrivacyPolicy")}
-                >
-                  {t("Footer.0")}
-                </span>
+                <>
+                  <a href="https://www.towngas.com/tc/Info/Privacy">
+                    {t("Footer.0")}
+                  </a>
+                  <span
+                    className="hover:cursor-pointer"
+                    onClick={() => setIsOpen("PrivacyPolicy")}
+                  >
+                    | 聲明免責聲明及使用條款
+                  </span>
+                </>
               ) : (
-                <span
-                  className="hover:cursor-pointer"
-                  onClick={() => setIsOpen("PrivacyPolicyEn")}
-                >
-                  {t("Footer.0")}
-                </span>
+                <>
+                  <a href="https://www.towngas.com/en/Info/Privacy">
+                    {t("Footer.0")}
+                  </a>
+                  <span
+                    className="hover:cursor-pointer"
+                    onClick={() => setIsOpen("PrivacyPolicyEn")}
+                  >
+                    | Disclaimer and Terms of Use
+                  </span>
+                </>
               )}
+              <span></span>
+
               {t("Footer.1")}
             </p>
             <p className="text-lg text-white">{t("Footer.2")}</p>

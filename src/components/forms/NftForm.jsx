@@ -44,6 +44,17 @@ const NftForm = () => {
     }
   };
 
+  const [isSubscribed, setIsSubscribed] = useState(false);
+
+  const handleChange = (event) => {
+    if (event.target.checked) {
+      console.log("✅ Checkbox is checked");
+    } else {
+      console.log("⛔️ Checkbox is NOT checked");
+    }
+    setIsSubscribed((current) => !current);
+  };
+
   return (
     <>
       <ModalComponents show={isOpen} onClose={() => setIsOpen("")} />
@@ -166,47 +177,73 @@ const NftForm = () => {
               </div>
             </li>
             <li className="col-span-2">
-              <CheckBox name={`${t("Form.9")}`} />
-            </li>
-            <li className="col-span-2 lg:col-span-1">
-              <div className="animated fadeInUp">
-                <label
-                  htmlFor="ordernum"
-                  className="block text-base font-medium text-gray-500 capitalize"
-                >
-                  {t("Form.10")}
-                </label>
-                <div className="mt-1">
+              <div className="relative flex items-start animated fadeInUp">
+                <div className="flex items-center h-5">
                   <input
-                    type="text"
-                    id="orderNum"
-                    value={orderNum}
-                    required
-                    className="p-2 shadow-inner shadow-gray-200 drop-shadow bg-gray-300/5 border block w-full sm:text-sm border-gray-300 focus:ring-primary-500 rounded-md"
-                    onChange={(e) => setOrderNum(e.target.value)}
+                    id="checkbox"
+                    name="checkbox"
+                    type="checkbox"
+                    value={isSubscribed}
+                    onChange={handleChange}
+                    className="focus:ring-primary-500 h-5 w-5 text-primary-600 border-gray-300 rounded"
                   />
+                </div>
+                <div className="ml-3 text-sm">
+                  <label
+                    htmlFor="checkbox"
+                    className="font-medium text-gray-500 cursor-pointer"
+                  >
+                    {t("Form.9")}
+                  </label>
                 </div>
               </div>
             </li>
-            <li className="col-span-2 lg:col-span-1">
-              <div className="animated fadeInUp">
-                <label
-                  htmlFor="orderDate"
-                  className="block text-base font-medium text-gray-500 capitalize"
-                >
-                  {t("Form.11")}
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="date"
-                    id="orderDate"
-                    value={orderDate}
-                    className="p-2 shadow-inner shadow-gray-200 drop-shadow bg-gray-300/5 border block w-full sm:text-sm border-gray-300 focus:ring-primary-500 rounded-md"
-                    onChange={(e) => setOrderDate(e.target.value)}
-                  />
-                </div>
-              </div>
-            </li>
+            {isSubscribed === true ? (
+              <>
+                <li className="col-span-2 lg:col-span-1">
+                  <div className="animated fadeInUp">
+                    <label
+                      htmlFor="ordernum"
+                      className="block text-base font-medium text-gray-500 capitalize"
+                    >
+                      {t("Form.10")}
+                    </label>
+                    <div className="mt-1">
+                      <input
+                        type="text"
+                        id="orderNum"
+                        value={orderNum}
+                        required
+                        className="p-2 shadow-inner shadow-gray-200 drop-shadow bg-gray-300/5 border block w-full sm:text-sm border-gray-300 focus:ring-primary-500 rounded-md"
+                        onChange={(e) => setOrderNum(e.target.value)}
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li className="col-span-2 lg:col-span-1">
+                  <div className="animated fadeInUp">
+                    <label
+                      htmlFor="orderDate"
+                      className="block text-base font-medium text-gray-500 capitalize"
+                    >
+                      {t("Form.11")}
+                    </label>
+                    <div className="mt-1">
+                      <input
+                        type="date"
+                        id="orderDate"
+                        value={orderDate}
+                        className="p-2 shadow-inner shadow-gray-200 drop-shadow bg-gray-300/5 border block w-full sm:text-sm border-gray-300 focus:ring-primary-500 rounded-md"
+                        onChange={(e) => setOrderDate(e.target.value)}
+                      />
+                    </div>
+                  </div>
+                </li>
+              </>
+            ) : (
+              <></>
+            )}
+
             <li className="col-span-2">
               <div className="text-center mt-4 animated fadeInUp">
                 <button

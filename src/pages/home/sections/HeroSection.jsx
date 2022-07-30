@@ -49,13 +49,22 @@ const HeroSection = () => {
                   />
                 )}
               </div>
+
               <div className="mb-0 animated fadeInLeft">
                 <div>
-                  <img
-                    className="block h-full w-full"
-                    src="/assets/images/hero-image-sm.png"
-                    alt=".."
-                  />
+                  {cl === "ch" ? (
+                    <img
+                      className="block h-full w-full"
+                      src="/assets/images/hero-image-mb.png"
+                      alt=".."
+                    />
+                  ) : (
+                    <img
+                      className="block h-full w-full"
+                      src="/assets/images/hero-image-mb-eng.png"
+                      alt=".."
+                    />
+                  )}
                 </div>
               </div>
             </div>

@@ -37,15 +37,17 @@ const NftForm = () => {
             crossdomain: true,
           }
         )
+        .then((response) => {
+          console.log(response.status);
+          if (response.status === 200) setIsOpen("SubmitThankYou");
+        })
         .catch(function (error) {
           if (error.response) {
             console.log(error.response.data);
             console.log(error.response.status);
-          }
-          if (error.response.status !== 200) {
-            setIsOpen("ErrorMessage");
-          } else {
-            setIsOpen("SubmitThankYou");
+            console.log(error.response.data.message);
+            console.log(error.message);
+            alert(error.response.data.message);
           }
         });
     } catch (error) {
@@ -275,7 +277,7 @@ const NftForm = () => {
             </li>
             <li className="col-span-2">
               <p className="animated fadeInUp text-center text-gray-400 text-base">
-                推廣生意的競賽牌照號碼：XXXXX
+                {t("Footer.1")}
               </p>
             </li>
           </ul>

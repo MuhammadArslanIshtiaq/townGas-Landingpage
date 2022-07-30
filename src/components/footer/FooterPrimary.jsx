@@ -23,26 +23,32 @@ export default function FooterPrimary() {
             <p className="text-lg text-white mx-auto lg:ml-0 lg:mr-auto">
               {cl === "ch" ? (
                 <>
-                  <a href="https://www.towngas.com/tc/Info/Privacy">
-                    {t("Footer.0")}
+                  <a
+                    href="https://www.towngas.com/tc/Info/Privacy"
+                    className="mx-1"
+                  >
+                    私隱政策
                   </a>
                   <span
-                    className="hover:cursor-pointer"
+                    className="hover:cursor-pointer mx-1"
                     onClick={() => setIsOpen("PrivacyPolicy")}
                   >
-                    | 聲明免責聲明及使用條款
+                    | 聲明免責聲明及使用條款 |
                   </span>
                 </>
               ) : (
                 <>
-                  <a href="https://www.towngas.com/en/Info/Privacy">
-                    {t("Footer.0")}
+                  <a
+                    href="https://www.towngas.com/en/Info/Privacy"
+                    className="mx-1"
+                  >
+                    Privacy Policy
                   </a>
                   <span
-                    className="hover:cursor-pointer"
+                    className="hover:cursor-pointer mx-1"
                     onClick={() => setIsOpen("PrivacyPolicyEn")}
                   >
-                    | Disclaimer and Terms of Use
+                    | Disclaimer and Terms of Use |
                   </span>
                 </>
               )}

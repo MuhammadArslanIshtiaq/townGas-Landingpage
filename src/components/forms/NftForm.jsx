@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import CheckBox from "./CheckBox";
 import ModalComponents from "../modals/ModalComponents";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
@@ -21,25 +20,36 @@ const NftForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setIsOpen("SubmitThankYou");
     console.log(name, email, phone, metaAddress, orderNum, orderDate);
     try {
-      const resp = axios.post(
-        url,
-        {
-          name: name,
-          email: email,
-          phone: phone,
-          wallet_address: metaAddress,
-          order_no: orderNum,
-          purchase_date: orderDate,
-        },
-        {
-          crossdomain: true,
-        }
-      );
-      console.log(resp.data);
+      const resp = axios
+        .post(
+          url,
+          {
+            name: name,
+            email: email,
+            phone: phone,
+            wallet_address: metaAddress,
+            order_no: orderNum,
+            purchase_date: orderDate,
+          },
+          {
+            crossdomain: true,
+          }
+        )
+        .catch(function (error) {
+          if (error.response) {
+            console.log(error.response.data);
+            console.log(error.response.status);
+          }
+          if (error.response.status !== 200) {
+            setIsOpen("ErrorMessage");
+          } else {
+            setIsOpen("SubmitThankYou");
+          }
+        });
     } catch (error) {
+      console.log("Error aya");
       console.log(error.response);
     }
   };

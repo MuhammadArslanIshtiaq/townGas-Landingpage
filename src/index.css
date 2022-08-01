@@ -19,8 +19,8 @@ body {
 }
 
 .bg-1 { 
-  background: #e7d387;
-  background: linear-gradient(100deg, #e5d491 5%, #d1bf79 50%, #e0ca74 100%);
+  background: #CCBB55;
+  background: linear-gradient(100deg, #E0CA7E 5%, #CCBB55 50%, #CCBB55 100%);
 }
 
 .bg-blue-p { 

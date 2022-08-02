@@ -1,8 +1,9 @@
 /* This example requires Tailwind CSS v2.0+ */
 
+import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 function classNames(...classes) {
@@ -14,6 +15,7 @@ export default function NavbarPrimary() {
   const [navbar, setNavbar] = useState(false);
   const [active, setActive] = useState("");
   const [language, setLanguage] = useState("ch");
+  const [title, setTitle] = useState("T煤氣160周年智慧燃展未來NFT大抽獎");
 
   const navigation = [
     { name: t("Header.1"), href: "#home" },
@@ -34,7 +36,16 @@ export default function NavbarPrimary() {
   const onLanguageChange = (lang) => {
     i18n.changeLanguage(lang);
     setLanguage(lang);
+    if (lang === "en") {
+      setTitle("Towngas 160th Anniversary NFT Lucky Draw");
+    } else {
+      setTitle("煤氣160周年智慧燃展未來NFT大抽獎");
+    }
   };
+
+  useEffect(() => {
+    document.title = `${title}`;
+  });
 
   window.addEventListener("scroll", changeBackground);
 

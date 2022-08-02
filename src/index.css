@@ -38,6 +38,31 @@ background: #E4E9F9 0% 0% no-repeat padding-box;
   height: 90vh;
 }
 
+@media (max-width: 640px) {
 .bg-size-400{
   background-size: 95vw;
+  height: 100vh;
 }
+}
+
+@media (min-width: 640px) {
+  .bg-size-400{
+    background-size: 90vw;
+  }
+}
+
+@media (min-width: 640px) {
+
+.pt-cod{
+padding-top: 0 !important;
+}
+
+}
+
+@media (min-width: 767px) {
+
+  .pt-cod{
+  padding-top: 60vw !important;
+  }
+  
+  }

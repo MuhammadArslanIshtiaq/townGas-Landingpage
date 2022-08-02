@@ -17,6 +17,16 @@ export default function NavbarPrimary() {
   const [language, setLanguage] = useState("ch");
   const [title, setTitle] = useState("T煤氣160周年智慧燃展未來NFT大抽獎");
 
+  let keywords = document.getElementsByTagName("meta")["keywords"];
+  let sitename = document.getElementsByTagName("meta")["site_name"];
+  let description = document.getElementsByTagName("meta")["description"];
+  let description2 = document.getElementsByTagName("meta")["description2"];
+
+  let chkeywords = document.getElementsByTagName("meta")["keywords"];
+  let chsitename = document.getElementsByTagName("meta")["site_name"];
+  let chdescription = document.getElementsByTagName("meta")["description"];
+  let chdescription2 = document.getElementsByTagName("meta")["description2"];
+
   const navigation = [
     { name: t("Header.1"), href: "#home" },
     { name: t("Header.2"), href: "#introduction" },
@@ -38,8 +48,22 @@ export default function NavbarPrimary() {
     setLanguage(lang);
     if (lang === "en") {
       setTitle("Towngas 160th Anniversary NFT Lucky Draw");
+      description.content =
+        "Towngas will be the first public utility to debut its free NFT project- “Towngas 160th Anniversary Smart Energy for a Brighter Future NFT Lucky Draw”. ";
+      keywords.content =
+        "Towngas, TGC, Towngas promotion, appliance promotion, Towngas 160, Towngas 160th, Towngas Lucky Draw, Towngas NFT";
+      sitename.content = "Towngas 160th Presents";
+      description2.content =
+        "Towngas will be the first public utility to debut its free NFT project- “Towngas 160th Anniversary Smart Energy for a Brighter Future NFT Lucky Draw”. ";
     } else {
       setTitle("煤氣160周年智慧燃展未來NFT大抽獎");
+      description.content =
+        "踏入160周年, 煤氣公司貫徹「智慧燃展未來」的理念, 推出全港首個公用事業機構的免費NFT計劃, 發行10,000張紀念NFT並舉辦抽獎活動, 送出160份驚喜獎賞。";
+      keywords.content =
+        "煤氣公司, TGC, 煤氣優惠, 爐具優惠, 煤氣160周年, 煤氣抽獎, 煤氣NFT, 買爐抽獎";
+      sitename.content = "煤氣160周年呈獻";
+      description2.content =
+        "踏入160周年, 煤氣公司貫徹以「智慧燃展未來」的理念, 推出全港首個公用事業機構的免費NFT計劃, 發行10,000張獨一無二的紀念NFT並舉辦抽獎活動, 送出160份驚喜獎賞, 以回饋市民多年來的支持。";
     }
   };
 

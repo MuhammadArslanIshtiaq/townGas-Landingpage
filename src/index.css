@@ -59,10 +59,10 @@ padding-top: 0 !important;
 
 }
 
-@media (min-width: 767px) {
+@media (min-width: 767px ) {
 
   .pt-cod{
-  padding-top: 60vw !important;
+  padding-top: 50px!important;
   }
   
   }

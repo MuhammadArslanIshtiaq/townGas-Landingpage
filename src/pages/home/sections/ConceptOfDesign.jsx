@@ -10,7 +10,7 @@ const ConceptOfDesign = () => {
   return (
     <section
       id="conceptOfDesign"
-      className="block z-20 sm:mt-36 lg:mt-8 sm:pt-[40rem] pt-cod lg:pt-[10rem] xl:pt-60 pb-8 lg:pb-16 bg-layerOne bg-cover"
+      className="z-21 bg-layerOne bg-cover sm:mt-36 md:mt-[38rem] lg:mt-0 xl:mt-[12rem]"
     >
       {/* === */}
       <span className="md:hidden absolute right-[0rem] top-[-2rem]">

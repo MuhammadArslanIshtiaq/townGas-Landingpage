@@ -11,7 +11,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <section className="lg:pt-36 pt-20 pb-4 lg:pb-16 md:max-h-[78rem] bg-bottom bg-cover md:bg-heroD relative z-20">
+      <section className="lg:pt-36 pt-20 pb-4 lg:pb-16 md:max-h-[78rem] bg-bottom bg-cover md:bg-heroD block z-20">
         {/* === */}
         <div className="bg-blue-p md:hidden" />
         <span className="md:hidden absolute right-[-12rem] top-[10rem]">

@@ -38,6 +38,7 @@ background: #E4E9F9 0% 0% no-repeat padding-box;
   height: 90vh;
 }
 
+
 @media (max-width: 640px) {
 .bg-size-400{
   background-size: 95vw;
@@ -51,18 +52,28 @@ background: #E4E9F9 0% 0% no-repeat padding-box;
   }
 }
 
-@media (min-width: 640px) {
+@media (max-width: 376px) {
+  .bg-size-400{
+    background-size: 95vw;
+    height: 115vh;
+  }
+  }
+
+
+@media (min-width: 1580px) {
 
 .pt-cod{
-padding-top: 0 !important;
+padding-top: 4rem !important;
 }
 
 }
 
-@media (min-width: 767px ) {
+
+@media (min-width: 1780px) {
 
   .pt-cod{
-  padding-top: 50px!important;
+  padding-top: 8rem !important;
   }
   
   }
+  

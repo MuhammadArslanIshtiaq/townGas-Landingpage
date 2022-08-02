@@ -84,7 +84,7 @@ export default function NavbarPrimary() {
                           active === item.name
                             ? "text-primary border-primary"
                             : "text-primary border-transparent hover:border-primary",
-                          "font-semibold text-[1rem] border-2 py-3 px-4 rounded animated fadeInDownBig capitalize",
+                          "font-semibold text-[1.2rem] border-2 py-3 px-4 rounded animated fadeInDownBig capitalize",
                           item.durationClass
                         )}
                       >
@@ -92,9 +92,30 @@ export default function NavbarPrimary() {
                       </a>
                     ))}
                   </div>
+                  <div className="flex items-center space-x-3 animated fadeInRightBig pl-3">
+                    <button
+                      type="button"
+                      onClick={() => onLanguageChange("ch")}
+                      className={`font-semibold text-[1.2rem] pl-5 hover:text-primary ${
+                        language === "ch" ? "text-primary" : "text-gray-300"
+                      }`}
+                    >
+                      中
+                    </button>
+                    <span className="block w-[0.1875rem] h-4 bg-primary" />
+                    <button
+                      type="button"
+                      onClick={() => onLanguageChange("en")}
+                      className={`font-semibold text-[1.2rem] hover:text-primary ${
+                        language === "en" ? "text-primary" : "text-gray-300"
+                      }`}
+                    >
+                      ENG
+                    </button>
+                  </div>
                 </div>
               </div>
-              <div className="hidden lg:flex absolute inset-y-0 right-0 items-center pr-2 lg:static lg:inset-auto lg:ml-6 lg:pr-0">
+              {/* <div className="hidden lg:flex absolute inset-y-0 right-0 items-center pr-2 lg:static lg:inset-auto lg:ml-6 lg:pr-0">
                 <div className="flex items-center space-x-3 animated fadeInRightBig">
                   <button
                     type="button"
@@ -116,7 +137,7 @@ export default function NavbarPrimary() {
                     ENG
                   </button>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 

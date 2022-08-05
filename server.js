@@ -4,8 +4,8 @@ const fs = require('fs');
 const path = require('path');
 const port = 443;
 
-var key = fs.readFileSync(__dirname + '/ssl/selfsigned.key');
-var cert = fs.readFileSync(__dirname + '/ssl/selfsigned.crt');
+var key = fs.readFileSync('../ssl/202106-wildtgappliance.key');
+var cert = fs.readFileSync('../ssl/STAR_towngasappliance_com.crt');
 var options = {
     key: key,
     cert: cert

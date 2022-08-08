@@ -4,7 +4,7 @@ import ModalComponents from "../modals/ModalComponents";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import axios from "axios";
-const url = "http://audiobar.xyz/api/user";
+const url = "/user";
 
 const NftForm = () => {
   const { t } = useTranslation();

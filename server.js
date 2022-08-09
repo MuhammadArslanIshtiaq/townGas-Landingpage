@@ -1,5 +1,5 @@
 const express = require('express');
-const https = require('https');
+// const https = require('https');
 const fs = require('fs');
 const path = require('path');
 const { default: axios } = require('axios');
@@ -26,8 +26,8 @@ app.post('/user', (req, res) => {
         .catch((err) => console.log(err))
 });
 
-var server = https.createServer(options, app);
+// var server = http.createServer(options, app);
 
-server.listen(port, () => {
+app.listen(port, () => {
     console.log("server starting on port : " + port)
 });

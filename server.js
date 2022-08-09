@@ -5,10 +5,10 @@ const path = require('path');
 const { default: axios } = require('axios');
 const port = 443;
 
-var key = fs.readFileSync('./selfsigned.key');
-var cert = fs.readFileSync('./selfsigned.crt');
-// var key = fs.readFileSync('./ssl/202106-wildtgappliance.key');
-// var cert = fs.readFileSync('./ssl/STAR_towngasappliance_com.crt');
+// var key = fs.readFileSync('./selfsigned.key');
+// var cert = fs.readFileSync('./selfsigned.crt');
+var key = fs.readFileSync('./ssl/202106-wildtgappliance.key');
+var cert = fs.readFileSync('./ssl/STAR_towngasappliance_com.crt');
 var options = {
     key: key,
     cert: cert
@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 app.post('/user', (req, res) => {
-    axios.post('http://0.0.0.0:444/api/user', req.body)
+    axios.post('http://172.28.88.72/api/user', req.body)
         .then((result) => res.send(result.data))
         .catch((err) => console.log(err))
 });

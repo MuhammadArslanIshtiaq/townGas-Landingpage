@@ -5,10 +5,10 @@ const path = require('path');
 const { default: axios } = require('axios');
 const port = 1234;
 
-var key = fs.readFileSync('./selfsigned.key');
-var cert = fs.readFileSync('./selfsigned.crt');
-// var key = fs.readFileSync('./ssl/202106-wildtgappliance.key');
-// var cert = fs.readFileSync('./ssl/STAR_towngasappliance_com.crt');
+// var key = fs.readFileSync('./selfsigned.key');
+// var cert = fs.readFileSync('./selfsigned.crt');
+var key = fs.readFileSync('./ssl/202106-wildtgappliance.key');
+var cert = fs.readFileSync('./ssl/STAR_towngasappliance_com.crt');
 var options = {
     key: key,
     cert: cert
@@ -26,8 +26,8 @@ app.post('/user', (req, res) => {
         .catch((err) => console.log(err))
 });
 
-// var server = http.createServer(options, app);
+var server = http.createServer(options, app);
 
-app.listen(port, () => {
+server.listen(port, () => {
     console.log("server starting on port : " + port)
 });

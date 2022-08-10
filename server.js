@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 app.post('/user', (req, res) => {
-    axios.post('http://3.73.37.14:1234/api/user', req.body)
+    axios.post('https://172.28.88.72:443/api/user', req.body)
         .then((result) => res.send(result.data))
         .catch((err) => console.log(err))
 });

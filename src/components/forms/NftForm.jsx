@@ -32,6 +32,7 @@ const NftForm = () => {
             wallet_address: metaAddress,
             order_no: orderNum,
             purchase_date: orderDate,
+            language: cl
           },
           {
             crossdomain: true,

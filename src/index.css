@@ -76,4 +76,13 @@ padding-top: 4rem !important;
   }
   
   }
+
+  
+@media (min-width: 1600px) {
+.bg-pos{
+
+  background-position: 0% 20% !important;
+
+}
+}
   

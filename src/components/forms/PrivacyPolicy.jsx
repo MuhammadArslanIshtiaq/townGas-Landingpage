@@ -158,7 +158,7 @@ const PrivacyPolicy = () => {
         <span className="bg-yellow-400">致電6221 2956</span> 查詢。
         <br />
         19. 推廣生意的競賽牌照號碼：
-        <span className="bg-yellow-400">55362-7TBC</span>
+        <span className="bg-yellow-400">55978, 55979</span>
       </p>
     </div>
   );

@@ -13,7 +13,10 @@ const SubmitThankYou = () => {
         <br /> {t("Thankyou.3")}
       </p>
 
-      <p className="animated fadeInUp">{t("Thankyou.4")}</p>
+      <p className="animated fadeInUp">{t("Thankyou.4")}
+      <a href="https://opensea.io/collection/towngas160nft">{t("Thankyou.5")}</a>
+      {t("Thankyou.6")}
+      </p>
     </div>
   );
 };

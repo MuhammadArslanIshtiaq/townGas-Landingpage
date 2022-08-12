@@ -1,135 +1,124 @@
 {
-    "Header":{
-"1": "Home",
-"2":"Design Concept",
-"3":"Prizes",
-"4":"How to Join",
-"5":"FAQS"
-},
-
-"Button":{
-    "1":"REDEEM NFT",
-    "2a":"Free redemption",
-    "2b":"Gas 160th Anniversary NFT",
-    "3":"Submit"
-    
-},
-
-"About" : "Founded in 1862, The Hong Kong and China Gas Company Limited (Towngas) is Hong Kong's first public utility with a focus on innovation and environmental friendliness, maintaining this position as Asia’s leading clean energy supplier and quality service provider. 2022 marks a new milestone for Towngas with its 160th anniversary. In line with our philosophy of “Smart Energy for a Brighter Future“, Towngas is the first Hong Kong public utility launching a free NFT project with an initial release of 10,000 unique commemorative NFTs, thus an anniversary lucky draw to give away 160 fabulous prizes!",
-
-"COD":"To promote the development of local creative industries, Towngas collaborated with young local artist, Tracy Liu. All NFTs are collectible digital artworks that showcase Towngas iconic gas appliances with local elements.",
-
-"Prize" :{
-    "t1" :"Grand Prize",
-    "d1" :"HKD$16,000 ",
-    "d1a" :"Gas Appliance Coupon",
-    "d1b" :"(1 Winner)",
-    "t2" :"2nd Prize",
-    "d2" :"HKD$10,000 ",
-    "d2a" :"Gas Appliance Coupon",
-    "d2b" :"(1 Winner)",
-    "t3" :"3rd Prize",
-    "d3" :"Dyson PURE COOL CRYPTOMIC™   ",
-    "d3a" :"2-in-1 Air Purifier - TP06",
-    "d3b" :"[Gunmetal Bronze]",
-    "d3c" :"(1 Winner)",
-    "d3d" :"(Valued at HKD$5,880)",
-    "t4" :"4th Prize",
-    "d4" :"Samsung 2 Door Refrigerator 328L",
-    "d4a" :"(Silver)",
-    "d4c" :"(Valued at HKD$5,790)",
-    "d4b" :" (1 winner)",
-    "t5" :"5th Prize",
-    "d5" :"HKD$5,000",
-    "d5a" :"Gas Appliance Coupon",
-    "d5b" :"(5 winners)",
-    "t6" :"6th Prize",
-    "d6" :"Philips ADD6911L RO Water",
-    "d6a" :"Dispenser",
-    "d6c" :"(Valued at $3,788)",
-    "d6b" :"(1 Winner)",
-    "t7" :"7th Prize",
-    "d7" :"HKD$1,000",
-    "d7a" :"Towngas Fun e-Coupon ",
-    "d7b" :"(10 Winners)",
-    "t8" :"8th Prize",
-    "d8" :"HKD$300",
-    "d8a" :"Towngas Fun e-Coupon ",
-    "d8b" :"(80 Winners)",
-    "t9" :"9th Prize",
-    "d9" :"Rinnai Cooking Pot RTR-300D1 ",
-    "d9a" :"(60 Winners)",
-    "d9b" :"(Valued at HKD$268)",
-    "total" : "「10,000」 PIECES ONLY"
-},
-
-"Step" :{
-    "title" : "Participants must hold a valid Hong Kong Identity Card for persons aged 18 or above, and complete the following steps:",
-    "1a":"1. Download and create a MetaMask Wallet",
-    "1b":"(Click to download)",
-    "2":"2. Fill in the form and submit the information on left",
-    "3":"3. An NFT and lucky draw entry will be sent to your wallet within 24 hours after submission",
-    "4":"",
-    "5":"",
-    "6":"",
-    "7":"Each Participant can redeem a free NFT and lucky draw entry. During the event period,",
-    "8":"when purchasing gas appliances through Towngas",
-    "10":", an additional NFT and lucky draw entry will be granted ",
-    "9":"by filling in the sales order number and purchase date. Each eligible Participant can only participate in the event once and receive a maximum of two NFTs and two lucky draw entries.",
-    "11":"(While stocks last)"
-},
-
-"Faq":{
-    "Q1":"What is an NFT?",
-    "A1":"NFT, stands for “Non-fungible Token”, is an one-of-a-kind digital asset with a certificate of ownership that can be traded and recorded in any blockchain.",
-    "Q2":"Is NFT secure?",
-    "A2":"Good crypto asset management practices are suggested when redeeming your Towngas 160th Anniversary NFT. Please do not share your virtual wallet account and secret recovery phrase with anyone, select a trustable trading platform to sell the NFTs and avoid clicking on suspicious links or linking your wallet to malicious websites.    ",
-    "Q3":"How many Towngas 160th Anniversary NFT will be available?",
-    "A3":"Towngas will launch a total of 10,000 NFTs. Each NFT will be entitled to a lucky draw entry, while stocks last.",
-    "Q4":"When will the Towngas 160th Anniversary NFTs be issued?",
-    "A4":"The event starts on 11 August 2022 at 12 a.m. and closes on 11 September 2022 at 11:59 p.m. (Hong Kong time).",
-    "Q5":"How many NFT can I get?",
-    "A5":"Each Participant can redeem one free NFT and one lucky draw entry. During the event period, when purchasing gas appliances through Towngas (applicable to Towngas Customer Centre, outdoor sales booths, online and telephone orders, excluding dealers and agents), an additional NFT and lucky draw entry will be granted by filling in the sales order number and purchase date after verified by the staff. Each eligible Participant can only participate in the event once and receive a maximum of two NFTs and two lucky draw entries. If the same sales order number is used for more than once, his/her registration will be disqualified",
-    "Q6":"When will the results of lucky draw be announced?",
-    "A6":"The results will be announced on Towngas Appliance Facebook page, published on September 16, 2022 in The Standard and Sing Tao Daily.",
-    "Q7":"How to set up a MetaMask wallet?",
-    "A7":"Please click here to read the guideline on registration of MetaMask.",
-    "Q8":"Is there any handling fee for redeeming a Towngas 160th Anniversary NFT?",
-    "A8":"No, your Towngas 160th Anniversary NFT will be airdropped to the provided wallet address directly.",
-    "Q9":"Can I withdraw and transfer my Towngas 160th Anniversary NFT? What are the restrictions?",
-    "A9":"Yes, you can transfer your Towngas 160th Anniversary NFT and trade it on the NFT marketplace, OpenSea after prize redemption. If you transfer or sell your NFT before the lucky draw, you will not be eligible to participate in the 'Towngas 160th Anniversary Smart Energy for a Brighter Future NFT Lucky Draw'. Winners should contain the commemorative NFT in their registered virtual wallet address at the time of prize collection. ",
-    "Q10":"Which blockchain is Towngas 160th Anniversary NFTs on?",
-    "A10":"Polygon"
-},
-
-"Form":{
-    "1" : "Name (same as HKID card):",
-    "2" : "Email Address",
-    "3" : "Phone Number",
-    "4" : "MetaMask Wallet Address (Please add screen cap instruction to teach ppl how to find it):",
-    "5" : " How to find MetaMask Wallet Address :",
-    "6" : "1) Open METAMASK",
-    "7" : "2) Copy Wallet Address",
-    "8" : "3) Complete",
-    "9" : "Please tick to get additional NFT if you purchased gas appliances。",
-    "10" : "Order No:",
-    "11" : "Purchase Date:"
-},
-
-"Thankyou":{
-    "1" : "Thank you for your participation in Towngas 160th Anniversary NFT Lucky Draw.",
-    "2" : "Your NFT will be sent to the provided wallet address. ,",
-    "3" : "Please check it on MetaMask.",
-    "4" : ""
-},
-
-"Footer":{
-    "0": "Privacy Policy",
-    "1" : "Promotion Competition Licence No.: XXXXX",
-    "2" : "© 2022 All rights reserved. TGC"
-    
-}
-
-
-
+    "Header": {
+        "1": "Home",
+        "2": "Design Concept",
+        "3": "Prizes",
+        "4": "How to Join",
+        "5": "FAQS"
+    },
+    "Button": {
+        "1": "REDEEM NFT",
+        "2a": "Free redemption",
+        "2b": "Redeem free Towngas 160th Anniversary NFT & Lucky Draw",
+        "3": "Submit"
+    },
+    "About": "Founded in 1862, The Hong Kong and China Gas Company Limited (Towngas) is Hong Kong's first public utility with a focus on innovation and environmental friendliness, maintaining this position as Asia’s leading clean energy supplier and quality service provider. 2022 marks a new milestone for Towngas with its 160th anniversary. In line with our philosophy of “Smart Energy for a Brighter Future“, Towngas is the first Hong Kong public utility launching a free NFT project with an initial release of 10,000 unique commemorative NFTs, thus an anniversary lucky draw to give away 160 fabulous prizes!*No association between NFT redemption and entry of lucky draw",
+    "COD": "To promote the development of local creative industries, Towngas collaborated with young local artist, Tracy Liu. All NFTs are collectible digital artworks that showcase Towngas iconic gas appliances with local elements.",
+    "Prize": {
+        "t1": "Grand Prize",
+        "d1": "HKD$16,000 ",
+        "d1a": "Gas Appliance Coupon",
+        "d1b": "(1 Winner)",
+        "t2": "2nd Prize",
+        "d2": "HKD$10,000 ",
+        "d2a": "Gas Appliance Coupon",
+        "d2b": "(1 Winner)",
+        "t3": "3rd Prize",
+        "d3": "Dyson PURE COOL CRYPTOMIC™   ",
+        "d3a": "2-in-1 Air Purifier - TP06",
+        "d3b": "[Gunmetal Bronze]",
+        "d3c": "(1 Winner)",
+        "d3d": "(Valued at HKD$5,880)",
+        "t4": "4th Prize",
+        "d4": "Samsung 2 Door Refrigerator 328L",
+        "d4a": "(Silver)",
+        "d4c": "(Valued at HKD$5,790)",
+        "d4b": " (1 winner)",
+        "t5": "5th Prize",
+        "d5": "HKD$5,000",
+        "d5a": "Gas Appliance Coupon",
+        "d5b": "(5 winners)",
+        "t6": "6th Prize",
+        "d6": "Philips ADD6911L RO Water",
+        "d6a": "Dispenser",
+        "d6c": "(Valued at $3,788)",
+        "d6b": "(1 Winner)",
+        "t7": "7th Prize",
+        "d7": "HKD$1,000",
+        "d7a": "Towngas Fun e-Coupon ",
+        "d7b": "(10 Winners)",
+        "t8": "8th Prize",
+        "d8": "HKD$300",
+        "d8a": "Towngas Fun e-Coupon ",
+        "d8b": "(80 Winners)",
+        "t9": "9th Prize",
+        "d9": "Rinnai Cooking Pot RTR-300D1 ",
+        "d9a": "(60 Winners)",
+        "d9b": "(Valued at HKD$268)",
+        "total": "「10,000」 PIECES ONLY"
+    },
+    "Step": {
+        "title": "Participants must hold a valid Hong Kong Identity Card for persons reaching the age of 18, and complete the following steps for lucky draw application:",
+        "1a": "1. Fill in the form and submit the information on left Participants who redeem NFT, please complete step 2. Download and create a MetaMask Wallet",
+        "1b": "2. Download and create a MetaMask Wallet",
+        "1c": " (Click to download)",
+        "2": "3. Once submitted, lucky draw entry will be redeemed and an NFT will be sent to your wallet within 24 hours after submission",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": "",
+        "7": "First 10,000 participants who provided a wallet address can redeem a free NFT while no limitation on participants for lucky draw entrance. During the event period, when",
+        "8": " purchasing gas appliances through Towngas, ",
+        "10": "an additional NFT and lucky draw entry will be granted ",
+        "9": "by filling in the sales order number and purchase date. Each eligible Participant can only participate in the event once and receive a maximum of two NFTs and two lucky draw entries.",
+        "11": "While stocks last."
+    },
+    "Faq": {
+        "Q1": "What is an NFT?",
+        "A1": "NFT, stands for “Non-fungible Token”, is an one-of-a-kind digital asset with a certificate of ownership that can be traded and recorded in any blockchain.",
+        "Q2": "Is NFT secure?",
+        "A2": "Good crypto asset management practices are suggested when redeeming your Towngas 160th Anniversary NFT. Please do not share your virtual wallet account and secret recovery phrase with anyone, select a trustable trading platform to sell the NFTs and avoid clicking on suspicious links or linking your wallet to malicious websites.    ",
+        "Q3": "How many Towngas 160th Anniversary NFT will be available?",
+        "A3": "Towngas will launch a total of 10,000 NFTs. Each NFT will be entitled to a lucky draw entry, while stocks last.",
+        "Q4": "When will the Towngas 160th Anniversary NFTs be issued?",
+        "A4": "The event starts on 11 August 2022 at 12 a.m. and closes on 11 September 2022 at 11:59 p.m. (Hong Kong time).",
+        "Q5": "How many NFT can I get?",
+        "A5": "First 10,000 participants who provided a wallet address can redeem one free NFT (while stocks last) while no limitation on participants for  lucky draw entrance. During the event period, when purchasing gas appliances through Towngas (applicable to Towngas Customer Centre, outdoor sales booths, online and telephone orders, excluding dealers and agents), an additional NFT and lucky draw entry will be granted by filling in the sales order number and purchase date after verified by the staff. Each eligible Participant can only participate in the event once and receive a maximum of two NFTs and two lucky draw entries. If the same sales order number is used for more than once, his/her registration will be disqualified.",
+        "Q6": "When will the results of lucky draw be announced?",
+        "A6": "The results will be announced on Towngas Appliance Facebook page, published on September 16, 2022 in The Standard and Sing Tao Daily.",
+        "Q7": "How to set up a MetaMask wallet?",
+        "A7": "Please click here to read the guideline on registration of MetaMask.",
+        "Q8": "Is there any handling fee for redeeming a Towngas 160th Anniversary NFT?",
+        "A8": "No, your Towngas 160th Anniversary NFT will be airdropped to the provided wallet address directly.",
+        "Q9": "Can I withdraw and transfer my Towngas 160th Anniversary NFT? What are the restrictions?",
+        "A9": "Yes, you can transfer your Towngas 160th Anniversary NFT and trade it on the NFT marketplace, OpenSea after prize redemption. If you transfer or sell your NFT before the lucky draw, you will not be eligible to participate in the 'Towngas 160th Anniversary Smart Energy for a Brighter Future NFT Lucky Draw'. Winners should contain the commemorative NFT in their registered virtual wallet address at the time of prize collection. ",
+        "Q10": "Which blockchain is Towngas 160th Anniversary NFTs on?",
+        "A10": "Polygon"
+    },
+    "Form": {
+        "1": "Name (same as HKID card):",
+        "2": "Email Address:",
+        "3": "Phone Number:",
+        "4": "MetaMask Wallet Address:",
+        "5": "How to find MetaMask Wallet Address :",
+        "6": "1) Open METAMASK",
+        "7": "2) Copy Wallet Address",
+        "8": "3) Complete",
+        "9": "Please tick to get additional NFT and lucky draw entry if you purchased gas appliances",
+        "10": "Order No.:",
+        "11": "Purchase Date:"
+    },
+    "Thankyou": {
+        "1": "Thank you for your participation in Towngas 160th Anniversary NFT Lucky Draw.",
+        "2": "Your NFT will be sent to the provided wallet address. ,",
+        "3": "Please check it on MetaMask.",
+        "4": "You can also ",
+        "5": "click here",
+        "6": " to view all minted Towngas 160th Anniversary NFT collection."
+    },
+    "Footer": {
+        "0": "Privacy Policy",
+        "1": "Promotion Competition Licence No.: 55978, 55979",
+        "2": "© 2022 All rights reserved. TGC"
+    }
 }

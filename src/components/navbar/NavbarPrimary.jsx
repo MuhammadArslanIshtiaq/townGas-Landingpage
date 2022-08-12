@@ -1,83 +1,86 @@
 /* This example requires Tailwind CSS v2.0+ */
 
-import React from "react";
-import { Disclosure } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import React from 'react'
+import { Disclosure } from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
+  return classes.filter(Boolean).join(' ')
 }
 
 export default function NavbarPrimary() {
-  const { t, i18n } = useTranslation();
-  const [navbar, setNavbar] = useState(false);
-  const [active, setActive] = useState("");
-  const [language, setLanguage] = useState("ch");
-  const [title, setTitle] = useState("T煤氣160周年智慧燃展未來NFT大抽獎");
+  const { t, i18n } = useTranslation()
+  const [navbar, setNavbar] = useState(false)
+  const [active, setActive] = useState('')
+  const [language, setLanguage] = useState('ch')
+  const [title, setTitle] = useState('煤氣160周年智慧燃展未來NFT暨大抽獎')
 
-  let keywords = document.getElementsByTagName("meta")["keywords"];
-  let sitename = document.getElementsByTagName("meta")["site_name"];
-  let description = document.getElementsByTagName("meta")["description"];
-  let description2 = document.getElementsByTagName("meta")["description2"];
+  let keywords = document.getElementsByTagName('meta')['keywords']
+  let sitename = document.getElementsByTagName('meta')['site_name']
+  let description = document.getElementsByTagName('meta')['description']
+  let description2 = document.getElementsByTagName('meta')['description2']
+  let title2 = document.getElementsByTagName('meta')['title2']
 
-  let chkeywords = document.getElementsByTagName("meta")["keywords"];
-  let chsitename = document.getElementsByTagName("meta")["site_name"];
-  let chdescription = document.getElementsByTagName("meta")["description"];
-  let chdescription2 = document.getElementsByTagName("meta")["description2"];
+  let chkeywords = document.getElementsByTagName('meta')['keywords']
+  let chsitename = document.getElementsByTagName('meta')['site_name']
+  let chdescription = document.getElementsByTagName('meta')['description']
+  let chdescription2 = document.getElementsByTagName('meta')['description2']
 
   const navigation = [
-    { name: t("Header.1"), href: "#home" },
-    { name: t("Header.2"), href: "#introduction" },
-    { name: t("Header.3"), href: "#conceptOfDesign" },
-    { name: t("Header.4"), href: "#prize" },
-    { name: t("Header.5"), href: "#commonProblem" },
-  ];
+    { name: t('Header.1'), href: '#home' },
+    { name: t('Header.2'), href: '#introduction' },
+    { name: t('Header.3'), href: '#conceptOfDesign' },
+    { name: t('Header.4'), href: '#prize' },
+    { name: t('Header.5'), href: '#commonProblem' },
+  ]
 
   const changeBackground = () => {
     if (window.scrollY >= 180) {
-      setNavbar(true);
+      setNavbar(true)
     } else {
-      setNavbar(false);
+      setNavbar(false)
     }
-  };
+  }
 
   const onLanguageChange = (lang) => {
-    i18n.changeLanguage(lang);
-    setLanguage(lang);
-    if (lang === "en") {
-      setTitle("Towngas 160th Anniversary NFT Lucky Draw");
+    i18n.changeLanguage(lang)
+    setLanguage(lang)
+    if (lang === 'en') {
+      setTitle('Towngas 160th Anniversary NFT Giveaway & Lucky Draw')
       description.content =
-        "Towngas will be the first public utility to debut its free NFT project- “Towngas 160th Anniversary Smart Energy for a Brighter Future NFT Lucky Draw”. ";
+        'Towngas will be the first public utility to debut its free NFT project– “Towngas 160th Anniversary Smart Energy for a Brighter Future NFT Giveaway & Lucky Draw”. '
       keywords.content =
-        "Towngas, TGC, Towngas promotion, appliance promotion, Towngas 160, Towngas 160th, Towngas Lucky Draw, Towngas NFT";
-      sitename.content = "Towngas 160th Presents";
+        'Towngas, TGC, Towngas promotion, appliance promotion, Towngas 160, Towngas 160th, Towngas Lucky Draw, Towngas NFT'
+      sitename.content = 'Towngas 160th Presents'
+      title2.content = 'Towngas 160th Anniversary NFT Giveaway & Lucky Draw'
       description2.content =
-        "Towngas will be the first public utility to debut its free NFT project- “Towngas 160th Anniversary Smart Energy for a Brighter Future NFT Lucky Draw”. ";
+        'This year, Towngas reaches its 160th anniversary milestone; the company will keep abreast of the times and continue to thrive by the philosophy of ‘Smart Energy for a Brighter Future’. In celebration of this significant year, Towngas will be the first public utility among the rest to debut its free NFT project.'
     } else {
-      setTitle("煤氣160周年智慧燃展未來NFT大抽獎");
+      setTitle('煤氣160周年智慧燃展未來NFT暨大抽獎')
       description.content =
-        "踏入160周年, 煤氣公司貫徹「智慧燃展未來」的理念, 推出全港首個公用事業機構的免費NFT計劃, 發行10,000張紀念NFT並舉辦抽獎活動, 送出160份驚喜獎賞。";
+        '踏入160周年，煤氣公司貫徹「智慧燃展未來」的理念，推出全港首個公用事業機構的免費NFT計劃，發行10,000張紀念NFT並同時舉辦抽獎活動，送出160份驚喜獎賞。'
       keywords.content =
-        "煤氣公司, TGC, 煤氣優惠, 爐具優惠, 煤氣160周年, 煤氣抽獎, 煤氣NFT, 買爐抽獎";
-      sitename.content = "煤氣160周年呈獻";
+        '煤氣公司，TGC，煤氣優惠，爐具優惠，煤氣160周年，煤氣抽獎，煤氣NFT，買爐抽獎'
+      sitename.content = '煤氣160周年呈獻'
+      title2.content = '煤氣160周年智慧燃展未來NFT暨大抽獎'
       description2.content =
-        "踏入160周年, 煤氣公司貫徹以「智慧燃展未來」的理念, 推出全港首個公用事業機構的免費NFT計劃, 發行10,000張獨一無二的紀念NFT並舉辦抽獎活動, 送出160份驚喜獎賞, 以回饋市民多年來的支持。";
+        '踏入160周年，煤氣公司貫徹以「智慧燃展未來」的理念，推出全港首個公用事業機構的免費NFT計劃，發行10,000張獨一無二的紀念NFT並同時舉辦抽獎活動，送出160份驚喜獎賞，以回饋市民多年來的支持。'
     }
-  };
+  }
 
   useEffect(() => {
-    document.title = `${title}`;
-  });
+    document.title = `${title}`
+  })
 
-  window.addEventListener("scroll", changeBackground);
+  window.addEventListener('scroll', changeBackground)
 
   return (
     <Disclosure
       as="nav"
       className={`fixed w-full left-[50%] translate-x-[-50%] top-0 z-40 transition-all duration-300 ${
-        navbar ? "bg-white py-2 shadow-sm shadow-gray-400" : "bg-transparent"
+        navbar ? 'bg-white py-2 shadow-sm shadow-gray-400' : 'bg-transparent'
       }`}
     >
       {({ open }) => (
@@ -117,10 +120,10 @@ export default function NavbarPrimary() {
                         onClick={() => setActive(item.name)}
                         className={classNames(
                           active === item.name
-                            ? "text-primary border-primary"
-                            : "text-primary border-transparent hover:border-primary",
-                          "font-semibold text-[1.2rem] border-2 py-3 px-4 rounded animated fadeInDownBig capitalize",
-                          item.durationClass
+                            ? 'text-primary border-primary'
+                            : 'text-primary border-transparent hover:border-primary',
+                          'font-semibold text-[1.2rem] border-2 py-3 px-4 rounded animated fadeInDownBig capitalize',
+                          item.durationClass,
                         )}
                       >
                         {item.name}
@@ -130,9 +133,9 @@ export default function NavbarPrimary() {
                   <div className="flex items-center space-x-3 animated fadeInRightBig pl-3">
                     <button
                       type="button"
-                      onClick={() => onLanguageChange("ch")}
+                      onClick={() => onLanguageChange('ch')}
                       className={`font-semibold text-[1.2rem] pl-5 hover:text-primary ${
-                        language === "ch" ? "text-primary" : "text-gray-300"
+                        language === 'ch' ? 'text-primary' : 'text-gray-300'
                       }`}
                     >
                       中
@@ -140,9 +143,9 @@ export default function NavbarPrimary() {
                     <span className="block w-[0.1875rem] h-4 bg-primary" />
                     <button
                       type="button"
-                      onClick={() => onLanguageChange("en")}
+                      onClick={() => onLanguageChange('en')}
                       className={`font-semibold text-[1.2rem] hover:text-primary ${
-                        language === "en" ? "text-primary" : "text-gray-300"
+                        language === 'en' ? 'text-primary' : 'text-gray-300'
                       }`}
                     >
                       ENG
@@ -187,11 +190,11 @@ export default function NavbarPrimary() {
                     onClick={() => setActive(item.name)}
                     className={classNames(
                       active === item.name
-                        ? "bg-primary text-white"
-                        : "text-primary  hover:bg-primary-700 hover:text-white",
-                      "block px-3 py-3 mt-5 rounded-md text-lg font-medium animated fadeInUp"
+                        ? 'bg-primary text-white'
+                        : 'text-primary  hover:bg-primary-700 hover:text-white',
+                      'block px-3 py-3 mt-5 rounded-md text-lg font-medium animated fadeInUp',
                     )}
-                    aria-current={item.current ? "page" : undefined}
+                    aria-current={item.current ? 'page' : undefined}
                   >
                     {item.name}
                   </Disclosure.Button>
@@ -199,9 +202,9 @@ export default function NavbarPrimary() {
                 <div className="flex items-center justify-center space-x-3 animated fadeInUp">
                   <button
                     type="button"
-                    onClick={() => onLanguageChange("ch")}
+                    onClick={() => onLanguageChange('ch')}
                     className={`font-semibold hover:text-primary ${
-                      language === "ch" ? "text-primary" : "text-gray-300"
+                      language === 'ch' ? 'text-primary' : 'text-gray-300'
                     }`}
                   >
                     中
@@ -209,9 +212,9 @@ export default function NavbarPrimary() {
                   <span className="block w-[0.1875rem] h-4 bg-primary" />
                   <button
                     type="button"
-                    onClick={() => onLanguageChange("en")}
+                    onClick={() => onLanguageChange('en')}
                     className={`font-semibold hover:text-primary ${
-                      language === "en" ? "text-primary" : "text-gray-300"
+                      language === 'en' ? 'text-primary' : 'text-gray-300'
                     }`}
                   >
                     ENG
@@ -223,5 +226,5 @@ export default function NavbarPrimary() {
         </>
       )}
     </Disclosure>
-  );
+  )
 }

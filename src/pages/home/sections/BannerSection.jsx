@@ -4,13 +4,17 @@ import { Link } from "react-router-dom";
 import FaqSection from "./FaqSection";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
+import ModalComponents from "../../../components/modals/ModalComponents";
 
 const BannerSection = () => {
   const { t } = useTranslation();
+  const [isOpen, setIsOpen] = React.useState("");
   let cl = i18next.language;
 
   return (
     <section className="relative z-20 bg-layerThree bg-cover py-16">
+      <ModalComponents show={isOpen} onClose={() => setIsOpen("")} />
+
       <div className="lg:max-w-7xl px-6 mx-auto text-center">
         <ScrollAnimation animateIn="fadeInLeft">
           <div className=" bg-white/50 border-2 border-primary p-6 sm:p-8 lg:p-14 rounded-lg text-left">
@@ -39,6 +43,7 @@ const BannerSection = () => {
                       <Link
                         to
                         className="bg-1 transform duration-300 hover:scale-95 active:scale-95 text-white inline-flex justify-center items-center gap-4 py-4 px-8 rounded-xl text-2xl"
+                        onClick={() => setIsOpen("formModal")}
                       >
                         <span className="block h-12 min-w-[2.8rem]">
                           <img
@@ -66,11 +71,12 @@ const BannerSection = () => {
                   <div>
                     <p>
                       {t("Step.1a")} <br />
+                      {t("Step.1b")}
                       <a
                         href="https://metamask.io/download/"
                         className="cursor-pointer text-secondary underline hover:opacity-80"
                       >
-                        {t("Step.1b")}
+                        {t("Step.1c")}
                       </a>
                     </p>
                     <p>{t("Step.2")}</p>
@@ -88,7 +94,7 @@ const BannerSection = () => {
                     {t("Step.7")}
                     <a
                       href="#"
-                      className="cursor-pointer text-primary font-bold hover:opacity-80 mx-1"
+                      className="cursor-pointer text-primary font-bold hover:opacity-80"
                     >
                       {t("Step.8")}
                     </a>
@@ -106,6 +112,7 @@ const BannerSection = () => {
                     <Link
                       to
                       className="bg-1 transform duration-300 hover:scale-95 active:scale-95 text-white flex justify-center items-center gap-4 py-4 px-8 rounded-xl font-semibold text-xl"
+                      onClick={() => setIsOpen("formModal")}
                     >
                       <span className="text-center font-bold">
                         <img

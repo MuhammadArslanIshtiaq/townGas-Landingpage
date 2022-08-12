@@ -270,7 +270,7 @@ const PrivacyPolicyEn = () => {
         <span className="bg-yellow-400">6221 2956</span>.
         <br />
         19. Trade Promotion Competition Licence Number:{" "}
-        <span className="bg-yellow-400">TBC</span>
+        <span className="bg-yellow-400">55978, 55979</span>
       </p>
     </div>
   );

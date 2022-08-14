@@ -12,19 +12,19 @@ const PrivacyPolicyEn = () => {
         1.{" "}
         <span className="bg-yellow-400">
           "Towngas 160th Anniversary Smart Energy for a Brighter Future NFT
-          Lucky Draw"
-        </span>{" "}
+          Giveaway & Lucky Draw"
+        </span>
         (this "Event") is organised by The Hong Kong and China Gas Company
         Limited (the "Company").
         <br />
-        2. This Event starts on 11 August 2022 at 12 a.m. (Hong Kong time) and
-        closes on 11 September 2022 at 11:59 p.m. (Hong Kong time).
+        2. This Event starts on 19 August 2022 at 12 a.m. (Hong Kong time) and
+        closes on 13 September 2022 at 11:59 p.m. (Hong Kong time).
         <br />
         3. For the purpose of this Event, the time recorded in Towngas system is
         final (“Event Period”).
         <br />
         4. Participants must hold a valid Hong Kong Identity Card for persons
-        aged 18 or above.
+        reaching the age of 18.
         <br />
         5. Please read these Terms and Conditions carefully before you
         participate in this Event. By participating in this Event, it is taken
@@ -38,40 +38,37 @@ const PrivacyPolicyEn = () => {
         personal data during the continuation of this Event. By participating in
         this Event, the Participant agrees to allow the Company to send his/her
         personal data, including but not limited to name, email address, mobile
-        number, crypto wallet address, mailing address and Towngas account
-        number, etc., to third-party service providers for lucky draw, prize
-        redemption and verification. The Participant shall also be regarded as
-        authorising the Company to use his/her personal data for the operation,
-        lucky draw, communication, prize redemption and verification purposes in
-        this Event.
+        number, mailing address and Towngas account number, etc., to third-party
+        service providers for lucky draw, prize redemption and verification. The
+        Participant shall also be regarded as authorising the Company to use
+        his/her personal data for the operation, lucky draw, communication,
+        prize redemption and verification purposes in this Event.
         <br />
-        7. 10,000 will be issued and each NFT will be entitled to a lucky draw
-        entry, while stocks last.
+        7. Each Participant can redeem one lucky draw entry by registration and
+        one free NFT (if applicable). During the event period, when purchasing
+        gas appliances through Towngas (applicable to Towngas Customer Centre,
+        outdoor sales booths, online and telephone orders, excluding dealers and
+        agents), an additional lucky draw entry will be granted by filling in
+        the order no. and purchase date after verified by the staff. Each
+        eligible Participant can only participate in the event once and receive
+        a maximum of two lucky draw entries. If the same order no. is used for
+        more than once or the appliance installation is cancelled during event
+        period, his/her registration will be disqualified.
         <br />
-        8. Each Participant can redeem one free NFT and one lucky draw entry.
-        During the event period, when purchasing gas appliances through Towngas
-        (applicable to Towngas Customer Centre, outdoor sales booths, online and
-        telephone orders, excluding dealers and agents), an additional NFT and
-        lucky draw entry will be granted by filling in the sales order number
-        and purchase date after verified by the staff. Each eligible Participant
-        can only participate in the event once and receive a maximum of two NFTs
-        and two lucky draw entries. If the same sales order number is used for
-        more than once, his/her registration will be disqualified.
-        <br />
-        9. Participants must provide personal data required by the company
+        8. Participants must provide personal data required by the company
         including the Towngas account number (applicable only to Participants
         who have purchased appliances) for verification, prize redemption and
         lucky draw.
         <br />
-        10. Participants must ensure that the submitted name (same as ID card),
-        email address, phone number, crypto wallet address, sales order number
-        and purchase date are correct. Any incorrect and incomplete entry will
-        be disqualified. In case of any dispute, the decision of the Company
-        shall be final. The company will not be responsible for any incorrect or
-        inaccurate registration information, arising out of or resulting from
-        internet users, technical or human error.
+        9. Participants must ensure that the submitted name (same as ID card),
+        email address, phone number, order no. and purchase date are correct.
+        Any incorrect and incomplete entry will be disqualified. In case of any
+        dispute, the decision of the Company shall be final. The company will
+        not be responsible for any incorrect or inaccurate registration
+        information, arising out of or resulting from internet users, technical
+        or human error.
         <br />
-        11. Any Participant who is found or reasonably suspected to tamper or
+        10. Any Participant who is found or reasonably suspected to tamper or
         interfere with the game mechanism in any way, or who participates in the
         Game process dishonestly, the Company reserves the right to make final
         decisions and disqualifies Participant from participating or winning
@@ -79,23 +76,22 @@ const PrivacyPolicyEn = () => {
         immediate disqualification of the Participant's registration and/or
         prize eligibility.
         <br />
-        12. The prizes will be drawn by lot. The winner will be notified by
+        11. The prizes will be drawn by lot. The winner will be notified by
         email about the arrangement and details of the prize redemption.
         <br />
-        13. This activity does not accept authorized collection. The winner must
+        12. This activity does not accept authorized collection. The winner must
         collect the prize in person on or before the designated date. Otherwise,
         the winner will be deemed to have given up the right to receive the
         prize and the prize will be forfeited. The Company will not re-issue the
         prize to the winner.
         <br />
-        14. At the time of the prize collection, the Winner is required to prove
+        13. At the time of the prize collection, the Winner is required to prove
         his/her eligibility to the Company, including presenting the original of
-        his/her Hong Kong Identity Card for persons aged 18 or above and his/her
-        own valid Towngas account number which was used to participate in this
-        Event.
+        his/her Hong Kong Identity Card for persons aged 18 or above and the
+        prize redemption email.
         <br />
-        15. Should a Winner fail to provide the required proof stated in clause
-        14 for verification or any of the proof provided be inconsistent with
+        14. Should a Winner fail to provide the required proof stated in clause
+        13 for verification or any of the proof provided be inconsistent with
         the information on the Towngas Account Number which was used to
         participate in this Event or the Winner fails to hold a valid Hong Kong
         Identity Card for a person aged 18 or above, his/her registration will
@@ -105,21 +101,19 @@ const PrivacyPolicyEn = () => {
         compensation and/or assume any responsibility, liability and/or bear any
         consequence.
         <br />
-        16. Prizes cannot be transferred, exchanged or converted into cash or
+        15. Prizes cannot be transferred, exchanged or converted into cash or
         any other products/services. No Winner is entitled to request any
         alternative prize or payment of cash in substitution of his/her prize.
         <br />
-        17. The price of the prize is for reference only. The Company shall not
+        16. The price of the prize is for reference only. The Company shall not
         give any declaration, compensation and/or be assumed any
         responsibilities, liabilities and consequences with respect to the value
         of the prize, any difference between the actual market price and the
         reference price, or otherwise. In case of any dispute, the Company
         reserves the right of final decision.
         <br />
-        18. The Company does not guarantee the quality and availability of any
-        prize, whether provided by the Company or any other merchants. Where a
-        product/service is provided by a third-party merchant rather than the
-        Company, the Company does not guarantee the quality of the
+        17. Where a product/service is provided by a third-party merchant rather
+        than the Company, the Company does not guarantee the quality of the
         product/service or whether or how the merchants perform including but
         not limited to any false trade descriptions, misleading, false
         statements, incomplete, unauthorised representation, unfair trade or any
@@ -127,20 +121,17 @@ const PrivacyPolicyEn = () => {
         complaint or dispute relating to the product/service provided by the
         third-party merchant directly with the merchant.
         <br />
-        19. After the redemption of prizes, the Company will not re-issue,
-        replace, repair, maintain or be responsible for damaged, lost or stolen
-        prizes. The Company shall not give any declaration, compensation and/or
-        assumes any responsibility, liability and/or bear any consequence
-        regarding the same.
-        <br />
-        20. The results of the lucky draw will be announced on Towngas Appliance
+        18. The results of the lucky draw will be announced on Towngas Appliance
         Facebook page, published on September 16, 2022 in The Standard and Sing
         Tao Daily.
         <br />
-        21. Employees of the Company are not allowed to enter this Lucky Draw.
+        19. Employees of the Company are not allowed to enter this Lucky Draw.
         <br />
-        22. In case of any dispute, the decision of the Company shall be final
+        20. In case of any dispute, the decision of the Company shall be final
         and conclusive.
+        <br />
+        21. Trade Promotion Competition Licence Number:{" "}
+        <span className="bg-yellow-400">TBC</span>
       </p>
 
       <p className="text-red-600 font-semibold animated fadeInUp text-2xl">
@@ -175,9 +166,9 @@ const PrivacyPolicyEn = () => {
         General
       </p>
       <p className="animated fadeInUp">
-        1. The Company has the sole and absolute discretion in determining a
-        person's eligibility to enter this Event and/or receive any prize in
-        accordance with these Terms and Conditions.
+        1. The Company has the sole and absolute discretion in, with reference
+        to the relevant clauses in this Terms and Conditions, determining a
+        person's eligibility to enter this Event and/or receive any prize.
         <br />
         2. In the case of any eligible Participant’s failure to participate in
         this Event or any delay, loss, or error in the submitted information
@@ -221,10 +212,8 @@ const PrivacyPolicyEn = () => {
         unauthorised intervention, fraud, technical failures, and/or any other
         causes beyond the control of the Company that corrupt or affect the
         system operation, security, fairness, integrity, or normal operations
-        the relevant part(s) of this Event, the Company reserves the right to
-        postpone, suspend or cancel the relevant part(s) of this Event as well
-        as to disqualify any Participant who tamper with this Event process,
-        without notice.
+        the relevant part(s) of this Event, the Company will disqualify any
+        Participant who tamper with this Event process, without notice.
         <br />
         8. The Company shall not be responsible for any consequence due to the
         redemption, use or enjoyment of the prizes.
@@ -268,9 +257,6 @@ const PrivacyPolicyEn = () => {
         <br />
         18. For enquiries, please feel free to contact us via{" "}
         <span className="bg-yellow-400">6221 2956</span>.
-        <br />
-        19. Trade Promotion Competition Licence Number:{" "}
-        <span className="bg-yellow-400">55978, 55979</span>
       </p>
     </div>
   );

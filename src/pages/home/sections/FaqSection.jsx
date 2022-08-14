@@ -34,6 +34,9 @@ const FaqSection = () => {
       number: "Q05",
       question: t("Faq.Q5"),
       answer: t("Faq.A5"),
+      answer1: t("Faq.A5a"),
+      answer2: t("Faq.A5b"),
+      answer3: t("Faq.A5c"),
     },
     {
       number: "Q06",
@@ -101,14 +104,10 @@ const FaqSection = () => {
         <div>
           <dl className="grid grid-cols-2 gap-4">
             {faqs.map((faq) => (
-              <Disclosure
-                as="div"
-                key={faq.question}
-                className="col-span-2 lg:col-span-1"
-              >
+              <Disclosure as="div" className="col-span-2 lg:col-span-1">
                 {({ open }) => (
                   <ScrollAnimation
-                    duration={1}
+                    duration={2}
                     animateIn="fadeInUp"
                     className="h-full"
                   >
@@ -134,6 +133,14 @@ const FaqSection = () => {
                       </dt>
                       <Disclosure.Panel as="dd" className="mt-4 pr-12">
                         <p className="text-base text-gray-500">{faq.answer}</p>
+                        <p className="text-sm text-gray-500">
+                          {faq.answer1}{" "}
+                          <span className="text-base text-gray-500">
+                            {faq.answer2}
+                          </span>
+                        </p>
+
+                        <p className="text-base text-gray-500">{faq.answer3}</p>
                       </Disclosure.Panel>
                     </div>
                   </ScrollAnimation>

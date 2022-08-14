@@ -7,21 +7,23 @@
         "5": "FAQS"
     },
     "Button": {
-        "1": "REDEEM NFT",
-        "2a": "Free redemption",
-        "2b": "Redeem free Towngas 160th Anniversary NFT & Lucky Draw",
+        "1": "REGISTER FOR LUCKY DRAW / REDEEM NFT! ",
+        "1a": "",
+        "2a": "Participate lucky draw / ",
+        "2b": "Redeem free Towngas 160th Anniversary NFT",
         "3": "Submit"
     },
-    "About": "Founded in 1862, The Hong Kong and China Gas Company Limited (Towngas) is Hong Kong's first public utility with a focus on innovation and environmental friendliness, maintaining this position as Asia’s leading clean energy supplier and quality service provider. 2022 marks a new milestone for Towngas with its 160th anniversary. In line with our philosophy of “Smart Energy for a Brighter Future“, Towngas is the first Hong Kong public utility launching a free NFT project with an initial release of 10,000 unique commemorative NFTs, thus an anniversary lucky draw to give away 160 fabulous prizes!*No association between NFT redemption and entry of lucky draw",
+    "About": "Founded in 1862, The Hong Kong and China Gas Company Limited (Towngas) is Hong Kong's first public utility with a focus on innovation and environmental friendliness, maintaining this position as Asia’s leading clean energy supplier and quality service provider. 2022 marks a new milestone for Towngas with its 160th anniversary. In line with our philosophy of “Smart Energy for a Brighter Future“, Towngas is the first Hong Kong public utility launching a free NFT project with an initial release of 10,000 unique commemorative NFTs, thus an anniversary lucky draw to give away 160 fabulous prizes!",
+    "About1":"*No association between NFT redemption and entry of lucky draw",
     "COD": "To promote the development of local creative industries, Towngas collaborated with young local artist, Tracy Liu. All NFTs are collectible digital artworks that showcase Towngas iconic gas appliances with local elements.",
     "Prize": {
         "t1": "Grand Prize",
         "d1": "HKD$16,000 ",
-        "d1a": "Gas Appliance Coupon",
+        "d1a": "Gas Appliance Voucher",
         "d1b": "(1 Winner)",
         "t2": "2nd Prize",
         "d2": "HKD$10,000 ",
-        "d2a": "Gas Appliance Coupon",
+        "d2a": "Gas Appliance Voucher",
         "d2b": "(1 Winner)",
         "t3": "3rd Prize",
         "d3": "Dyson PURE COOL CRYPTOMIC™   ",
@@ -36,7 +38,7 @@
         "d4b": " (1 winner)",
         "t5": "5th Prize",
         "d5": "HKD$5,000",
-        "d5a": "Gas Appliance Coupon",
+        "d5a": "Gas Appliance Voucher",
         "d5b": "(5 winners)",
         "t6": "6th Prize",
         "d6": "Philips ADD6911L RO Water",
@@ -45,21 +47,22 @@
         "d6b": "(1 Winner)",
         "t7": "7th Prize",
         "d7": "HKD$1,000",
-        "d7a": "Towngas Fun e-Coupon ",
+        "d7a": "Towngas Fun e-Voucher ",
         "d7b": "(10 Winners)",
         "t8": "8th Prize",
         "d8": "HKD$300",
-        "d8a": "Towngas Fun e-Coupon ",
+        "d8a": "Towngas Fun e-Voucher ",
         "d8b": "(80 Winners)",
         "t9": "9th Prize",
         "d9": "Rinnai Cooking Pot RTR-300D1 ",
         "d9a": "(60 Winners)",
         "d9b": "(Valued at HKD$268)",
-        "total": "「10,000」 PIECES ONLY"
+        "total": "10,000 NFTs ONLY"
     },
     "Step": {
         "title": "Participants must hold a valid Hong Kong Identity Card for persons reaching the age of 18, and complete the following steps for lucky draw application:",
-        "1a": "1. Fill in the form and submit the information on left Participants who redeem NFT, please complete step 2. Download and create a MetaMask Wallet",
+        "1a": "1. Fill in the form and submit the information on left Participants who redeem NFT, please complete step 2.",
+        "1aa":"",
         "1b": "2. Download and create a MetaMask Wallet",
         "1c": " (Click to download)",
         "2": "3. Once submitted, lucky draw entry will be redeemed and an NFT will be sent to your wallet within 24 hours after submission",
@@ -71,7 +74,7 @@
         "8": " purchasing gas appliances through Towngas, ",
         "10": "an additional NFT and lucky draw entry will be granted ",
         "9": "by filling in the sales order number and purchase date. Each eligible Participant can only participate in the event once and receive a maximum of two NFTs and two lucky draw entries.",
-        "11": "While stocks last."
+        "11": "Whilte stocks last (NFT)."
     },
     "Faq": {
         "Q1": "What is an NFT?",
@@ -79,11 +82,14 @@
         "Q2": "Is NFT secure?",
         "A2": "Good crypto asset management practices are suggested when redeeming your Towngas 160th Anniversary NFT. Please do not share your virtual wallet account and secret recovery phrase with anyone, select a trustable trading platform to sell the NFTs and avoid clicking on suspicious links or linking your wallet to malicious websites.    ",
         "Q3": "How many Towngas 160th Anniversary NFT will be available?",
-        "A3": "Towngas will launch a total of 10,000 NFTs. Each NFT will be entitled to a lucky draw entry, while stocks last.",
+        "A3": "Towngas will launch a total of 10,000 NFTs. First 10,000 participants who provide wallet address can redeem one free NFT, while stocks last.",
         "Q4": "When will the Towngas 160th Anniversary NFTs be issued?",
-        "A4": "The event starts on 11 August 2022 at 12 a.m. and closes on 11 September 2022 at 11:59 p.m. (Hong Kong time).",
+        "A4": "The event starts on 19 August 2022 at 12 a.m. and closes on 13 September 2022 at 11:59 p.m. (Hong Kong time).",
         "Q5": "How many NFT can I get?",
         "A5": "First 10,000 participants who provided a wallet address can redeem one free NFT (while stocks last) while no limitation on participants for  lucky draw entrance. During the event period, when purchasing gas appliances through Towngas (applicable to Towngas Customer Centre, outdoor sales booths, online and telephone orders, excluding dealers and agents), an additional NFT and lucky draw entry will be granted by filling in the sales order number and purchase date after verified by the staff. Each eligible Participant can only participate in the event once and receive a maximum of two NFTs and two lucky draw entries. If the same sales order number is used for more than once, his/her registration will be disqualified.",
+        "A5a": "",
+        "A5b": "",
+        "A5c": "",
         "Q6": "When will the results of lucky draw be announced?",
         "A6": "The results will be announced on Towngas Appliance Facebook page, published on September 16, 2022 in The Standard and Sing Tao Daily.",
         "Q7": "How to set up a MetaMask wallet?",
@@ -91,7 +97,7 @@
         "Q8": "Is there any handling fee for redeeming a Towngas 160th Anniversary NFT?",
         "A8": "No, your Towngas 160th Anniversary NFT will be airdropped to the provided wallet address directly.",
         "Q9": "Can I withdraw and transfer my Towngas 160th Anniversary NFT? What are the restrictions?",
-        "A9": "Yes, you can transfer your Towngas 160th Anniversary NFT and trade it on the NFT marketplace, OpenSea after prize redemption. If you transfer or sell your NFT before the lucky draw, you will not be eligible to participate in the 'Towngas 160th Anniversary Smart Energy for a Brighter Future NFT Lucky Draw'. Winners should contain the commemorative NFT in their registered virtual wallet address at the time of prize collection. ",
+        "A9": "Yes, you can transfer your Towngas 160th Anniversary NFT and trade it on the NFT marketplace, OpenSea after redemption. If you transfer or sell your NFT before the lucky draw, you will not be eligible to participate in the 'Towngas 160th Anniversary Smart Energy for a Brighter Future NFT Lucky Draw'. Winners should contain the commemorative NFT in their registered virtual wallet address at the time of prize collection. ",
         "Q10": "Which blockchain is Towngas 160th Anniversary NFTs on?",
         "A10": "Polygon"
     },
@@ -99,7 +105,7 @@
         "1": "Name (same as HKID card):",
         "2": "Email Address:",
         "3": "Phone Number:",
-        "4": "MetaMask Wallet Address:",
+        "4": "MetaMask Wallet Address (If applicable):",
         "5": "How to find MetaMask Wallet Address :",
         "6": "1) Open METAMASK",
         "7": "2) Copy Wallet Address",
@@ -119,6 +125,7 @@
     "Footer": {
         "0": "Privacy Policy",
         "1": "Promotion Competition Licence No.: 55978, 55979",
-        "2": "© 2022 All rights reserved. TGC"
+        "2": "© 2022 All rights reserved.",
+        "3": "The Hong Kong and China Gas Company Limited"
     }
 }

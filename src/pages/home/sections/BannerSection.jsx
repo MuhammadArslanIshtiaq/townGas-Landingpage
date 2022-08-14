@@ -16,7 +16,7 @@ const BannerSection = () => {
       <ModalComponents show={isOpen} onClose={() => setIsOpen("")} />
 
       <div className="lg:max-w-7xl px-6 mx-auto text-center">
-        <ScrollAnimation animateIn="fadeInLeft">
+        <ScrollAnimation animateIn="fadeInLeft" duration={2}>
           <div className=" bg-white/50 border-2 border-primary p-6 sm:p-8 lg:p-14 rounded-lg text-left">
             <div className="grid grid-cols-2 gap-10 items-center">
               <div className="col-span-2 lg:col-span-1 text-center">
@@ -71,6 +71,7 @@ const BannerSection = () => {
                   <div>
                     <p>
                       {t("Step.1a")} <br />
+                      {t("Step.1aa")} <br />
                       {t("Step.1b")}
                       <a
                         href="https://metamask.io/download/"
@@ -85,20 +86,14 @@ const BannerSection = () => {
                   <p>{t("Step.4")}</p>
                   <p>
                     {t("Step.5")}
-                    <a
-                      href="#"
-                      className="cursor-pointer text-primary hover:opacity-80"
-                    >
+                    <span className=" text-primary hover:opacity-80">
                       {t("Step.6")}
-                    </a>
+                    </span>
                     {t("Step.7")}
-                    <a
-                      href="#"
-                      className="cursor-pointer text-primary font-bold hover:opacity-80"
-                    >
+                    <span className=" text-primary font-bold hover:opacity-80">
                       {t("Step.8")}
-                    </a>
-                    <span className="cursor-pointer text-primary  hover:opacity-80 mx-1">
+                    </span>
+                    <span className=" text-primary  hover:opacity-80 mx-1">
                       {t("Step.10")}
                     </span>
                     {t("Step.9")}

@@ -1,6 +1,6 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
-import PrimaryButton from "../../../components/buttons/PrimaryButton";
+import PrimaryButton from "../../../components/buttons/PrimaryButton2";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 
@@ -38,7 +38,7 @@ const ConceptOfDesign = () => {
       <div className="lg:max-w-7xl px-6 mx-auto">
         <div className="grid grid-cols-3 gap-8 items-center">
           <div className="col-span-3 lg:col-span-1">
-            <ScrollAnimation duration={1} animateIn="fadeInLeft">
+            <ScrollAnimation duration={2} animateIn="fadeInLeft">
               <div>
                 <span className="block h-24 w-[17rem] mx-auto lg:mx-0">
                   {cl === "ch" ? (
@@ -56,7 +56,7 @@ const ConceptOfDesign = () => {
                   )}
                 </span>
                 <div className="lg:hidden my-6 w-full md:w-[26rem] mx-auto">
-                  <ScrollAnimation duration={1} animateIn="fadeInRight">
+                  <ScrollAnimation duration={2} animateIn="fadeInRight">
                     <div>
                       <img
                         className="block h-full w-full"
@@ -77,7 +77,7 @@ const ConceptOfDesign = () => {
           </div>
           <div className="col-span-3 lg:col-span-2 hidden lg:block">
             <div>
-              <ScrollAnimation duration={1} animateIn="fadeInRight">
+              <ScrollAnimation duration={2} animateIn="fadeInRight">
                 <div>
                   <img
                     className="block h-full w-full"

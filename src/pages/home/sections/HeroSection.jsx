@@ -124,7 +124,7 @@ const HeroSection = () => {
                   </div>
                 </div>
                 <div className="col-span-3 sm:col-span-1 hidden md:block">
-                  <div className="animated fadeInRight xl:w-80">
+                  <div className="animated fadeInRight xl:w-80 2xl:w-96">
                     {cl === "ch" ? (
                       <img
                         className="block h-full w-full"
@@ -152,7 +152,7 @@ const HeroSection = () => {
               alt=".."
             />
           </span>
-          <ScrollAnimation duration={1} animateIn="fadeInDown">
+          <ScrollAnimation duration={2} animateIn="fadeInDown">
             <div className="bg-size-400 bg-hero2M sm:bg-hero2 xl:bg-hero2 bg-center bg-cover xl:bg-contain bg-no-repeat xl:max-w-7xl px-6 md:h-[28rem] xl:h-auto sm:m-[2rem] xl:mx-auto">
               {/* mobile view */}
               <div className="p-6 space-y-6 h-full flex flex-col justify-center items-center xl:hidden">
@@ -175,7 +175,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <ScrollAnimation
-                    duration={1}
+                    duration={2}
                     delay={600}
                     animateIn="fadeInLeft"
                   >
@@ -188,7 +188,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <ScrollAnimation
-                    duration={1}
+                    duration={2}
                     delay={600}
                     animateIn="fadeInUp"
                   >
@@ -202,7 +202,7 @@ const HeroSection = () => {
               <div className="hidden xl:grid grid-cols-2 gap-10 py-2 lg:py-32 lg:px-24 items-center">
                 <div className="col-span-2 lg:col-span-1">
                   <ScrollAnimation
-                    duration={1}
+                    duration={2}
                     delay={600}
                     animateIn="fadeInLeft"
                   >
@@ -215,7 +215,7 @@ const HeroSection = () => {
                 </div>
                 <div className="col-span-2 lg:col-span-1">
                   <ScrollAnimation
-                    duration={1}
+                    duration={2}
                     delay={600}
                     animateIn="fadeInRight"
                   >
@@ -236,6 +236,9 @@ const HeroSection = () => {
                     </span>
                     <p className="text-gray-400 md:text-base text-xs mt-4 ">
                       {t("About")}
+                    </p>
+                    <p className="text-primary-600 md:text-base text-xs mt-4 ">
+                      {t("About1")}
                     </p>
                   </ScrollAnimation>
                 </div>

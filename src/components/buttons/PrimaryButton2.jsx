@@ -23,7 +23,7 @@ const PrimaryButton = () => {
             alt="..."
           />
         </span>
-        <span>{t("Button.1")}</span>
+        <span className="line-clamp-1">{t("Button.1a")}</span>
         <span className=" transform rotate-[16deg] font-extrabold text-5xl">
           !
         </span>

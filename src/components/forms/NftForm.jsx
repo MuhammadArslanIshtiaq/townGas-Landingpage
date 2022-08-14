@@ -1,27 +1,27 @@
-import React from 'react'
-import { useState } from 'react'
-import ModalComponents from '../modals/ModalComponents'
-import { useTranslation } from 'react-i18next'
-import i18next from 'i18next'
-import axios from 'axios'
-const url = '/user'
+import React from "react";
+import { useState } from "react";
+import ModalComponents from "../modals/ModalComponents";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import axios from "axios";
+const url = "/user";
 
 const NftForm = () => {
-  const { t } = useTranslation()
-  let cl = i18next.language
-  const [isOpen, setIsOpen] = React.useState('')
+  const { t } = useTranslation();
+  let cl = i18next.language;
+  const [isOpen, setIsOpen] = React.useState("");
 
-  const [name, setName] = useState('')
-  const [error, setError] = useState(false)
-  const [email, setEmail] = useState('')
-  const [phone, setPhone] = useState('')
-  const [metaAddress, setMetaAddress] = useState('')
-  const [orderNum, setOrderNum] = useState('')
-  const [orderDate, setOrderDate] = useState('')
+  const [name, setName] = useState("");
+  const [error, setError] = useState(false);
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [metaAddress, setMetaAddress] = useState("");
+  const [orderNum, setOrderNum] = useState("");
+  const [orderDate, setOrderDate] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    setError(false)
+    e.preventDefault();
+    setError(false);
     try {
       const resp = axios
         .post(
@@ -37,39 +37,39 @@ const NftForm = () => {
           },
           {
             crossdomain: true,
-          },
+          }
         )
         .then((response) => {
-          if (response.status === 200) setIsOpen('SubmitThankYou')
+          if (response.status === 200) setIsOpen("SubmitThankYou");
         })
         .catch(function (error) {
           if (error.response) {
-            setError(true)
+            setError(true);
           }
-        })
+        });
     } catch (error) {
-      setError(true)
+      setError(true);
     }
-  }
+  };
 
-  const [isSubscribed, setIsSubscribed] = useState(false)
+  const [isSubscribed, setIsSubscribed] = useState(false);
 
   const handleChange = (event) => {
     if (event.target.checked) {
-      console.log('✅ Checkbox is checked')
+      console.log("✅ Checkbox is checked");
     } else {
-      console.log('⛔️ Checkbox is NOT checked')
+      console.log("⛔️ Checkbox is NOT checked");
     }
-    setIsSubscribed((current) => !current)
-  }
+    setIsSubscribed((current) => !current);
+  };
 
   return (
     <>
-      <ModalComponents show={isOpen} onClose={() => setIsOpen('')} />
+      <ModalComponents show={isOpen} onClose={() => setIsOpen("")} />
 
       <form noValidate>
         <div className="animated fadeInDown max-w-[20rem] mx-auto mb-6">
-          {cl === 'ch' ? (
+          {cl === "ch" ? (
             <img
               className="block h-full w-full"
               src="/assets/images/hero-title.png"
@@ -86,7 +86,7 @@ const NftForm = () => {
         {error === true ? (
           <>
             <div className="animated fadeInDown mx-auto mb-6 error">
-              {cl === 'ch' ? (
+              {cl === "ch" ? (
                 <div
                   class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 text-center"
                   role="alert"
@@ -115,7 +115,7 @@ const NftForm = () => {
                   htmlFor="name"
                   className="block text-base font-medium text-gray-500 capitalize"
                 >
-                  {t('Form.1')}
+                  {t("Form.1")}
                 </label>
                 <div className="mt-1">
                   <input
@@ -135,7 +135,7 @@ const NftForm = () => {
                   htmlFor="email"
                   className="block text-base font-medium text-gray-500 capitalize"
                 >
-                  {t('Form.2')}
+                  {t("Form.2")}
                 </label>
                 <div className="mt-1">
                   <input
@@ -155,11 +155,11 @@ const NftForm = () => {
                   htmlFor="phone"
                   className="block text-base font-medium text-gray-500 capitalize"
                 >
-                  {t('Form.3')}
+                  {t("Form.3")}
                 </label>
                 <div className="mt-1">
                   <input
-                    type="number"
+                    type="tel"
                     id="phone"
                     value={phone}
                     required
@@ -175,7 +175,7 @@ const NftForm = () => {
                   htmlFor="address"
                   className="block text-base font-medium text-gray-500 capitalize"
                 >
-                  {t('Form.4')}
+                  {t("Form.4")}
                 </label>
                 <div className="mt-1">
                   <input
@@ -192,11 +192,11 @@ const NftForm = () => {
             <li className="col-span-2 lg:col-span-1 self-center">
               <div className="space-y-4 text-gray-400 text-base">
                 <p className="text-primary font-semibold animated fadeInUp">
-                  {t('Form.5')}
+                  {t("Form.5")}
                 </p>
-                <p className="animated fadeInUp">{t('Form.6')}</p>
-                <p className="animated fadeInUp">{t('Form.7')}</p>
-                <p className="animated fadeInUp">{t('Form.8')}</p>
+                <p className="animated fadeInUp">{t("Form.6")}</p>
+                <p className="animated fadeInUp">{t("Form.7")}</p>
+                <p className="animated fadeInUp">{t("Form.8")}</p>
               </div>
             </li>
             <li className="col-span-2 lg:col-span-1 animated fadeInUp">
@@ -225,7 +225,7 @@ const NftForm = () => {
                     htmlFor="checkbox"
                     className="font-medium text-gray-500 cursor-pointer"
                   >
-                    {t('Form.9')}
+                    {t("Form.9")}
                   </label>
                 </div>
               </div>
@@ -238,7 +238,7 @@ const NftForm = () => {
                       htmlFor="ordernum"
                       className="block text-base font-medium text-gray-500 capitalize"
                     >
-                      {t('Form.10')}
+                      {t("Form.10")}
                     </label>
                     <div className="mt-1">
                       <input
@@ -258,7 +258,7 @@ const NftForm = () => {
                       htmlFor="orderDate"
                       className="block text-base font-medium text-gray-500 capitalize"
                     >
-                      {t('Form.11')}
+                      {t("Form.11")}
                     </label>
                     <div className="mt-1">
                       <input
@@ -291,20 +291,20 @@ const NftForm = () => {
                       alt="..."
                     />
                   </span>
-                  <span className="line-clamp-2">{t('Button.3')}</span>
+                  <span className="line-clamp-2">{t("Button.3")}</span>
                 </button>
               </div>
             </li>
             <li className="col-span-2">
               <p className="animated fadeInUp text-center text-gray-400 text-base">
-                {t('Footer.1')}
+                {t("Footer.1")}
               </p>
             </li>
           </ul>
         </div>
       </form>
     </>
-  )
-}
+  );
+};
 
-export default NftForm
+export default NftForm;

@@ -1,26 +1,24 @@
-import React from 'react';
+import React from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-import MainCard from '../../../components/cards/MainCard';
-import ScrollAnimation from 'react-animate-on-scroll';
+import { Swiper, SwiperSlide } from "swiper/react";
+import ScrollAnimation from "react-animate-on-scroll";
+
+import { Link } from "react-router-dom";
 
 const CardsSection = () => {
   const CardsList = [
-    { btnColor: '#F9D53F' },
-    { btnColor: '#0071BC' },
-    { btnColor: '#ADD136' },
-    { btnColor: '#8dd10b' },
-    { btnColor: '#F9D53E' },
-    { btnColor: '#0071BB' },
-    { btnColor: '#ADD137' },
-    { btnColor: '#8dd10c' },
+    { btnColor: "#F9D53F", img: "/assets/images/nft-pink.jpg" },
+    { btnColor: "#0071BC", img: "/assets/images/nft-red.jpg" },
+    { btnColor: "#ADD136", img: "/assets/images/nft-green.jpg" },
+    { btnColor: "#8dd10b", img: "/assets/images/nft-blue.jpg" },
+    { btnColor: "#F9D53E", img: "/assets/images/nft-orange.jpg" },
   ];
 
   return (
-    <section className='pb-12'>
-      <div className='relative'>
-        <ScrollAnimation animateIn='fadeInLeft'>
-          <div className=' flex gap-3 md:gap-10 xl:gap-20 items-center'>
+    <section className="pb-12">
+      <div className="relative">
+        <ScrollAnimation animateIn="fadeInLeft" duration={2}>
+          <div className=" flex gap-3 md:gap-10 xl:gap-20 items-center">
             <Swiper
               slidesPerView={3}
               spaceBetween={10}
@@ -41,7 +39,24 @@ const CardsSection = () => {
             >
               {CardsList.map((item) => (
                 <SwiperSlide key={item.btnColor}>
-                  <MainCard item={item} />
+                  <div className="py-3">
+                    <Link
+                      to
+                      className="block relative p-3 md:p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-95"
+                    >
+                      <span
+                        className="rounded-full p-2 text-xs md:text-base md:px-8 md:py-3 absolute top-0 right-0 text-white font-bold"
+                        style={{ backgroundColor: `${item.btnColor}` }}
+                      >
+                        #2098
+                      </span>
+                      <img
+                        className="block h-full w-full object-contain"
+                        src={item.img}
+                        alt=".."
+                      />
+                    </Link>
+                  </div>
                 </SwiperSlide>
               ))}
             </Swiper>

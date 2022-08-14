@@ -13,7 +13,7 @@ const PrimaryButton = () => {
 
       <Link
         to
-        className="bg-primary hover:bg-primary-600 text-white inline-flex justify-center items-center gap-2 py-4 px-8 rounded-full text-2xl"
+        className="bg-primary hover:bg-primary-600 text-white inline-flex justify-center items-center gap-2 py-4 px-8 rounded-full text-xl"
         onClick={() => setIsOpen("formModal")}
       >
         <span className="block h-9 min-w-[2.5rem]">
@@ -23,7 +23,12 @@ const PrimaryButton = () => {
             alt="..."
           />
         </span>
-        <span>{t("Button.1")}</span>
+        <span>
+          {t("Button.1")}
+          <p>
+            <span>{t("Button.11")}</span>
+          </p>
+        </span>
         <span className=" transform rotate-[16deg] font-extrabold text-5xl">
           !
         </span>

@@ -29,11 +29,17 @@ export default function FooterPrimary() {
                   >
                     私隱政策
                   </a>
+                  <a
+                    className="hover:cursor-pointer mx-1"
+                    href="https://www.towngas.com/tc/Info/Disclaimer"
+                  >
+                    | 免責聲明及使用條款 |
+                  </a>
                   <span
                     className="hover:cursor-pointer mx-1"
                     onClick={() => setIsOpen("PrivacyPolicy")}
                   >
-                    | 免責聲明及使用條款 |
+                    | 活動條款及細則 |
                   </span>
                 </>
               ) : (
@@ -45,11 +51,17 @@ export default function FooterPrimary() {
                     Privacy Policy
                   </a>
 
+                  <a
+                    className="hover:cursor-pointer mx-1"
+                    href="https://www.towngas.com/en/Info/Disclaimer"
+                  >
+                    | Disclaimer |
+                  </a>
                   <span
                     className="hover:cursor-pointer mx-1"
                     onClick={() => setIsOpen("PrivacyPolicyEn")}
                   >
-                    | Disclaimer and Terms of Use |
+                    | Terms & Conditions |
                   </span>
                 </>
               )}

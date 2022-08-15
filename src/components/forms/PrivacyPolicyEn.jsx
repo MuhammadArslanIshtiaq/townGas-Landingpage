@@ -10,10 +10,8 @@ const PrivacyPolicyEn = () => {
       </p>
       <p className="animated fadeInUp">
         1.{" "}
-        <span className="bg-yellow-400">
           "Towngas 160th Anniversary Smart Energy for a Brighter Future NFT
           Giveaway & Lucky Draw"
-        </span>
         (this "Event") is organised by The Hong Kong and China Gas Company
         Limited (the "Company").
         <br />
@@ -131,7 +129,7 @@ const PrivacyPolicyEn = () => {
         and conclusive.
         <br />
         21. Trade Promotion Competition Licence Number:{" "}
-        <span className="bg-yellow-400">TBC</span>
+        55978, 55979
       </p>
 
       <p className="text-red-600 font-semibold animated fadeInUp text-2xl">
@@ -255,8 +253,7 @@ const PrivacyPolicyEn = () => {
         and English versions of these Terms and Conditions, the English version
         shall prevail.
         <br />
-        18. For enquiries, please feel free to contact us via{" "}
-        <span className="bg-yellow-400">6221 2956</span>.
+        18. For enquiries, please feel free to contact us via{" "}6221 2956.
       </p>
     </div>
   );

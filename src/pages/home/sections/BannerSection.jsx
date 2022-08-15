@@ -80,7 +80,9 @@ const BannerSection = () => {
                         {t('Step.1c')}
                       </a>
                     </p>
+                    <br />
                     <p>{t('Step.2')}</p>
+                    <br />
                     <p>{t('Step.3')}</p>
                   </div>
                   <p>{t('Step.4')}</p>

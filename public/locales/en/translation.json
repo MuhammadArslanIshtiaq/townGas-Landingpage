@@ -106,9 +106,10 @@
         "A10": "Polygon"
     },
     "Form": {
-        "1": "Name (same as HKID card): *Required",
-        "2": "Email Address: *Required",
-        "3": "Phone Number: *Required",
+        "Required": " *Required",
+        "1": "Name (same as HKID card):",
+        "2": "Email Address:",
+        "3": "Phone Number:",
         "4": "MetaMask Wallet Address (If applicable):",
         "5": "How to find MetaMask Wallet Address :",
         "6": "1) Open METAMASK",

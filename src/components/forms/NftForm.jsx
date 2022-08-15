@@ -116,6 +116,7 @@ const NftForm = () => {
                   className="block text-base font-medium text-gray-500 capitalize"
                 >
                   {t("Form.1")}
+                  <span className="text-xs text-red-500">{t("Form.Required")}</span>
                 </label>
                 <div className="mt-1">
                   <input
@@ -136,6 +137,7 @@ const NftForm = () => {
                   className="block text-base font-medium text-gray-500 capitalize"
                 >
                   {t("Form.2")}
+                  <span className="text-xs text-red-500">{t("Form.Required")}</span>
                 </label>
                 <div className="mt-1">
                   <input
@@ -156,6 +158,8 @@ const NftForm = () => {
                   className="block text-base font-medium text-gray-500 capitalize"
                 >
                   {t("Form.3")}
+                  <span className="text-xs text-red-500">{t("Form.Required")}</span>
+
                 </label>
                 <div className="mt-1">
                   <input

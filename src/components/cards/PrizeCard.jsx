@@ -15,7 +15,7 @@ const PrizeCard = ({ item }) => {
       <h4 className="text-lg font-semibold capitalize line-clamp-3">
         {item.text}
       </h4>
-      <h4 className="text-base lg:text-lg font-semibold capitalize line-clamp-3">
+      <h4 className="text-base lg:text-lg font-semibold  line-clamp-3">
         {item.text1}
       </h4>
       <h4 className="text-base lg:text-lg font-semibold capitalize line-clamp-3">

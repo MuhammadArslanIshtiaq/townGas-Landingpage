@@ -123,7 +123,7 @@ const PrizeSection = () => {
       {/* == */}
       <div className="lg:max-w-7xl px-6 mx-auto text-center">
         <ScrollAnimation duration={1} animateIn="fadeInUp">
-          <h2 className="inline-block h-24 mb-8">
+          <h2 className="inline-block mb-8">
             {cl === "ch" ? (
               <img
                 className="block h-full w-full"

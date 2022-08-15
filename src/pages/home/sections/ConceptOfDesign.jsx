@@ -40,7 +40,7 @@ const ConceptOfDesign = () => {
           <div className="col-span-3 lg:col-span-1">
             <ScrollAnimation duration={2} animateIn="fadeInLeft">
               <div>
-                <span className="block h-24 w-[17rem] mx-auto lg:mx-0">
+                <span className="block w-[17rem] mx-auto lg:mx-0">
                   {cl === "ch" ? (
                     <img
                       className="block h-full w-full"

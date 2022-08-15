@@ -192,7 +192,7 @@ const HeroSection = () => {
                     delay={600}
                     animateIn="fadeInUp"
                   >
-                    <p className="text-gray-400 text-base leading-normal md:text-[8px] md:leading-[12px] md:px-5 lg:text-base lg:leading-normal font-semibold text-center">
+                    <p className="text-gray-400 text-base leading-normal md:text-[15px] md:leading-[18px] md:px-5 lg:text-base lg:leading-normal font-semibold text-center">
                       {t("About")}
                     </p>
                   </ScrollAnimation>
@@ -234,10 +234,10 @@ const HeroSection = () => {
                         />
                       )}
                     </span>
-                    <p className="text-gray-400 md:text-base text-xs mt-4 ">
+                    <p className="text-gray-400 md:text-base text-sm mt-4 ">
                       {t("About")}
                     </p>
-                    <p className="text-primary-600 md:text-base text-xs mt-4 ">
+                    <p className="text-primary-600 md:text-base text-sm mt-4 ">
                       {t("About1")}
                     </p>
                   </ScrollAnimation>

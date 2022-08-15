@@ -101,6 +101,7 @@ const BannerSection = () => {
                     {t('Step.9')}
                   </p>
                   <p className="my-3">{t('Step.11')}</p>
+                  <p className="my-3">{t('Step.12')}</p>
                 </div>
 
                 {/* hide on larger devices */}

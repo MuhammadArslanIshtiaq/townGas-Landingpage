@@ -39,7 +39,7 @@ export default function FooterPrimary() {
                     className="hover:cursor-pointer mx-1"
                     onClick={() => setIsOpen("PrivacyPolicy")}
                   >
-                    | 活動條款及細則 |
+                     活動條款及細則 |
                   </span>
                 </>
               ) : (
@@ -61,7 +61,7 @@ export default function FooterPrimary() {
                     className="hover:cursor-pointer mx-1"
                     onClick={() => setIsOpen("PrivacyPolicyEn")}
                   >
-                    | Terms & Conditions |
+                   Terms & Conditions |
                   </span>
                 </>
               )}

@@ -40,7 +40,9 @@ const NftForm = () => {
           }
         )
         .then((response) => {
-          if (response.status === 200) setIsOpen("SubmitThankYou");
+          if (response.error) { 
+            setError(true);
+          } else if (response.status === 200) setIsOpen("SubmitThankYou");
         })
         .catch(function (error) {
           if (error.response) {

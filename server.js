@@ -23,8 +23,8 @@ app.get('/', (req, res) => {
 app.post('/user', (req, res) => {
     axios.post('http://172.28.88.72:443/api/user', req.body)
         .then((result) => res.send(result.data))
-        .catch((err) => res.send({
-            error: "Invalid input."
+        .catch((err) => res.status(400).send({
+            message: "Failed! address is already in use!"
         }));
 });
 

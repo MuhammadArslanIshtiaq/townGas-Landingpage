@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import ModalComponents from "../modals/ModalComponents";
 import { useTranslation } from "react-i18next";
+import { useForm } from "react-hook-form";
 import i18next from "i18next";
 import axios from "axios";
 const url = "/user";
@@ -19,7 +20,7 @@ const NftForm = () => {
   const [orderNum, setOrderNum] = useState("");
   const [orderDate, setOrderDate] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmitForm = (e) => {
     e.preventDefault();
     setError(false);
     try {
@@ -40,7 +41,7 @@ const NftForm = () => {
           }
         )
         .then((response) => {
-          if (response.status === 400) { 
+          if (response.status === 400) {
             setError(true);
           } else if (response.status === 200) setIsOpen("SubmitThankYou");
         })
@@ -65,11 +66,18 @@ const NftForm = () => {
     setIsSubscribed((current) => !current);
   };
 
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
+
   return (
     <>
       <ModalComponents show={isOpen} onClose={() => setIsOpen("")} />
 
-      <form noValidate>
+      <form onSubmit={handleSubmitForm}>
         <div className="animated fadeInDown max-w-[20rem] mx-auto mb-6">
           {cl === "ch" ? (
             <img
@@ -90,18 +98,19 @@ const NftForm = () => {
             <div className="animated fadeInDown mx-auto mb-6 error">
               {cl === "ch" ? (
                 <div
-                  class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 text-center"
+                  className="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 text-center"
                   role="alert"
                 >
                   電話號碼 / 電郵地址 / MetaMask錢包地址已登記
                 </div>
               ) : (
                 <div
-                  class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 text-center"
+                  className="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 text-center"
                   role="alert"
                 >
                   Phone number / Email address /MetaMask Wallet Address is
                   registered
+                  {error}
                 </div>
               )}
             </div>
@@ -118,17 +127,29 @@ const NftForm = () => {
                   className="block text-base font-medium text-gray-500 capitalize"
                 >
                   {t("Form.1")}
-                  <span className="text-xs text-red-500">{t("Form.Required")}</span>
+                  <span className="text-xs text-red-500">
+                    {t("Form.Required")}
+                  </span>
                 </label>
                 <div className="mt-1">
                   <input
                     type="text"
-                    id="name"
                     value={name}
-                    required
+                    {...register("name", { required: true })}
                     className="p-2 shadow-inner shadow-gray-200 drop-shadow bg-gray-300/5 border block w-full sm:text-sm border-gray-300 focus:ring-primary-500 rounded-md"
                     onChange={(e) => setName(e.target.value)}
                   />
+                  {errors.name && (
+                    <>
+                      {cl === "ch" ? (
+                        <p className="text-red-600 mt-3 text-sm">这是必填栏</p>
+                      ) : (
+                        <p className="text-red-600 mt-3 text-sm">
+                          This field is required
+                        </p>
+                      )}
+                    </>
+                  )}
                 </div>
               </div>
             </li>
@@ -139,17 +160,49 @@ const NftForm = () => {
                   className="block text-base font-medium text-gray-500 capitalize"
                 >
                   {t("Form.2")}
-                  <span className="text-xs text-red-500">{t("Form.Required")}</span>
+                  <span className="text-xs text-red-500">
+                    {t("Form.Required")}
+                  </span>
                 </label>
                 <div className="mt-1">
                   <input
                     type="email"
-                    id="email"
                     value={email}
                     required
+                    {...register("email", {
+                      required: true,
+                      pattern:
+                        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                    })}
                     className="p-2 shadow-inner shadow-gray-200 drop-shadow bg-gray-300/5 border block w-full sm:text-sm border-gray-300 focus:ring-primary-500 rounded-md"
                     onChange={(e) => setEmail(e.target.value)}
                   />
+
+                  {errors.email && errors.email.type === "required" && (
+                    <>
+                      {cl === "ch" ? (
+                        <p className="text-red-600 mt-3 text-sm">这是必填栏</p>
+                      ) : (
+                        <p className="text-red-600 mt-3 text-sm">
+                          This field is required
+                        </p>
+                      )}
+                    </>
+                  )}
+
+                  {errors.email && errors.email.type === "pattern" && (
+                    <>
+                      {cl === "ch" ? (
+                        <p className="text-red-600 mt-3 text-sm">
+                          请确保您输入了有效的电子邮件。
+                        </p>
+                      ) : (
+                        <p className="text-red-600 mt-3 text-sm">
+                          Please make sure you have entered a valid email.
+                        </p>
+                      )}
+                    </>
+                  )}
                 </div>
               </div>
             </li>
@@ -160,18 +213,51 @@ const NftForm = () => {
                   className="block text-base font-medium text-gray-500 capitalize"
                 >
                   {t("Form.3")}
-                  <span className="text-xs text-red-500">{t("Form.Required")}</span>
-
+                  <span className="text-xs text-red-500">
+                    {t("Form.Required")}
+                  </span>
                 </label>
                 <div className="mt-1">
                   <input
                     type="tel"
-                    id="phone"
-                    value={phone}
+                    maxLength={8}
+                    minLength={8}
                     required
+                    value={phone}
+                    {...register("phone", {
+                      required: true,
+                      minLength: 8,
+                      message: "error message",
+                    })}
                     className="p-2 shadow-inner shadow-gray-200 drop-shadow bg-gray-300/5 border block w-full sm:text-sm border-gray-300 focus:ring-primary-500 rounded-md"
                     onChange={(e) => setPhone(e.target.value)}
                   />
+
+                  {errors.phone && errors.phone.type === "required" && (
+                    <>
+                      {cl === "ch" ? (
+                        <p className="text-red-600 mt-3 text-sm">这是必填栏</p>
+                      ) : (
+                        <p className="text-red-600 mt-3 text-sm">
+                          This field is required
+                        </p>
+                      )}
+                    </>
+                  )}
+
+                  {errors.phone && errors.phone.type === "minLength" && (
+                    <>
+                      {cl === "ch" ? (
+                        <p className="text-red-600 mt-3 text-sm">
+                          电话长度不能短于 8
+                        </p>
+                      ) : (
+                        <p className="text-red-600 mt-3 text-sm">
+                          Phone length cannot be shorter than 8
+                        </p>
+                      )}
+                    </>
+                  )}
                 </div>
               </div>
             </li>
@@ -285,9 +371,8 @@ const NftForm = () => {
             <li className="col-span-2">
               <div className="text-center mt-4 animated fadeInUp">
                 <button
-                  // onClick={() => setIsOpen("SubmitThankYou")}
-                  onClick={handleSubmit}
-                  type="button"
+                  onClick={handleSubmit(onSubmit)}
+                  type="submit"
                   className="w-full sm:w-auto bg-primary hover:bg-primary-600 text-white inline-flex justify-center items-center gap-4 py-4 px-8 rounded-full text-xl"
                 >
                   <span className="block h-6 min-w-[1.6rem]">

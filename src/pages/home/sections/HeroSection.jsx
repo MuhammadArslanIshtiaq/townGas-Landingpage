@@ -157,11 +157,11 @@ const HeroSection = () => {
               {/* mobile view */}
               <div className="p-6 space-y-6 h-full flex flex-col justify-center items-center xl:hidden">
                 <div>
-                  <span className="block h-18 lg:h-18 md:h-12 w-[12rem] lg:w-[12rem] md:w-32 mx-auto">
+                  <span className="block w-[12rem] lg:w-[12rem] md:w-32 mx-auto">
                     {cl === "ch" ? (
                       <img
                         className="block h-full w-full"
-                        src="/assets/images/title-1.png"
+                        src="/assets/images/title-6.png"
                         alt=".."
                       />
                     ) : (
@@ -223,7 +223,7 @@ const HeroSection = () => {
                       {cl === "ch" ? (
                         <img
                           className="block h-full w-full"
-                          src="/assets/images/title-1.png"
+                          src="/assets/images/title-6.png"
                           alt=".."
                         />
                       ) : (

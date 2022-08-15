@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 const PrizeCard = ({ item }) => {
   return (
@@ -12,23 +12,23 @@ const PrizeCard = ({ item }) => {
       <div className="py-[4rem] relative bg-title bg-cover bg-center bg-no-repeat">
         <img className="block h-full w-full" src={item.imageUrl} alt=".." />
       </div>
-      <h4 className="text-lg font-semibold capitalize line-clamp-3">
+      <h4 className="text-base sm:text-xl lg:text-lg font-semibold capitalize line-clamp-3">
         {item.text}
       </h4>
-      <h4 className="text-base lg:text-lg font-semibold  line-clamp-3">
+      <h4 className="text-base sm:text-xl lg:text-lg font-semibold line-clamp-3">
         {item.text1}
       </h4>
-      <h4 className="text-base lg:text-lg font-semibold capitalize line-clamp-3">
+      <h4 className="text-base sm:text-xl lg:text-lg font-semibold capitalize line-clamp-3">
         {item.text2}
       </h4>
-      <h4 className="text-base lg:text-lg font-semibold capitalize line-clamp-3">
+      <h4 className="text-base sm:text-xl lg:text-lg font-semibold capitalize line-clamp-3">
         {item.text3}
       </h4>
-      <h4 className="text-base lg:text-lg font-semibold capitalize line-clamp-3">
+      <h4 className="text-base sm:text-xl lg:text-lg font-semibold capitalize line-clamp-3">
         {item.text4}
       </h4>
     </div>
-  );
-};
+  )
+}
 
-export default PrizeCard;
+export default PrizeCard

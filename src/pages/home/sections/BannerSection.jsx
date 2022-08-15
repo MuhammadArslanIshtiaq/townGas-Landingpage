@@ -70,8 +70,10 @@ const BannerSection = () => {
                   <p>{t('Step.title')}</p>
                   <div>
                     <p>
-                      {t('Step.1a')} <br />
-                      {t('Step.1aa')} <br />
+                      {t('Step.1a')}
+                      {t('Step.1aa')}
+                      <br />
+                      <br />
                       {t('Step.1b')}
                       <a
                         href="https://metamask.io/download/"
@@ -82,7 +84,6 @@ const BannerSection = () => {
                     </p>
                     <br />
                     <p>{t('Step.2')}</p>
-                    <br />
                     <p>{t('Step.3')}</p>
                   </div>
                   <p>{t('Step.4')}</p>

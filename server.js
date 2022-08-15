@@ -23,7 +23,9 @@ app.get('/', (req, res) => {
 app.post('/user', (req, res) => {
     axios.post('http://172.28.88.72:443/api/user', req.body)
         .then((result) => res.send(result.data))
-        .catch((err) => console.log(err))
+        .catch((err) => res.send({
+            error: "Invalid input."
+        }));
 });
 
 var server = https.createServer(options, app);

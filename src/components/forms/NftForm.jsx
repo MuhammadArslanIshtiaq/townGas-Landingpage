@@ -21,7 +21,6 @@ const NftForm = () => {
   const [orderDate, setOrderDate] = useState("");
 
   const handleSubmitForm = (e) => {
-    e.preventDefault();
     setError(false);
     try {
       const resp = axios
@@ -371,7 +370,7 @@ const NftForm = () => {
             <li className="col-span-2">
               <div className="text-center mt-4 animated fadeInUp">
                 <button
-                  onClick={handleSubmit(onSubmit)}
+                  onClick={handleSubmit(handleSubmitForm)}
                   type="submit"
                   className="w-full sm:w-auto bg-primary hover:bg-primary-600 text-white inline-flex justify-center items-center gap-4 py-4 px-8 rounded-full text-xl"
                 >

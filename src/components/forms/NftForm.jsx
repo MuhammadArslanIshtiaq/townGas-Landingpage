@@ -223,7 +223,7 @@ const NftForm = () => {
                 </label>
                 <div className="mt-1">
                   <input
-                    type="tel"
+                    type="number"
                     maxLength={8}
                     minLength={8}
                     required
@@ -346,9 +346,46 @@ const NftForm = () => {
                         id="orderNum"
                         value={orderNum}
                         required
+                        maxLength={8}
+                        minLength={8}
+                        {...register("ordernumber", {
+                          required: true,
+                          minLength: 8,
+                          message: "error message",
+                        })}
                         className="p-2 shadow-inner shadow-gray-200 drop-shadow bg-gray-300/5 border block w-full sm:text-sm border-gray-300 focus:ring-primary-500 rounded-md"
                         onChange={(e) => setOrderNum(e.target.value)}
                       />
+
+                      {errors.ordernumber &&
+                        errors.ordernumber.type === "required" && (
+                          <>
+                            {cl === "ch" ? (
+                              <p className="text-red-600 mt-3 text-sm">
+                                这是必填栏
+                              </p>
+                            ) : (
+                              <p className="text-red-600 mt-3 text-sm">
+                                This field is required
+                              </p>
+                            )}
+                          </>
+                        )}
+
+                      {errors.ordernumber &&
+                        errors.ordernumber.type === "minLength" && (
+                          <>
+                            {cl === "ch" ? (
+                              <p className="text-red-600 mt-3 text-sm">
+                                訂單號長度應為 7 位。
+                              </p>
+                            ) : (
+                              <p className="text-red-600 mt-3 text-sm">
+                                Order # length should be 7 digits.
+                              </p>
+                            )}
+                          </>
+                        )}
                     </div>
                   </div>
                 </li>

@@ -139,7 +139,16 @@ const FaqSection = () => {
                         <p className="text-sm text-gray-500">
                           {faq.link ? (
                             <>
-                              {faq.answer1} <a href={faq.link}>{faq.answer2}</a>
+                              {faq.answer1}{" "}
+                              <span className="text-primary underline hover:opacity-80">
+                                <a
+                                  href={faq.link}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  {faq.answer2}
+                                </a>
+                              </span>
                               {faq.answer3}
                             </>
                           ) : (

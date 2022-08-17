@@ -52,6 +52,12 @@ const NftForm = () => {
     } catch (error) {
       setError(true);
     }
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMetaAddress("");
+    setOrderNum("");
+    setOrderDate("");
   };
 
   const [isSubscribed, setIsSubscribed] = useState(false);
@@ -70,7 +76,6 @@ const NftForm = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
 
   return (
     <>
@@ -273,7 +278,6 @@ const NftForm = () => {
                     type="text"
                     id="metaAddress"
                     value={metaAddress}
-                    required
                     className="p-2 shadow-inner shadow-gray-200 drop-shadow bg-gray-300/5 border block w-full sm:text-sm border-gray-300 focus:ring-primary-500 rounded-md"
                     onChange={(e) => setMetaAddress(e.target.value)}
                   />
@@ -285,7 +289,12 @@ const NftForm = () => {
                 <p className="text-primary font-semibold animated fadeInUp">
                   {t("Form.5")}
                 </p>
-                <p className="animated fadeInUp">{t("Form.6")}</p>
+                <p className="animated fadeInUp">
+                  {t("Form.6")}
+                  <span className="ml-1">
+                    <a href="https://metamask.io/download/">{t("Form.6a")}</a>
+                  </span>
+                </p>
                 <p className="animated fadeInUp">{t("Form.7")}</p>
                 <p className="animated fadeInUp">{t("Form.8")}</p>
               </div>

@@ -91,8 +91,9 @@ const PrizeSection = () => {
       title: t("Prize.t9"),
       imageUrl: "/assets/images/prize-item-6.png",
       text: t("Prize.d9"),
-      text1: t("Prize.d9a"),
-      text2: t("Prize.d9b"),
+      text1: t("Prize.d99"),
+      text2: t("Prize.d9a"),
+      text3: t("Prize.d9b"),
     },
   ];
 

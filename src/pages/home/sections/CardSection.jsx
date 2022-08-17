@@ -11,6 +11,7 @@ const CardsSection = () => {
     { btnColor: "#0071BC", img: "/assets/images/nft-red.jpg" },
     { btnColor: "#ADD136", img: "/assets/images/nft-green.jpg" },
     { btnColor: "#8dd10b", img: "/assets/images/nft-blue.jpg" },
+    { btnColor: "#8dd10c", img: "/assets/images/nft-orange.jpg" },
   ];
 
   return (

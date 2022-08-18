@@ -107,7 +107,7 @@ export default function NavbarPrimary() {
                     <div className="flex flex-row content-center">
                       <a href="https://www.towngas.com/tc/Home" target="blank">
                         <img
-                          className="h-20 w-auto"
+                          className="h20 lg:h-12 w-auto"
                           src="/assets/images/logo-2.svg"
                           alt="logo"
                         />
@@ -117,7 +117,7 @@ export default function NavbarPrimary() {
                         target="blank"
                       >
                         <img
-                          className="block h-16 w-auto ml-2"
+                          className="block h16 lg:h-10 w-auto ml-2"
                           src="/assets/images/TGC.svg"
                           alt="logo"
                         />
@@ -127,7 +127,7 @@ export default function NavbarPrimary() {
                     <div className="flex flex-row content-center">
                       <a href="https://www.towngas.com/en/Home" target="blank">
                         <img
-                          className="h-20 w-auto"
+                          className="h20 lg:h-12 w-auto"
                           src="/assets/images/logo-2.svg"
                           alt="logo"
                         />
@@ -137,7 +137,7 @@ export default function NavbarPrimary() {
                         target="blank"
                       >
                         <img
-                          className="block h-16 w-auto ml-2"
+                          className="block h16 lg:h-10 w-auto ml-2"
                           src="/assets/images/TGC.svg"
                           alt="logo"
                         />

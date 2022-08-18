@@ -74,6 +74,12 @@ background: #E4E9F9 0% 0% no-repeat padding-box;
     font-size: 30px !important;
     line-height: 36px !important;
   }
+
+  .lg-text{
+    font-size: 36px !important;
+    line-height: 44px !important;
+  
+  }
   }
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 380px) {
@@ -108,11 +114,15 @@ padding-top: 4rem !important;
   
 @media (min-width: 1600px) {
 .bg-pos{
-
   background-position: 0% 20% !important;
+}
+}
 
-}
-}
+@media (max-width: 1024px) {
+  .bg-pos{
+    background-position: 0% 10% !important;
+  }
+  }
   
 
 input::-webkit-outer-spin-button,

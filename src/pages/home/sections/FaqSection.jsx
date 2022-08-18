@@ -121,10 +121,10 @@ const FaqSection = () => {
                         <dt className="text-lg">
                           <Disclosure.Button className="text-left w-full flex justify-between items-baseline text-gray-400">
                             <div className="flex flex-col lg:flex-row gap-2 items-baseline">
-                              <h1 className="text-3xl font-semibold text-shadow-primary text-white">
+                              <h1 className="text-4xl lg:text-3xl font-semibold text-shadow-primary text-white">
                                 {faq.number}
                               </h1>
-                              <h2 className="text-xl font-semibold text-primary line-clamp-2">
+                              <h2 className="text-3xl lg:text-xl font-semibold text-primary line-clamp-2">
                                 {faq.question}
                               </h2>
                             </div>
@@ -141,10 +141,10 @@ const FaqSection = () => {
                           <p className="text-sm text-gray-500">
                             {faq.link ? (
                               <>
-                                <span className="text-base text-gray-500">
+                                <span className="text-2xl lg:text-base text-gray-500">
                                   {faq.answer1}
                                 </span>
-                                <span className="text-base text-primary underline hover:opacity-80">
+                                <span className="text-2xl lg:text-base text-primary underline hover:opacity-80">
                                   <a
                                     href={faq.link}
                                     target="_blank"
@@ -153,20 +153,20 @@ const FaqSection = () => {
                                     {faq.answer2}
                                   </a>
                                 </span>
-                                <span className="text-base text-gray-500">
+                                <span className="text-2xl lg:text-base text-gray-500">
                                   {faq.answer3}
                                 </span>
                               </>
                             ) : (
                               <>
-                                <p className="text-base text-gray-500">
+                                <p className="text-2xl lg:text-base text-gray-500">
                                   {faq.answer}
                                 </p>
                                 {faq.answer1}{" "}
-                                <span className="text-base text-gray-500">
+                                <span className="text-2xl lg:text-base text-gray-500">
                                   {faq.answer2}
                                 </span>
-                                <p className="text-base text-gray-500">
+                                <p className="text-2xl lg:text-base text-gray-500">
                                   {faq.answer3}
                                 </p>
                               </>

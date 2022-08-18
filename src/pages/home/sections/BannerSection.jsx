@@ -21,16 +21,16 @@ const BannerSection = () => {
             <div className="grid grid-cols-2 gap-10 items-center">
               <div className="col-span-2 lg:col-span-1 text-center">
                 <div>
-                  <h2 className="inline-block h-48">
+                  <h2 className="flex justify-center">
                     {cl === "ch" ? (
                       <img
-                        className="block h-full w-full"
+                        className="block h-3/6 w-3/6"
                         src="/assets/images/title-4.png"
                         alt=".."
                       />
                     ) : (
                       <img
-                        className="block h-full w-full"
+                        className="block h-3/6 w-3/6"
                         src="/assets/images/banner-heading.png"
                         alt="..."
                       />
@@ -66,7 +66,7 @@ const BannerSection = () => {
                 </div>
               </div>
               <div className="col-span-2 lg:col-span-1">
-                <div className="space-y-4 text-gray-400 cod-text md:text-lg">
+                <div className="space-y-4 text-gray-400 lg-text md:text-lg">
                   <p>{t("Step.title")}</p>
                   <div>
                     <p>

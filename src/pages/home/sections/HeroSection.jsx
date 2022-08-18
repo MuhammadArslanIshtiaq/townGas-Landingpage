@@ -157,7 +157,7 @@ const HeroSection = () => {
             animateIn="fadeInDown"
             className="flex justify-center"
           >
-            <div className="bg-size-400 bg-hero2M bg-center bg-cover bg-no-repeat xl:bg-hero2  xl:max-w-8xl xl:h-auto px-12 sm:m-[2rem] ">
+            <div className="bg-size-400 bg-hero2M bg-center bg-cover bg-no-repeat xl:bg-hero2  xl:h-auto px-12 sm:m-[2rem] ">
               {/* mobile view */}
               <div className="p-6 space-y-6 h-full flex flex-col justify-start lg:justify-center items-center xl:hidden">
                 <div className="mt-sm">

@@ -5,6 +5,7 @@ import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -12,6 +13,8 @@ function classNames(...classes) {
 
 export default function NavbarPrimary() {
   const { t, i18n } = useTranslation();
+  let cl = i18next.language;
+
   const [navbar, setNavbar] = useState(false);
   const [active, setActive] = useState("");
   const [language, setLanguage] = useState("ch");
@@ -100,16 +103,47 @@ export default function NavbarPrimary() {
               </div>
               <div className="lg:flex-1 flex items-center justify-center lg:items-stretch lg:justify-start">
                 <div className="flex-shrink-0 flex items-center animated fadeInLeftBig">
-                  <img
-                    className="hidden lg:block h-12 w-auto"
-                    src="/assets/images/logo-main.png"
-                    alt="logo"
-                  />
-                  <img
-                    className="block lg:hidden h-auto w-50"
-                    src="/assets/images/logo-mobile.png"
-                    alt="logo"
-                  />
+                  {cl === "ch" ? (
+                    <div className="flex flex-row content-center">
+                      <a href="https://www.towngas.com/tc/Home" target="blank">
+                        <img
+                          className="h-20 w-auto"
+                          src="/assets/images/logo-2.svg"
+                          alt="logo"
+                        />
+                      </a>
+                      <a
+                        href="https://www.towngasappliance.com/"
+                        target="blank"
+                      >
+                        <img
+                          className="block h-16 w-auto ml-2"
+                          src="/assets/images/TGC.svg"
+                          alt="logo"
+                        />
+                      </a>
+                    </div>
+                  ) : (
+                    <div className="flex flex-row content-center">
+                      <a href="https://www.towngas.com/en/Home" target="blank">
+                        <img
+                          className="h-20 w-auto"
+                          src="/assets/images/logo-2.svg"
+                          alt="logo"
+                        />
+                      </a>
+                      <a
+                        href="https://www.towngasappliance.com/"
+                        target="blank"
+                      >
+                        <img
+                          className="block h-16 w-auto ml-2"
+                          src="/assets/images/TGC.svg"
+                          alt="logo"
+                        />
+                      </a>
+                    </div>
+                  )}
                 </div>
                 <div className="hidden lg:flex items-center mx-auto">
                   <div className="flex space-x-2">

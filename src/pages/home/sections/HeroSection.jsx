@@ -4,6 +4,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import PrimaryButton from "../../../components/buttons/PrimaryButton";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
+import ScrollComponent from "../../../components/scroll/ScrollComponent";
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -32,7 +33,7 @@ const HeroSection = () => {
 
         <div className="px-6 lg:px-16 relative">
           <div className="grid grid-cols-5 gap-2 md:gap-6 h-full items-center">
-            {/* mobile view  */}
+            {/* mobile view starts */}
             <div className="col-span-5 md:block lg:hidden">
               <div className="animated fadeInDown mt-20 mb-3">
                 {cl === "ch" ? (
@@ -68,7 +69,7 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-            {/* /mobile view  */}
+            {/* /mobile view ends */}
             <div className="col-span-5 lg:col-span-2 transition-all duration-300 hidden lg:block">
               <div className="mb-8 animated fadeInLeft">
                 <div>
@@ -144,88 +145,22 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+
         <div className="mt-6 relative" id="introduction">
-          <span className="block absolute z-20">
-            <img
-              className="block h-full w-full"
-              src="/assets/images/lines-0.png"
-              alt=".."
-            />
-          </span>
-          <ScrollAnimation duration={1} animateIn="fadeInDown">
-            <div className="bg-size-400 bg-hero2M lg:bg-hero2 bg-center bg-cover lg:bg-contain bg-no-repeat lg:max-w-7xl px-6 lg:h-[28rem] xl:h-auto sm:m-[2rem] xl:mx-auto">
-              {/* mobile view */}
-              <div className="p-6 space-y-6 h-full flex flex-col justify-start lg:justify-center items-center xl:hidden">
-                <div className="mt-sm ">
-                  <span className="block md:w-9/12 lg:w-[12rem]  mx-auto">
-                    {cl === "ch" ? (
-                      <img
-                        className="block h-full w-full"
-                        src="/assets/images/title-6.png"
-                        alt=".."
-                      />
-                    ) : (
-                      <img
-                        className="block h-full w-full"
-                        src="/assets/images/about.png"
-                        alt="..."
-                      />
-                    )}
-                  </span>
-                </div>
-                <div>
-                  <ScrollAnimation
-                    duration={2}
-                    delay={600}
-                    animateIn="fadeInLeft"
-                  >
-                    <img
-                      className="block md:h-24 lg:h-12 w-auto mx-auto"
-                      src="/assets/images/logo.svg"
-                      alt="logo"
-                    />
-                  </ScrollAnimation>
-                </div>
-                <div>
-                  <ScrollAnimation
-                    duration={2}
-                    delay={600}
-                    animateIn="fadeInUp"
-                  >
-                    {cl === "ch" ? (
-                      <p className="text-gray-400 text-base leading-normal md:text-[50px] md:leading-[80px] md:px-5 lg:text-base lg:leading-normal font-semibold text-center">
-                        {t("About")}
-                      </p>
-                    ) : (
-                      <p className="text-gray-400 text-base leading-normal md:text-[40px] md:leading-[50px] md:mt-10 md:px-5 lg:text-base lg:leading-normal font-semibold text-center">
-                        {t("About")}
-                      </p>
-                    )}
-                  </ScrollAnimation>
-                </div>
-              </div>
-              {/* mobile view */}
-              <div className="hidden xl:grid grid-cols-2 gap-10 py-2 lg:py-32 lg:px-24 items-center">
-                <div className="col-span-2 lg:col-span-1">
-                  <ScrollAnimation
-                    duration={2}
-                    delay={600}
-                    animateIn="fadeInLeft"
-                  >
-                    <img
-                      className="block h-30 w-auto"
-                      src="/assets/images/logo.svg"
-                      alt="logo"
-                    />
-                  </ScrollAnimation>
-                </div>
-                <div className="col-span-2 lg:col-span-1">
-                  <ScrollAnimation
-                    duration={2}
-                    delay={600}
-                    animateIn="fadeInRight"
-                  >
-                    <span className="block h-24 w-[17rem]">
+          <ScrollComponent>
+            <span className="block absolute z-20">
+              <img
+                className="block h-full w-full"
+                src="/assets/images/lines-0.png"
+                alt=".."
+              />
+            </span>
+            <ScrollAnimation duration={1} animateIn="fadeInDown">
+              <div className="bg-size-400 bg-hero2M lg:bg-hero2 bg-center bg-cover lg:bg-contain bg-no-repeat lg:max-w-7xl px-6 lg:h-[28rem] xl:h-auto sm:m-[2rem] xl:mx-auto">
+                {/* mobile view starts */}
+                <div className="p-6 space-y-6 h-full flex flex-col justify-start lg:justify-center items-center xl:hidden">
+                  <div className="mt-sm ">
+                    <span className="block md:w-9/12 lg:w-[12rem]  mx-auto">
                       {cl === "ch" ? (
                         <img
                           className="block h-full w-full"
@@ -240,17 +175,88 @@ const HeroSection = () => {
                         />
                       )}
                     </span>
-                    <p className="text-gray-400 md:text-base text-sm mt-4 ">
-                      {t("About")}
-                    </p>
-                    <p className="text-primary-600 md:text-base text-sm mt-4 ">
-                      {t("About1")}
-                    </p>
-                  </ScrollAnimation>
+                  </div>
+                  <div>
+                    <ScrollAnimation
+                      duration={2}
+                      delay={600}
+                      animateIn="fadeInLeft"
+                    >
+                      <img
+                        className="block md:h-24 lg:h-12 w-auto mx-auto"
+                        src="/assets/images/logo.svg"
+                        alt="logo"
+                      />
+                    </ScrollAnimation>
+                  </div>
+                  <div>
+                    <ScrollAnimation
+                      duration={2}
+                      delay={600}
+                      animateIn="fadeInUp"
+                    >
+                      {cl === "ch" ? (
+                        <p className="text-gray-400 text-base leading-normal md:text-[50px] md:leading-[80px] md:px-5 lg:text-base lg:leading-normal font-semibold text-center">
+                          {t("About")}
+                        </p>
+                      ) : (
+                        <p className="text-gray-400 text-base leading-normal md:text-[40px] md:leading-[50px] md:mt-10 md:px-5 lg:text-base lg:leading-normal font-semibold text-center">
+                          {t("About")}
+                        </p>
+                      )}
+                    </ScrollAnimation>
+                  </div>
+                </div>
+                {/* mobile view ends */}
+
+                <div className="hidden xl:grid grid-cols-2 gap-10 py-2 lg:py-32 lg:px-24 items-center">
+                  <div className="col-span-2 lg:col-span-1">
+                    <ScrollAnimation
+                      duration={2}
+                      delay={600}
+                      animateIn="fadeInLeft"
+                    >
+                      <img
+                        className="block h-30 w-auto"
+                        src="/assets/images/logo.svg"
+                        alt="logo"
+                      />
+                    </ScrollAnimation>
+                  </div>
+                  <div className="col-span-2 lg:col-span-1">
+                    <ScrollAnimation
+                      duration={2}
+                      delay={600}
+                      animateIn="fadeInRight"
+                    >
+                      <span className="block h-24 w-[17rem]">
+                        {cl === "ch" ? (
+                          <img
+                            className="block h-full w-full"
+                            src="/assets/images/title-6.png"
+                            alt=".."
+                          />
+                        ) : (
+                          <img
+                            className="block h-full w-full"
+                            src="/assets/images/about.png"
+                            alt="..."
+                          />
+                        )}
+                      </span>
+
+                      <p className="text-gray-400 md:text-base text-sm mt-4 ">
+                        {t("About")}
+                      </p>
+                      <p className="text-primary-600 md:text-base text-sm mt-4 ">
+                        {t("About1")}
+                      </p>
+                    </ScrollAnimation>
+                  </div>
                 </div>
               </div>
-            </div>
-          </ScrollAnimation>
+            </ScrollAnimation>
+          </ScrollComponent>
         </div>
       </section>
     </>

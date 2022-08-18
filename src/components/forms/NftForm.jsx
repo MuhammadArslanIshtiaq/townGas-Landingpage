@@ -139,14 +139,19 @@ const NftForm = () => {
                   <input
                     type="text"
                     value={name}
-                    {...register("name", { required: true })}
+                    {...register("name", {
+                      required: true,
+                      pattern: /^[A-Za-z]+$/i,
+                    })}
                     className="p-2 shadow-inner shadow-gray-200 drop-shadow bg-gray-300/5 border block w-full sm:text-sm border-gray-300 focus:ring-primary-500 rounded-md"
                     onChange={(e) => setName(e.target.value)}
                   />
                   {errors.name && (
                     <>
                       {cl === "ch" ? (
-                        <p className="text-red-600 mt-3 text-sm">請提供正確資料</p>
+                        <p className="text-red-600 mt-3 text-sm">
+                          請提供正確資料
+                        </p>
                       ) : (
                         <p className="text-red-600 mt-3 text-sm">
                           This field is required
@@ -185,7 +190,9 @@ const NftForm = () => {
                   {errors.email && errors.email.type === "required" && (
                     <>
                       {cl === "ch" ? (
-                        <p className="text-red-600 mt-3 text-sm">請提供正確資料</p>
+                        <p className="text-red-600 mt-3 text-sm">
+                          請提供正確資料
+                        </p>
                       ) : (
                         <p className="text-red-600 mt-3 text-sm">
                           This field is required
@@ -240,7 +247,9 @@ const NftForm = () => {
                   {errors.phone && errors.phone.type === "required" && (
                     <>
                       {cl === "ch" ? (
-                        <p className="text-red-600 mt-3 text-sm">請提供正確資料</p>
+                        <p className="text-red-600 mt-3 text-sm">
+                          請提供正確資料
+                        </p>
                       ) : (
                         <p className="text-red-600 mt-3 text-sm">
                           This field is required

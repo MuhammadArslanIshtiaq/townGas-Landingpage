@@ -152,12 +152,12 @@ const HeroSection = () => {
               alt=".."
             />
           </span>
-          <ScrollAnimation duration={2} animateIn="fadeInDown">
-            <div className="bg-size-400 bg-hero2M xl:bg-hero2 bg-center bg-cover xl:bg-contain bg-no-repeat xl:max-w-7xl px-6 md:h-[28rem] xl:h-auto sm:m-[2rem] xl:mx-auto">
+          <ScrollAnimation duration={1} animateIn="fadeInDown">
+            <div className="bg-size-400 bg-hero2M lg:bg-hero2 bg-center bg-cover lg:bg-contain bg-no-repeat lg:max-w-7xl px-6 lg:h-[28rem] xl:h-auto sm:m-[2rem] xl:mx-auto">
               {/* mobile view */}
-              <div className="p-6 space-y-6 h-full flex flex-col justify-center items-center xl:hidden">
-                <div>
-                  <span className="block w-[12rem] lg:w-[12rem] md:w-32 mx-auto">
+              <div className="p-6 space-y-6 h-full flex flex-col justify-start lg:justify-center items-center xl:hidden">
+                <div className="mt-sm ">
+                  <span className="block md:w-9/12 lg:w-[12rem]  mx-auto">
                     {cl === "ch" ? (
                       <img
                         className="block h-full w-full"
@@ -180,7 +180,7 @@ const HeroSection = () => {
                     animateIn="fadeInLeft"
                   >
                     <img
-                      className="block h-12 md:h-10 lg:h-12 w-auto mx-auto"
+                      className="block md:h-24 lg:h-12 w-auto mx-auto"
                       src="/assets/images/logo.svg"
                       alt="logo"
                     />
@@ -192,7 +192,7 @@ const HeroSection = () => {
                     delay={600}
                     animateIn="fadeInUp"
                   >
-                    <p className="text-gray-400 text-base leading-normal md:text-[15px] md:leading-[18px] md:px-5 lg:text-base lg:leading-normal font-semibold text-center">
+                    <p className="text-gray-400 text-base leading-normal md:text-[50px] md:leading-[80px] md:px-5 lg:text-base lg:leading-normal font-semibold text-center">
                       {t("About")}
                     </p>
                   </ScrollAnimation>

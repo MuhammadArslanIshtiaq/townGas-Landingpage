@@ -92,7 +92,7 @@ const NftForm = () => {
           ) : (
             <img
               className="block h-full w-full"
-              src="/assets/images/hero-heading.png"
+              src="/assets/images/hero-title-en.png"
               alt="..."
             />
           )}

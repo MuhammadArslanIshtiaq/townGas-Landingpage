@@ -59,6 +59,15 @@ background: #E4E9F9 0% 0% no-repeat padding-box;
   }
   }
 
+  @media only screen and (min-device-width: 320px) and (max-device-width: 380px) {
+
+    .mt-sm{
+      margin-top: 20rem;
+    }
+    }
+
+  
+
 
 @media (min-width: 1580px) {
 

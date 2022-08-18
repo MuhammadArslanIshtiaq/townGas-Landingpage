@@ -192,9 +192,15 @@ const HeroSection = () => {
                     delay={600}
                     animateIn="fadeInUp"
                   >
-                    <p className="text-gray-400 text-base leading-normal md:text-[50px] md:leading-[80px] md:px-5 lg:text-base lg:leading-normal font-semibold text-center">
-                      {t("About")}
-                    </p>
+                    {cl === "ch" ? (
+                      <p className="text-gray-400 text-base leading-normal md:text-[50px] md:leading-[80px] md:px-5 lg:text-base lg:leading-normal font-semibold text-center">
+                        {t("About")}
+                      </p>
+                    ) : (
+                      <p className="text-gray-400 text-base leading-normal md:text-[40px] md:leading-[50px] md:mt-10 md:px-5 lg:text-base lg:leading-normal font-semibold text-center">
+                        {t("About")}
+                      </p>
+                    )}
                   </ScrollAnimation>
                 </div>
               </div>

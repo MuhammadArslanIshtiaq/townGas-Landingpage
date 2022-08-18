@@ -12,11 +12,11 @@ const CardsSection = () => {
     { btnColor: "#ADD136", img: "/assets/images/3.jpg" },
     { btnColor: "#8dd10b", img: "/assets/images/4.jpg" },
     { btnColor: "#8dd10c", img: "/assets/images/5.jpg" },
-    { btnColor: "#8dd10c", img: "/assets/images/6.jpg" },
-    { btnColor: "#8dd10c", img: "/assets/images/7.jpg" },
-    { btnColor: "#8dd10c", img: "/assets/images/8.jpg" },
-    { btnColor: "#8dd10c", img: "/assets/images/9.jpg" },
-    { btnColor: "#8dd10c", img: "/assets/images/10.jpg" },
+    { btnColor: "#8dd10d", img: "/assets/images/6.jpg" },
+    { btnColor: "#8dd10e", img: "/assets/images/7.jpg" },
+    { btnColor: "#8dd10f", img: "/assets/images/8.jpg" },
+    { btnColor: "#8dd10g", img: "/assets/images/9.jpg" },
+    { btnColor: "#8dd10h", img: "/assets/images/10.jpg" },
   ];
 
   return (

@@ -57,6 +57,10 @@ background: #E4E9F9 0% 0% no-repeat padding-box;
   .mt-sm{
     margin-top: 28rem;
   }
+  .cod-text{
+    font-size: 30px !important;
+    line-height: 36px !important;
+  }
   }
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 380px) {
@@ -71,6 +75,7 @@ background: #E4E9F9 0% 0% no-repeat padding-box;
     }
     }
 
+   
   
 
 

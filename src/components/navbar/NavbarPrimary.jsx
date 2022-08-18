@@ -92,9 +92,9 @@ export default function NavbarPrimary() {
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-primary hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XIcon className="block h-6 w-6" aria-hidden="true" />
+                    <XIcon className="block h-16 w-16" aria-hidden="true" />
                   ) : (
-                    <MenuIcon className="block h-12 w-12" aria-hidden="true" />
+                    <MenuIcon className="block h-16 w-16" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>

@@ -127,7 +127,7 @@ const PrizeSection = () => {
           <h2 className="inline-block mb-8">
             {cl === "ch" ? (
               <img
-                className="block h-full w-full"
+                className="block h-32"
                 src="/assets/images/title-3.png"
                 alt=".."
               />

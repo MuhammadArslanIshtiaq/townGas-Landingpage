@@ -102,12 +102,12 @@ export default function NavbarPrimary() {
                 <div className="flex-shrink-0 flex items-center animated fadeInLeftBig">
                   <img
                     className="hidden lg:block h-12 w-auto"
-                    src="/assets/images/logo-1.svg"
+                    src="/assets/images/logo-1@2x.png"
                     alt="logo"
                   />
                   <img
                     className="block lg:hidden h-auto w-50"
-                    src="/assets/images/logo-1.svg"
+                    src="/assets/images/logo-1.png"
                     alt="logo"
                   />
                 </div>

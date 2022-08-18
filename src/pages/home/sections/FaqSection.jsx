@@ -92,7 +92,7 @@ const FaqSection = () => {
           <h2 className="inline-block h-28 mb-8">
             {cl === "ch" ? (
               <img
-                className="block h-full w-full"
+                className="block h-32 w-auto"
                 src="/assets/images/title-5.png"
                 alt=".."
               />

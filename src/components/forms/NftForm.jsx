@@ -146,7 +146,7 @@ const NftForm = () => {
                   {errors.name && (
                     <>
                       {cl === "ch" ? (
-                        <p className="text-red-600 mt-3 text-sm">这是必填栏</p>
+                        <p className="text-red-600 mt-3 text-sm">請提供正確資料</p>
                       ) : (
                         <p className="text-red-600 mt-3 text-sm">
                           This field is required
@@ -185,7 +185,7 @@ const NftForm = () => {
                   {errors.email && errors.email.type === "required" && (
                     <>
                       {cl === "ch" ? (
-                        <p className="text-red-600 mt-3 text-sm">这是必填栏</p>
+                        <p className="text-red-600 mt-3 text-sm">請提供正確資料</p>
                       ) : (
                         <p className="text-red-600 mt-3 text-sm">
                           This field is required
@@ -198,7 +198,7 @@ const NftForm = () => {
                     <>
                       {cl === "ch" ? (
                         <p className="text-red-600 mt-3 text-sm">
-                          请确保您输入了有效的电子邮件。
+                          請填寫有效電郵
                         </p>
                       ) : (
                         <p className="text-red-600 mt-3 text-sm">
@@ -240,7 +240,7 @@ const NftForm = () => {
                   {errors.phone && errors.phone.type === "required" && (
                     <>
                       {cl === "ch" ? (
-                        <p className="text-red-600 mt-3 text-sm">这是必填栏</p>
+                        <p className="text-red-600 mt-3 text-sm">請提供正確資料</p>
                       ) : (
                         <p className="text-red-600 mt-3 text-sm">
                           This field is required
@@ -253,11 +253,11 @@ const NftForm = () => {
                     <>
                       {cl === "ch" ? (
                         <p className="text-red-600 mt-3 text-sm">
-                          电话长度不能短于 8
+                          請填寫正確電話號碼
                         </p>
                       ) : (
                         <p className="text-red-600 mt-3 text-sm">
-                          Phone length cannot be shorter than 8
+                          Please enter correct phone number
                         </p>
                       )}
                     </>
@@ -291,7 +291,7 @@ const NftForm = () => {
                 </p>
                 <p className="animated fadeInUp">
                   {t("Form.6")}
-                  <span className="ml-1">
+                  <span className="ml-1 cursor-pointer text-secondary underline hover:opacity-80">
                     <a href="https://metamask.io/download/">{t("Form.6a")}</a>
                   </span>
                 </p>
@@ -362,7 +362,7 @@ const NftForm = () => {
                           <>
                             {cl === "ch" ? (
                               <p className="text-red-600 mt-3 text-sm">
-                                这是必填栏
+                                請提供正確資料
                               </p>
                             ) : (
                               <p className="text-red-600 mt-3 text-sm">

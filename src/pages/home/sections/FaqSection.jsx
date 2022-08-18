@@ -2,6 +2,7 @@ import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { MinusIcon, PlusIcon } from "@heroicons/react/outline";
 import ScrollAnimation from "react-animate-on-scroll";
+import ScrollComponent from "../../../components/scroll/ScrollComponent";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 
@@ -72,109 +73,111 @@ const FaqSection = () => {
   return (
     <div id="commonProblem" className="relative z-20 mt-12">
       {/* == */}
-      <span className="md:hidden absolute left-[-4rem] top-[-2rem]">
-        <img
-          className="block h-full w-full"
-          src="/assets/images/polygon-left.svg"
-          alt=".."
-        />
-      </span>
-      <span className="md:hidden absolute right-[0rem] top-[0rem]">
-        <img
-          className="block h-full w-full"
-          src="/assets/images/balls.svg"
-          alt=".."
-        />
-      </span>
-      {/* == */}
-      <div className="lg:max-w-7xl px-6 mx-auto text-center">
-        <ScrollAnimation duration={1} animateIn="fadeInUp">
-          <h2 className="inline-block h-28 mb-8">
-            {cl === "ch" ? (
-              <img
-                className="block h-32 w-auto"
-                src="/assets/images/title-5.png"
-                alt=".."
-              />
-            ) : (
-              <img
-                className="block h-full w-full"
-                src="/assets/images/faq.png"
-                alt="..."
-              />
-            )}
-          </h2>
-        </ScrollAnimation>
-        <div>
-          <dl className="grid grid-cols-2 gap-4">
-            {faqs.map((faq) => (
-              <Disclosure as="div" className="col-span-2 lg:col-span-1">
-                {({ open }) => (
-                  <ScrollAnimation
-                    duration={2}
-                    animateIn="fadeInUp"
-                    className="h-full"
-                  >
-                    <div className="min-h-[6.4rem] bg-white rounded-lg border-2 border-primary p-4 text-left">
-                      <dt className="text-lg">
-                        <Disclosure.Button className="text-left w-full flex justify-between items-baseline text-gray-400">
-                          <div className="flex flex-col lg:flex-row gap-2 items-baseline">
-                            <h1 className="text-3xl font-semibold text-shadow-primary text-white">
-                              {faq.number}
-                            </h1>
-                            <h2 className="text-xl font-semibold text-primary line-clamp-2">
-                              {faq.question}
-                            </h2>
-                          </div>
-                          <span className="ml-6 h-7 flex items-center">
-                            {open ? (
-                              <MinusIcon className="h-8 w-8 text-primary-600" />
-                            ) : (
-                              <PlusIcon className="h-8 w-8 text-primary-600" />
-                            )}
-                          </span>
-                        </Disclosure.Button>
-                      </dt>
-                      <Disclosure.Panel as="dd" className="mt-4 pr-12">
-                        <p className="text-sm text-gray-500">
-                          {faq.link ? (
-                            <>
-                              {faq.answer1}{" "}
-                              <span className="text-primary underline hover:opacity-80">
-                                <a
-                                  href={faq.link}
-                                  target="_blank"
-                                  rel="noreferrer"
-                                >
-                                  {faq.answer2}
-                                </a>
-                              </span>
-                              {faq.answer3}
-                            </>
-                          ) : (
-                            <>
-                              <p className="text-base text-gray-500">
-                                {faq.answer}
-                              </p>
-                              {faq.answer1}{" "}
-                              <span className="text-base text-gray-500">
-                                {faq.answer2}
-                              </span>
-                              <p className="text-base text-gray-500">
+      <ScrollComponent>
+        <span className="md:hidden absolute left-[-4rem] top-[-2rem]">
+          <img
+            className="block h-full w-full"
+            src="/assets/images/polygon-left.svg"
+            alt=".."
+          />
+        </span>
+        <span className="md:hidden absolute right-[0rem] top-[0rem]">
+          <img
+            className="block h-full w-full"
+            src="/assets/images/balls.svg"
+            alt=".."
+          />
+        </span>
+        {/* == */}
+        <div className="lg:max-w-7xl px-6 mx-auto text-center">
+          <ScrollAnimation duration={1} animateIn="fadeInUp">
+            <h2 className="inline-block h-28 mb-8">
+              {cl === "ch" ? (
+                <img
+                  className="block h-32 w-auto"
+                  src="/assets/images/title-5.png"
+                  alt=".."
+                />
+              ) : (
+                <img
+                  className="block h-full w-full"
+                  src="/assets/images/faq.png"
+                  alt="..."
+                />
+              )}
+            </h2>
+          </ScrollAnimation>
+          <div>
+            <dl className="grid grid-cols-2 gap-4">
+              {faqs.map((faq) => (
+                <Disclosure as="div" className="col-span-2 lg:col-span-1">
+                  {({ open }) => (
+                    <ScrollAnimation
+                      duration={2}
+                      animateIn="fadeInUp"
+                      className="h-full"
+                    >
+                      <div className="min-h-[6.4rem] bg-white rounded-lg border-2 border-primary p-4 text-left">
+                        <dt className="text-lg">
+                          <Disclosure.Button className="text-left w-full flex justify-between items-baseline text-gray-400">
+                            <div className="flex flex-col lg:flex-row gap-2 items-baseline">
+                              <h1 className="text-3xl font-semibold text-shadow-primary text-white">
+                                {faq.number}
+                              </h1>
+                              <h2 className="text-xl font-semibold text-primary line-clamp-2">
+                                {faq.question}
+                              </h2>
+                            </div>
+                            <span className="ml-6 h-7 flex items-center">
+                              {open ? (
+                                <MinusIcon className="h-8 w-8 text-primary-600" />
+                              ) : (
+                                <PlusIcon className="h-8 w-8 text-primary-600" />
+                              )}
+                            </span>
+                          </Disclosure.Button>
+                        </dt>
+                        <Disclosure.Panel as="dd" className="mt-4 pr-12">
+                          <p className="text-sm text-gray-500">
+                            {faq.link ? (
+                              <>
+                                {faq.answer1}{" "}
+                                <span className="text-primary underline hover:opacity-80">
+                                  <a
+                                    href={faq.link}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    {faq.answer2}
+                                  </a>
+                                </span>
                                 {faq.answer3}
-                              </p>
-                            </>
-                          )}
-                        </p>
-                      </Disclosure.Panel>
-                    </div>
-                  </ScrollAnimation>
-                )}
-              </Disclosure>
-            ))}
-          </dl>
+                              </>
+                            ) : (
+                              <>
+                                <p className="text-base text-gray-500">
+                                  {faq.answer}
+                                </p>
+                                {faq.answer1}{" "}
+                                <span className="text-base text-gray-500">
+                                  {faq.answer2}
+                                </span>
+                                <p className="text-base text-gray-500">
+                                  {faq.answer3}
+                                </p>
+                              </>
+                            )}
+                          </p>
+                        </Disclosure.Panel>
+                      </div>
+                    </ScrollAnimation>
+                  )}
+                </Disclosure>
+              ))}
+            </dl>
+          </div>
         </div>
-      </div>
+      </ScrollComponent>
     </div>
   );
 };

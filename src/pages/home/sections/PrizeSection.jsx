@@ -1,5 +1,6 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
+import ScrollComponent from "../../../components/scroll/ScrollComponent";
 import PrizeCard from "../../../components/cards/PrizeCard";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
@@ -99,65 +100,67 @@ const PrizeSection = () => {
 
   return (
     <section id="prize" className="relative z-20 md:bg-layerTwo bg-cover">
-      {/* == */}
-      <span className="md:hidden absolute left-[-10rem] top-[-2rem]">
-        <img
-          className="block h-full w-full"
-          src="/assets/images/polygon-right.svg"
-          alt=".."
-        />
-      </span>
-      <span className="md:hidden absolute right-[-1.6rem] top-[1rem]">
-        <img
-          className="block h-full w-full"
-          src="/assets/images/sparkle-green.svg"
-          alt=".."
-        />
-      </span>
-      <span className="block absolute z-20 top-[30rem]">
-        <img
-          className="block h-full w-full"
-          src="/assets/images/lines-0.png"
-          alt=".."
-        />
-      </span>
-      {/* == */}
-      <div className="lg:max-w-7xl px-6 mx-auto text-center">
-        <ScrollAnimation duration={1} animateIn="fadeInUp">
-          <h2 className="inline-block mb-8">
-            {cl === "ch" ? (
-              <img
-                className="block h-32"
-                src="/assets/images/title-3.png"
-                alt=".."
-              />
-            ) : (
-              <img
-                className="block h-full w-full"
-                src="/assets/images/prize.png"
-                alt="..."
-              />
-            )}
-          </h2>
-        </ScrollAnimation>
+      <ScrollComponent>
+        {/* == */}
+        <span className="md:hidden absolute left-[-10rem] top-[-2rem]">
+          <img
+            className="block h-full w-full"
+            src="/assets/images/polygon-right.svg"
+            alt=".."
+          />
+        </span>
+        <span className="md:hidden absolute right-[-1.6rem] top-[1rem]">
+          <img
+            className="block h-full w-full"
+            src="/assets/images/sparkle-green.svg"
+            alt=".."
+          />
+        </span>
+        <span className="block absolute z-20 top-[30rem]">
+          <img
+            className="block h-full w-full"
+            src="/assets/images/lines-0.png"
+            alt=".."
+          />
+        </span>
+        {/* == */}
+        <div className="lg:max-w-7xl px-6 mx-auto text-center">
+          <ScrollAnimation duration={1} animateIn="fadeInUp">
+            <h2 className="inline-block mb-8">
+              {cl === "ch" ? (
+                <img
+                  className="block h-32"
+                  src="/assets/images/title-3.png"
+                  alt=".."
+                />
+              ) : (
+                <img
+                  className="block h-full w-full"
+                  src="/assets/images/prize.png"
+                  alt="..."
+                />
+              )}
+            </h2>
+          </ScrollAnimation>
 
-        {/* gallery start */}
-        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4">
-          {prizeList.map((item) => (
-            <div key={item.title}>
-              <ScrollAnimation
-                className="h-full"
-                duration={1}
-                delay={item.delay}
-                animateIn="fadeInLeft"
-              >
-                <PrizeCard item={item} />
-              </ScrollAnimation>
-            </div>
-          ))}
+          {/* gallery start */}
+          <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4">
+            {prizeList.map((item) => (
+              <div key={item.title}>
+                <ScrollAnimation
+                  className="h-full"
+                  duration={1}
+                  delay={item.delay}
+                  animateIn="fadeInLeft"
+                >
+                  <PrizeCard item={item} />
+                </ScrollAnimation>
+              </div>
+            ))}
+          </div>
+          {/* gallery end */}
         </div>
-        {/* gallery end */}
-      </div>
+      </ScrollComponent>
     </section>
   );
 };

@@ -141,35 +141,36 @@ const NftForm = () => {
                     value={name}
                     {...register("name", {
                       required: true,
-                      pattern: /^[A-Za-z]+$/i,
+                      pattern: /^[A-Za-z ]+$/i,
                     })}
                     className="p-2 shadow-inner shadow-gray-200 drop-shadow bg-gray-300/5 border block w-full sm:text-sm border-gray-300 focus:ring-primary-500 rounded-md"
                     onChange={(e) => setName(e.target.value)}
                   />
+
                   {errors.name && errors.name.type === "required" && (
                     <>
                       {cl === "ch" ? (
                         <p className="text-red-600 mt-3 text-sm">
-                          請提供正確資料
+                          請提供正確資料。
                         </p>
                       ) : (
                         <p className="text-red-600 mt-3 text-sm">
-                          This field is required
+                          This field is required.
                         </p>
                       )}
+                    </>
+                  )}
 
-                      {errors.name && errors.name.type === "pattern" && (
-                        <>
-                          {cl === "ch" ? (
-                            <p className="text-red-600 mt-3 text-sm">
-                              pattern rola
-                            </p>
-                          ) : (
-                            <p className="text-red-600 mt-3 text-sm">
-                              Please input correct name.
-                            </p>
-                          )}
-                        </>
+                  {errors.name && errors.name.type === "pattern" && (
+                    <>
+                      {cl === "ch" ? (
+                        <p className="text-red-600 mt-3 text-sm">
+                          请输入正确的信息。
+                        </p>
+                      ) : (
+                        <p className="text-red-600 mt-3 text-sm">
+                          Please input correct info.
+                        </p>
                       )}
                     </>
                   )}
@@ -205,11 +206,11 @@ const NftForm = () => {
                     <>
                       {cl === "ch" ? (
                         <p className="text-red-600 mt-3 text-sm">
-                          請提供正確資料
+                          請提供正確資料。
                         </p>
                       ) : (
                         <p className="text-red-600 mt-3 text-sm">
-                          This field is required
+                          This field is required.
                         </p>
                       )}
                     </>
@@ -219,11 +220,11 @@ const NftForm = () => {
                     <>
                       {cl === "ch" ? (
                         <p className="text-red-600 mt-3 text-sm">
-                          請填寫有效電郵
+                          請填寫有效電郵。
                         </p>
                       ) : (
                         <p className="text-red-600 mt-3 text-sm">
-                          Please make sure you have entered a valid email.
+                          Please input a valid email.
                         </p>
                       )}
                     </>
@@ -262,11 +263,11 @@ const NftForm = () => {
                     <>
                       {cl === "ch" ? (
                         <p className="text-red-600 mt-3 text-sm">
-                          請提供正確資料
+                          請提供正確資料。
                         </p>
                       ) : (
                         <p className="text-red-600 mt-3 text-sm">
-                          This field is required
+                          This field is required.
                         </p>
                       )}
                     </>
@@ -276,11 +277,11 @@ const NftForm = () => {
                     <>
                       {cl === "ch" ? (
                         <p className="text-red-600 mt-3 text-sm">
-                          請填寫正確電話號碼
+                          請填寫正確電話號碼。
                         </p>
                       ) : (
                         <p className="text-red-600 mt-3 text-sm">
-                          Please enter correct phone number
+                          Please input correct phone number.
                         </p>
                       )}
                     </>

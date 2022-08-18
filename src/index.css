@@ -62,10 +62,10 @@ background: #E4E9F9 0% 0% no-repeat padding-box;
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 620px) {
+@media only screen and (min-device-width: 380px) and (max-device-width: 620px) {
   .bg-size-400{
     background-size: 90vw !important;
-    height: 100vh !important;
+    height: 115vh !important;
   }
   .mt-sm{
     margin-top: 28rem;

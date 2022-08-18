@@ -13,7 +13,7 @@ const PrimaryButton = () => {
 
       <Link
         to
-        className="bg-primary hover:bg-primary-600 text-white inline-flex justify-center items-center gap-2 py-4 px-8 rounded-full text-xl"
+        className="bg-primary hover:bg-primary-600 text-white inline-flex justify-center items-center gap-2 py-4 px-8 rounded-full text-xl z-50"
         onClick={() => setIsOpen("formModal")}
       >
         <span className="block h-9 min-w-[2.5rem]">

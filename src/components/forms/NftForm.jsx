@@ -42,7 +42,10 @@ const NftForm = () => {
         .then((response) => {
           if (response.status === 400) {
             setError(true);
-          } else if (response.status === 200) setIsOpen("SubmitThankYou");
+          } else if (response.status === 200) {
+            setIsOpen("SubmitThankYou");
+            const timeoutID = setTimeout(setIsOpen(""), 3000);
+          }
         })
         .catch(function (error) {
           if (error.response) {
@@ -370,11 +373,11 @@ const NftForm = () => {
                         id="orderNum"
                         value={orderNum}
                         required
-                        maxLength={8}
-                        minLength={8}
+                        maxLength={7}
+                        minLength={7}
                         {...register("ordernumber", {
                           required: true,
-                          minLength: 8,
+                          minLength: 7,
                           message: "error message",
                         })}
                         className="p-2 shadow-inner shadow-gray-200 drop-shadow bg-gray-300/5 border block w-full sm:text-sm border-gray-300 focus:ring-primary-500 rounded-md"

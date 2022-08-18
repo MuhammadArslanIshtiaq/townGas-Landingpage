@@ -92,7 +92,7 @@ const HeroSection = () => {
                   ) : (
                     <img
                       className="block h-full w-full"
-                      src="/assets/images/hero-eng.png"
+                      src="/assets/images/hero-title-en.png"
                       alt="..."
                     />
                   )}

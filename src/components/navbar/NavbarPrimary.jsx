@@ -212,7 +212,7 @@ export default function NavbarPrimary() {
                   >
                     中
                   </button>
-                  <span className="block w-[0.1875rem] h-4 bg-primary" />
+                  <span className="block w-[0.4rem] h-16 bg-primary" />
                   <button
                     type="button"
                     onClick={() => onLanguageChange("en")}

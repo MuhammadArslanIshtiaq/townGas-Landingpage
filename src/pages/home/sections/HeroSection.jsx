@@ -177,17 +177,11 @@ const HeroSection = () => {
                     </span>
                   </div>
                   <div>
-                    <ScrollAnimation
-                      duration={2}
-                      delay={600}
-                      animateIn="fadeInLeft"
-                    >
-                      <img
-                        className="block md:h-24 lg:h-12 w-auto mx-auto"
-                        src="/assets/images/logo.svg"
-                        alt="logo"
-                      />
-                    </ScrollAnimation>
+                    <img
+                      className="block md:h-24 lg:h-12 w-auto mx-auto"
+                      src="/assets/images/logo.svg"
+                      alt="logo"
+                    />
                   </div>
                   <div>
                     <ScrollAnimation
@@ -196,11 +190,11 @@ const HeroSection = () => {
                       animateIn="fadeInUp"
                     >
                       {cl === "ch" ? (
-                        <p className="text-gray-400 text-base leading-normal md:text-[50px] md:leading-[80px] md:px-5 lg:text-base lg:leading-normal font-semibold text-center">
+                        <p className="text-gray-400 text-base leading-normal md:text-[50px] md:leading-[70px] md:px-5 lg:text-base lg:leading-normal font-semibold text-center">
                           {t("About")}
                         </p>
                       ) : (
-                        <p className="text-gray-400 text-base leading-normal md:text-[40px] md:leading-[50px] md:mt-10 md:px-5 lg:text-base lg:leading-normal font-semibold text-center">
+                        <p className="text-gray-400 text-base leading-normal md:text-[36px] md:leading-[50px] md:mt-10 md:px-5 lg:text-base lg:leading-normal font-semibold text-center">
                           {t("About")}
                         </p>
                       )}

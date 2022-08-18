@@ -146,7 +146,7 @@ const NftForm = () => {
                     className="p-2 shadow-inner shadow-gray-200 drop-shadow bg-gray-300/5 border block w-full sm:text-sm border-gray-300 focus:ring-primary-500 rounded-md"
                     onChange={(e) => setName(e.target.value)}
                   />
-                  {errors.name && (
+                  {errors.name && errors.name.type === "required" && (
                     <>
                       {cl === "ch" ? (
                         <p className="text-red-600 mt-3 text-sm">
@@ -156,6 +156,20 @@ const NftForm = () => {
                         <p className="text-red-600 mt-3 text-sm">
                           This field is required
                         </p>
+                      )}
+
+                      {errors.name && errors.name.type === "pattern" && (
+                        <>
+                          {cl === "ch" ? (
+                            <p className="text-red-600 mt-3 text-sm">
+                              pattern rola
+                            </p>
+                          ) : (
+                            <p className="text-red-600 mt-3 text-sm">
+                              Please make sure you have entered a valid name.
+                            </p>
+                          )}
+                        </>
                       )}
                     </>
                   )}

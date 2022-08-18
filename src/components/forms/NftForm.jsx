@@ -131,10 +131,10 @@ const NftForm = () => {
               <div className="animated fadeInUp">
                 <label
                   htmlFor="name"
-                  className="block text-base font-medium text-gray-500 capitalize"
+                  className="block text-lg font-medium text-gray-500 capitalize"
                 >
                   {t("Form.1")}
-                  <span className="text-xs text-red-500">
+                  <span className="text-base text-red-500">
                     {t("Form.Required")}
                   </span>
                 </label>
@@ -184,10 +184,10 @@ const NftForm = () => {
               <div className="animated fadeInUp">
                 <label
                   htmlFor="email"
-                  className="block text-base font-medium text-gray-500 capitalize"
+                  className="block text-lg font-medium text-gray-500 capitalize"
                 >
                   {t("Form.2")}
-                  <span className="text-xs text-red-500">
+                  <span className="text-base text-red-500">
                     {t("Form.Required")}
                   </span>
                 </label>
@@ -239,10 +239,10 @@ const NftForm = () => {
               <div className="animated fadeInUp">
                 <label
                   htmlFor="phone"
-                  className="block text-base font-medium text-gray-500 capitalize"
+                  className="block text-lg font-medium text-gray-500 capitalize"
                 >
                   {t("Form.3")}
-                  <span className="text-xs text-red-500">
+                  <span className="text-base text-red-500">
                     {t("Form.Required")}
                   </span>
                 </label>
@@ -296,7 +296,7 @@ const NftForm = () => {
               <div className="animated fadeInUp">
                 <label
                   htmlFor="address"
-                  className="block text-base font-medium text-gray-500 capitalize"
+                  className="block text-lg font-medium text-gray-500 capitalize"
                 >
                   {t("Form.4")}
                 </label>
@@ -363,7 +363,7 @@ const NftForm = () => {
                   <div className="animated fadeInUp">
                     <label
                       htmlFor="ordernum"
-                      className="block text-base font-medium text-gray-500 capitalize"
+                      className="block text-lg font-medium text-gray-500 capitalize"
                     >
                       {t("Form.10")}
                     </label>
@@ -420,7 +420,7 @@ const NftForm = () => {
                   <div className="animated fadeInUp">
                     <label
                       htmlFor="orderDate"
-                      className="block text-base font-medium text-gray-500 capitalize"
+                      className="block text-lg font-medium text-gray-500 capitalize"
                     >
                       {t("Form.11")}
                     </label>

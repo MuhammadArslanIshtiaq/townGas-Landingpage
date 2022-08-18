@@ -192,7 +192,7 @@ export default function NavbarPrimary() {
                       active === item.name
                         ? "bg-primary text-white"
                         : "text-primary  hover:bg-primary-700 hover:text-white",
-                      "block px-3 py-3 mt-5 rounded-md text-3xl font-medium animated fadeInUp"
+                      "block px-3 py-3 mt-5 rounded-md text-5xl font-medium animated fadeInUp"
                     )}
                     aria-current={item.current ? "page" : undefined}
                   >
@@ -206,7 +206,7 @@ export default function NavbarPrimary() {
                   <button
                     type="button"
                     onClick={() => onLanguageChange("ch")}
-                    className={`text-3xl font-semibold hover:text-primary ${
+                    className={`text-5xl  font-semibold hover:text-primary ${
                       language === "ch" ? "text-primary" : "text-gray-300"
                     }`}
                   >
@@ -216,7 +216,7 @@ export default function NavbarPrimary() {
                   <button
                     type="button"
                     onClick={() => onLanguageChange("en")}
-                    className={`text-3xl font-semibold hover:text-primary ${
+                    className={`text-5xl font-semibold hover:text-primary ${
                       language === "en" ? "text-primary" : "text-gray-300"
                     }`}
                   >

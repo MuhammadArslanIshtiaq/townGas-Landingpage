@@ -168,7 +168,7 @@ const NftForm = () => {
                     <>
                       {cl === "ch" ? (
                         <p className="text-red-600 mt-3 text-sm">
-                          请输入正确的信息。
+                          請輸入正確姓名。
                         </p>
                       ) : (
                         <p className="text-red-600 mt-3 text-sm">

@@ -152,8 +152,12 @@ const HeroSection = () => {
               alt=".."
             />
           </span>
-          <ScrollAnimation duration={2} animateIn="fadeInDown">
-            <div className="bg-size-400 bg-hero2M xl:bg-hero2 bg-center bg-cover xl:bg-contain bg-no-repeat xl:max-w-7xl px-6  xl:h-auto sm:m-[2rem] ">
+          <ScrollAnimation
+            duration={2}
+            animateIn="fadeInDown"
+            className="flex justify-center"
+          >
+            <div className="bg-size-400 bg-hero2M xl:bg-hero2 bg-center bg-cover bg-no-repeat xl:w-auto px-12  xl:h-auto sm:m-[2rem] ">
               {/* mobile view */}
               <div className="p-6 space-y-6 h-full flex flex-col justify-start lg:justify-center items-center xl:hidden">
                 <div className="mt-sm">

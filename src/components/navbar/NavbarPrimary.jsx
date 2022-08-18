@@ -107,7 +107,7 @@ export default function NavbarPrimary() {
                   />
                   <img
                     className="block lg:hidden h-auto w-50"
-                    src="/assets/images/logo-1@2x.png"
+                    src="/assets/images/logo-1.png"
                     alt="logo"
                   />
                 </div>

@@ -153,11 +153,11 @@ const HeroSection = () => {
             />
           </span>
           <ScrollAnimation duration={2} animateIn="fadeInDown">
-            <div className="bg-size-400 bg-hero2M lg:bg-hero2 bg-center bg-cover lg:bg-contain bg-no-repeat lg:max-w-7xl px-6 lg:h-[28rem] xl:h-auto sm:m-[2rem] xl:mx-auto">
+            <div className="bg-size-400 bg-hero2M xl:bg-hero2 bg-center bg-cover xl:bg-contain bg-no-repeat xl:max-w-7xl px-6  xl:h-auto sm:m-[2rem] ">
               {/* mobile view */}
-              <div className="p-6 space-y-6 h-full flex flex-col justify-start lg:justify-center items-center xl:hidde">
+              <div className="p-6 space-y-6 h-full flex flex-col justify-start lg:justify-center items-center xl:hidden">
                 <div className="mt-sm">
-                  <span className="block md:w-9/12 lg:w-[12rem]  mx-auto">
+                  <span className="block md:w-9/12  xl:w-[12rem]  mx-auto">
                     {cl === "ch" ? (
                       <img
                         className="block h-full w-full"
@@ -175,7 +175,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <img
-                    className="block md:h-24 lg:h-12 w-auto mx-auto"
+                    className="block md:h-24 xl:h-12 w-auto mx-auto"
                     src="/assets/images/logo.svg"
                     alt="logo"
                   />
@@ -187,11 +187,11 @@ const HeroSection = () => {
                     animateIn="fadeInUp"
                   >
                     {cl === "ch" ? (
-                      <p className="text-gray-400 text-base leading-normal md:text-[50px] md:leading-[70px] md:px-5 lg:text-base lg:leading-normal font-semibold text-center">
+                      <p className="text-gray-400 text-base leading-normal md:text-[50px] md:leading-[70px] md:px-5 lg:text-[56px] lg:leading-[70px] xl:text-base xl:leading-normal font-semibold text-center">
                         {t("About")}
                       </p>
                     ) : (
-                      <p className="text-gray-400 text-base leading-normal md:text-[36px] md:leading-[50px] md:mt-10 md:px-5 lg:text-base lg:leading-normal font-semibold text-center">
+                      <p className="text-gray-400 text-base leading-normal md:text-[36px] md:leading-[50px] md:mt-10 md:px-5 lg:text-[40px] lg:leading-[56px] xl:text-base xl:leading-normal font-semibold text-center">
                         {t("About")}
                       </p>
                     )}

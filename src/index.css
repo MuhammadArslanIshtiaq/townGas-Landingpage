@@ -39,6 +39,7 @@ background: #E4E9F9 0% 0% no-repeat padding-box;
 }
 
 
+
 @media only screen and (min-width: 640px) {
   .bg-size-400{
     background-size: 90vw;
@@ -46,6 +47,18 @@ background: #E4E9F9 0% 0% no-repeat padding-box;
   }
   .mt-sm{
     margin-top: 12rem;
+  }
+}
+
+@media only screen and (min-device-width: 900px) {
+
+  .bg-size-400{
+    background-size: 90vw;
+    height: 150vh;
+  }
+  
+  .mt-sm{
+    margin-top: 0;
   }
 }
 
@@ -74,9 +87,6 @@ background: #E4E9F9 0% 0% no-repeat padding-box;
       margin-top: 16rem;
     }
     }
-
-   
-  
 
 
 @media (min-width: 1580px) {

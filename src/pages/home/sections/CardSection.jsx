@@ -7,11 +7,16 @@ import { Link } from "react-router-dom";
 
 const CardsSection = () => {
   const CardsList = [
-    { btnColor: "#F9D53F", img: "/assets/images/nft-pink.jpg" },
-    { btnColor: "#0071BC", img: "/assets/images/nft-red.jpg" },
-    { btnColor: "#ADD136", img: "/assets/images/nft-green.jpg" },
-    { btnColor: "#8dd10b", img: "/assets/images/nft-blue.jpg" },
-    { btnColor: "#8dd10c", img: "/assets/images/nft-orange.jpg" },
+    { btnColor: "#F9D53F", img: "/assets/images/1.jpg" },
+    { btnColor: "#0071BC", img: "/assets/images/2.jpg" },
+    { btnColor: "#ADD136", img: "/assets/images/3.jpg" },
+    { btnColor: "#8dd10b", img: "/assets/images/4.jpg" },
+    { btnColor: "#8dd10c", img: "/assets/images/5.jpg" },
+    { btnColor: "#8dd10c", img: "/assets/images/6.jpg" },
+    { btnColor: "#8dd10c", img: "/assets/images/7.jpg" },
+    { btnColor: "#8dd10c", img: "/assets/images/8.jpg" },
+    { btnColor: "#8dd10c", img: "/assets/images/9.jpg" },
+    { btnColor: "#8dd10c", img: "/assets/images/10.jpg" },
   ];
 
   return (

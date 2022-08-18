@@ -291,7 +291,7 @@ const NftForm = () => {
                 </p>
                 <p className="animated fadeInUp">
                   {t("Form.6")}
-                  <span className="ml-1">
+                  <span className="ml-1 cursor-pointer text-secondary underline hover:opacity-80">
                     <a href="https://metamask.io/download/">{t("Form.6a")}</a>
                   </span>
                 </p>

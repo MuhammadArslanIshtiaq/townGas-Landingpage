@@ -1,27 +1,35 @@
-import React from "react";
-import { useState } from "react";
-import ModalComponents from "../modals/ModalComponents";
-import { useTranslation } from "react-i18next";
-import { useForm } from "react-hook-form";
-import i18next from "i18next";
-import axios from "axios";
-const url = "/user";
+import React from 'react'
+import { useState } from 'react'
+import ModalComponents from '../modals/ModalComponents'
+import { useTranslation } from 'react-i18next'
+import { useForm } from 'react-hook-form'
+import i18next from 'i18next'
+import axios from 'axios'
+const url = '/user'
 
 const NftForm = () => {
-  const { t } = useTranslation();
-  let cl = i18next.language;
-  const [isOpen, setIsOpen] = React.useState("");
+  const { t } = useTranslation()
+  let cl = i18next.language
+  const [isOpen, setIsOpen] = React.useState('')
 
-  const [name, setName] = useState("");
-  const [error, setError] = useState(false);
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [metaAddress, setMetaAddress] = useState("");
-  const [orderNum, setOrderNum] = useState("");
-  const [orderDate, setOrderDate] = useState("");
+  const [name, setName] = useState('')
+  const [error, setError] = useState(false)
+  const [nameError, setNameError] = useState(false)
+  const [emailError, setEmailError] = useState(false)
+  const [phoneError, setPhoneError] = useState(false)
+  const [orderError, setOrderError] = useState(false)
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+  const [metaAddress, setMetaAddress] = useState('')
+  const [orderNum, setOrderNum] = useState('')
+  const [orderDate, setOrderDate] = useState('')
 
   const handleSubmitForm = (e) => {
-    setError(false);
+    setError(false)
+    setNameError(false)
+    setEmailError(false)
+    setPhoneError(false)
+    setOrderError(false);
     try {
       const resp = axios
         .post(
@@ -37,56 +45,69 @@ const NftForm = () => {
           },
           {
             crossdomain: true,
-          }
+          },
         )
         .then((response) => {
           if (response.status === 400) {
-            setError(true);
+            setError(true)
           } else if (response.status === 200) {
-            setIsOpen("SubmitThankYou");
-            const timeoutID = setTimeout(setIsOpen(""), 3000);
+            if (response.error && response.error.length > 0) {
+              setError(true)
+              if (response.type === 1) {
+                setNameError(true)
+              } else if (response.type === 2) {
+                setEmailError(true)
+              } else if (response.type === 3) {
+                setPhoneError(true)
+              } else if (response.type === 4) {
+                setOrderError(true);
+              }
+            } else {
+              setIsOpen('SubmitThankYou')
+              const timeoutID = setTimeout(setIsOpen(''), 3000)
+            }
           }
         })
         .catch(function (error) {
           if (error.response) {
-            setError(true);
+            setError(true)
           }
-        });
+        })
     } catch (error) {
-      setError(true);
+      setError(true)
     }
-    setName("");
-    setEmail("");
-    setPhone("");
-    setMetaAddress("");
-    setOrderNum("");
-    setOrderDate("");
-  };
+    setName('')
+    setEmail('')
+    setPhone('')
+    setMetaAddress('')
+    setOrderNum('')
+    setOrderDate('')
+  }
 
-  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [isSubscribed, setIsSubscribed] = useState(false)
 
   const handleChange = (event) => {
     if (event.target.checked) {
-      console.log("✅ Checkbox is checked");
+      console.log('✅ Checkbox is checked')
     } else {
-      console.log("⛔️ Checkbox is NOT checked");
+      console.log('⛔️ Checkbox is NOT checked')
     }
-    setIsSubscribed((current) => !current);
-  };
+    setIsSubscribed((current) => !current)
+  }
 
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm()
 
   return (
     <>
-      <ModalComponents show={isOpen} onClose={() => setIsOpen("")} />
+      <ModalComponents show={isOpen} onClose={() => setIsOpen('')} />
 
       <form onSubmit={handleSubmitForm}>
         <div className="animated fadeInDown max-w-[20rem] mx-auto mb-6">
-          {cl === "ch" ? (
+          {cl === 'ch' ? (
             <img
               className="block h-full w-full"
               src="/assets/images/hero-title.png"
@@ -103,7 +124,7 @@ const NftForm = () => {
         {error === true ? (
           <>
             <div className="animated fadeInDown mx-auto mb-6 error">
-              {cl === "ch" ? (
+              {cl === 'ch' ? (
                 <div
                   className="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 text-center"
                   role="alert"
@@ -117,7 +138,6 @@ const NftForm = () => {
                 >
                   Phone number / Email address /MetaMask Wallet Address is
                   registered
-                  {error}
                 </div>
               )}
             </div>
@@ -133,16 +153,16 @@ const NftForm = () => {
                   htmlFor="name"
                   className="block text-2xl font-medium text-gray-500 capitalize"
                 >
-                  {t("Form.1")}
+                  {t('Form.1')}
                   <span className="text-base text-red-500">
-                    {t("Form.Required")}
+                    {t('Form.Required')}
                   </span>
                 </label>
                 <div className="mt-1">
                   <input
                     type="text"
                     value={name}
-                    {...register("name", {
+                    {...register('name', {
                       required: true,
                       pattern: /^[A-Za-z ]+$/i,
                     })}
@@ -150,9 +170,9 @@ const NftForm = () => {
                     onChange={(e) => setName(e.target.value)}
                   />
 
-                  {errors.name && errors.name.type === "required" && (
+                  {errors.name && errors.name.type === 'required' && (
                     <>
-                      {cl === "ch" ? (
+                      {cl === 'ch' ? (
                         <p className="text-red-600 mt-3 text-sm">
                           請提供正確資料。
                         </p>
@@ -164,9 +184,9 @@ const NftForm = () => {
                     </>
                   )}
 
-                  {errors.name && errors.name.type === "pattern" && (
+                  {errors.name && errors.name.type === 'pattern' && (
                     <>
-                      {cl === "ch" ? (
+                      {cl === 'ch' ? (
                         <p className="text-red-600 mt-3 text-sm">
                           請輸入正確姓名。
                         </p>
@@ -186,9 +206,9 @@ const NftForm = () => {
                   htmlFor="email"
                   className="block text-2xlfont-medium text-gray-500 capitalize"
                 >
-                  {t("Form.2")}
+                  {t('Form.2')}
                   <span className="text-base text-red-500">
-                    {t("Form.Required")}
+                    {t('Form.Required')}
                   </span>
                 </label>
                 <div className="mt-1">
@@ -196,18 +216,17 @@ const NftForm = () => {
                     type="email"
                     value={email}
                     required
-                    {...register("email", {
+                    {...register('email', {
                       required: true,
-                      pattern:
-                        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                      pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
                     })}
                     className="p-2 shadow-inner shadow-gray-200 drop-shadow bg-gray-300/5 border block w-full sm:text-sm border-gray-300 focus:ring-primary-500 rounded-md"
                     onChange={(e) => setEmail(e.target.value)}
                   />
 
-                  {errors.email && errors.email.type === "required" && (
+                  {errors.email && errors.email.type === 'required' && (
                     <>
-                      {cl === "ch" ? (
+                      {cl === 'ch' ? (
                         <p className="text-red-600 mt-3 text-sm">
                           請提供正確資料。
                         </p>
@@ -219,9 +238,9 @@ const NftForm = () => {
                     </>
                   )}
 
-                  {errors.email && errors.email.type === "pattern" && (
+                  {errors.email && errors.email.type === 'pattern' && (
                     <>
-                      {cl === "ch" ? (
+                      {cl === 'ch' ? (
                         <p className="text-red-600 mt-3 text-sm">
                           請填寫有效電郵。
                         </p>
@@ -241,9 +260,9 @@ const NftForm = () => {
                   htmlFor="phone"
                   className="block text-2xl font-medium text-gray-500 capitalize"
                 >
-                  {t("Form.3")}
+                  {t('Form.3')}
                   <span className="text-base text-red-500">
-                    {t("Form.Required")}
+                    {t('Form.Required')}
                   </span>
                 </label>
                 <div className="mt-1">
@@ -253,18 +272,18 @@ const NftForm = () => {
                     minLength={8}
                     required
                     value={phone}
-                    {...register("phone", {
+                    {...register('phone', {
                       required: true,
                       minLength: 8,
-                      message: "error message",
+                      message: 'error message',
                     })}
                     className="p-2 shadow-inner shadow-gray-200 drop-shadow bg-gray-300/5 border block w-full sm:text-sm border-gray-300 focus:ring-primary-500 rounded-md"
                     onChange={(e) => setPhone(e.target.value)}
                   />
 
-                  {errors.phone && errors.phone.type === "required" && (
+                  {errors.phone && errors.phone.type === 'required' && (
                     <>
-                      {cl === "ch" ? (
+                      {cl === 'ch' ? (
                         <p className="text-red-600 mt-3 text-sm">
                           請提供正確資料。
                         </p>
@@ -276,9 +295,9 @@ const NftForm = () => {
                     </>
                   )}
 
-                  {errors.phone && errors.phone.type === "minLength" && (
+                  {errors.phone && errors.phone.type === 'minLength' && (
                     <>
-                      {cl === "ch" ? (
+                      {cl === 'ch' ? (
                         <p className="text-red-600 mt-3 text-sm">
                           請填寫正確電話號碼。
                         </p>
@@ -298,7 +317,7 @@ const NftForm = () => {
                   htmlFor="address"
                   className="block text-2xl font-medium text-gray-500 capitalize"
                 >
-                  {t("Form.4")}
+                  {t('Form.4')}
                 </label>
                 <div className="mt-1">
                   <input
@@ -314,16 +333,16 @@ const NftForm = () => {
             <li className="col-span-2 lg:col-span-1 self-center">
               <div className="space-y-4 text-gray-400 text-2xl">
                 <p className="text-primary font-semibold animated fadeInUp">
-                  {t("Form.5")}
+                  {t('Form.5')}
                 </p>
                 <p className="animated fadeInUp">
-                  {t("Form.6")}
+                  {t('Form.6')}
                   <span className="ml-1 cursor-pointer text-secondary underline hover:opacity-80">
-                    <a href="https://metamask.io/download/">{t("Form.6a")}</a>
+                    <a href="https://metamask.io/download/">{t('Form.6a')}</a>
                   </span>
                 </p>
-                <p className="animated fadeInUp">{t("Form.7")}</p>
-                <p className="animated fadeInUp">{t("Form.8")}</p>
+                <p className="animated fadeInUp">{t('Form.7')}</p>
+                <p className="animated fadeInUp">{t('Form.8')}</p>
               </div>
             </li>
             <li className="col-span-2 lg:col-span-1 animated fadeInUp">
@@ -352,7 +371,7 @@ const NftForm = () => {
                     htmlFor="checkbox"
                     className="font-medium text-2xl text-gray-500 cursor-pointer"
                   >
-                    {t("Form.9")}
+                    {t('Form.9')}
                   </label>
                 </div>
               </div>
@@ -365,7 +384,7 @@ const NftForm = () => {
                       htmlFor="ordernum"
                       className="block text-2xlfont-medium text-gray-500 capitalize"
                     >
-                      {t("Form.10")}
+                      {t('Form.10')}
                     </label>
                     <div className="mt-1">
                       <input
@@ -375,19 +394,19 @@ const NftForm = () => {
                         required
                         maxLength={7}
                         minLength={7}
-                        {...register("ordernumber", {
+                        {...register('ordernumber', {
                           required: true,
                           minLength: 7,
-                          message: "error message",
+                          message: 'error message',
                         })}
                         className="p-2 shadow-inner shadow-gray-200 drop-shadow bg-gray-300/5 border block w-full sm:text-sm border-gray-300 focus:ring-primary-500 rounded-md"
                         onChange={(e) => setOrderNum(e.target.value)}
                       />
 
                       {errors.ordernumber &&
-                        errors.ordernumber.type === "required" && (
+                        errors.ordernumber.type === 'required' && (
                           <>
-                            {cl === "ch" ? (
+                            {cl === 'ch' ? (
                               <p className="text-red-600 mt-3 text-sm">
                                 請提供正確資料.
                               </p>
@@ -400,9 +419,9 @@ const NftForm = () => {
                         )}
 
                       {errors.ordernumber &&
-                        errors.ordernumber.type === "minLength" && (
+                        errors.ordernumber.type === 'minLength' && (
                           <>
-                            {cl === "ch" ? (
+                            {cl === 'ch' ? (
                               <p className="text-red-600 mt-3 text-sm">
                                 請輸入7位數字的單據編號.
                               </p>
@@ -422,7 +441,7 @@ const NftForm = () => {
                       htmlFor="orderDate"
                       className="block text-2xl font-medium text-gray-500 capitalize"
                     >
-                      {t("Form.11")}
+                      {t('Form.11')}
                     </label>
                     <div className="mt-1">
                       <input
@@ -454,20 +473,20 @@ const NftForm = () => {
                       alt="..."
                     />
                   </span>
-                  <span className="line-clamp-2">{t("Button.3")}</span>
+                  <span className="line-clamp-2">{t('Button.3')}</span>
                 </button>
               </div>
             </li>
             <li className="col-span-2">
               <p className="animated fadeInUp text-center text-gray-400 text-base">
-                {t("Footer.1")}
+                {t('Footer.1')}
               </p>
             </li>
           </ul>
         </div>
       </form>
     </>
-  );
-};
+  )
+}
 
-export default NftForm;
+export default NftForm

@@ -141,8 +141,10 @@ const FaqSection = () => {
                           <p className="text-sm text-gray-500">
                             {faq.link ? (
                               <>
-                                {faq.answer1}{" "}
-                                <span className="text-primary underline hover:opacity-80">
+                                <span className="text-base text-gray-500">
+                                  {faq.answer1}
+                                </span>
+                                <span className="text-base text-primary underline hover:opacity-80">
                                   <a
                                     href={faq.link}
                                     target="_blank"
@@ -151,7 +153,9 @@ const FaqSection = () => {
                                     {faq.answer2}
                                   </a>
                                 </span>
-                                {faq.answer3}
+                                <span className="text-base text-gray-500">
+                                  {faq.answer3}
+                                </span>
                               </>
                             ) : (
                               <>

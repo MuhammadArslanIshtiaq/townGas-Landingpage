@@ -166,7 +166,7 @@ const NftForm = () => {
                             </p>
                           ) : (
                             <p className="text-red-600 mt-3 text-sm">
-                              Please make sure you have entered a valid name.
+                              Please input correct name.
                             </p>
                           )}
                         </>
@@ -385,11 +385,11 @@ const NftForm = () => {
                           <>
                             {cl === "ch" ? (
                               <p className="text-red-600 mt-3 text-sm">
-                                請提供正確資料
+                                請提供正確資料.
                               </p>
                             ) : (
                               <p className="text-red-600 mt-3 text-sm">
-                                This field is required
+                                This field is required.
                               </p>
                             )}
                           </>
@@ -400,11 +400,11 @@ const NftForm = () => {
                           <>
                             {cl === "ch" ? (
                               <p className="text-red-600 mt-3 text-sm">
-                                訂單號長度應為 7 位。
+                                請輸入7位數字的單據編號.
                               </p>
                             ) : (
                               <p className="text-red-600 mt-3 text-sm">
-                                Order # length should be 7 digits.
+                                Please input 7-digit order no.
                               </p>
                             )}
                           </>

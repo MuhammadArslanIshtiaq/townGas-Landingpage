@@ -86,13 +86,13 @@ const HeroSection = () => {
                   {cl === "ch" ? (
                     <img
                       className="block h-full w-full"
-                      src="/assets/images/hero-title.png"
+                      src="/assets/images/hero-title-lg.png"
                       alt="..."
                     />
                   ) : (
                     <img
                       className="block h-full w-full"
-                      src="/assets/images/hero-title-en.png"
+                      src="/assets/images/hero-title-lg-en.png"
                       alt="..."
                     />
                   )}

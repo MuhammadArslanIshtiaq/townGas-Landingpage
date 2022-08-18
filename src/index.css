@@ -123,6 +123,10 @@ padding-top: 4rem !important;
     background-position: 70% !important;
   }
   }
+
+.bg-mob{
+  background-image: url('/public/assets/images/bg-mob.png');
+}
   
 
 input::-webkit-outer-spin-button,

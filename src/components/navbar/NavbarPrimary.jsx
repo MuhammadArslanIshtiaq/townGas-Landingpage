@@ -82,7 +82,7 @@ export default function NavbarPrimary() {
   return (
     <Disclosure
       as="nav"
-      className={`fixed w-full left-[50%] translate-x-[-50%] top-0 z-40 transition-all duration-300 ${
+      className={`fixed w-full left-[50%] translate-x-[-50%] top-0 z-40 transition-all duration-300  ${
         navbar ? "bg-white py-2 shadow-sm shadow-gray-400" : "bg-transparent"
       }`}
     >

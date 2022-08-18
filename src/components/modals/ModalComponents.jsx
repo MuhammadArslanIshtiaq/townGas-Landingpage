@@ -11,7 +11,7 @@ const ModalComponents = (props) => {
   return (
     <>
       <Modal
-        sizeClass="max-w-2xl"
+        sizeClass="max-w-4xl lg:max-w-2xl"
         show={props.show === "formModal"}
         onClose={props.onClose}
       >
@@ -27,7 +27,7 @@ const ModalComponents = (props) => {
       </Modal>
 
       <Modal
-        sizeClass="max-w-2xl"
+        sizeClass="max-w-4xl lg:max-w-2xl"
         show={props.show === "PrivacyPolicyEn"}
         onClose={props.onClose}
       >
@@ -35,7 +35,7 @@ const ModalComponents = (props) => {
       </Modal>
 
       <Modal
-        sizeClass="max-w-2xl"
+        sizeClass="max-w-4xl lg:max-w-2xl"
         show={props.show === "PrivacyPolicy"}
         onClose={props.onClose}
       >

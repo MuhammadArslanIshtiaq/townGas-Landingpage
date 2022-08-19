@@ -131,7 +131,7 @@ const NftForm = () => {
                   className="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 text-center"
                   role="alert"
                 >
-                  姓名输入不能为空.
+                  姓名已登記.
                 </div>
               ) : (
                 <div
@@ -155,7 +155,7 @@ const NftForm = () => {
                   className="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 text-center"
                   role="alert"
                 >
-                  邮件已被注册。
+                  電郵已登記
                 </div>
               ) : (
                 <div
@@ -179,7 +179,7 @@ const NftForm = () => {
                   className="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 text-center"
                   role="alert"
                 >
-                  手机已经注册。
+                  電話號碼已登記
                 </div>
               ) : (
                 <div
@@ -203,7 +203,7 @@ const NftForm = () => {
                   className="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 text-center"
                   role="alert"
                 >
-                  订单号已注册。
+                  訂單號碼已登記
                 </div>
               ) : (
                 <div

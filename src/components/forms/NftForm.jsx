@@ -63,6 +63,12 @@ const NftForm = () => {
                 setOrderError(true)
               }
             } else {
+              setName('')
+              setEmail('')
+              setPhone('')
+              setMetaAddress('')
+              setOrderNum('')
+              setOrderDate('')
               setIsOpen('SubmitThankYou')
               setTimeout(() => setIsOpen(''), 3000)
             }
@@ -76,12 +82,6 @@ const NftForm = () => {
     } catch (error) {
       setError(true)
     }
-    setName('')
-    setEmail('')
-    setPhone('')
-    setMetaAddress('')
-    setOrderNum('')
-    setOrderDate('')
   }
 
   const [isSubscribed, setIsSubscribed] = useState(false)

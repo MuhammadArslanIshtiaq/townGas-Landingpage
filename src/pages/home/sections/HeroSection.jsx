@@ -192,18 +192,18 @@ const HeroSection = () => {
                   >
                     {cl === "ch" ? (
                       <>
-                        <p className="text-gray-400 text-base leading-normal md:text-[50px] md:leading-[70px] md:px-5 lg:text-[56px] lg:leading-[70px] xl:text-base xl:leading-normal font-semibold text-center">
+                        <p className="text-gray-400 text-base leading-normal lg:text-[50px] sm:text-4xl sm:leading-[70px] md:px-5 lg:text-[56px] lg:leading-[70px] xl:text-base xl:leading-normal font-semibold text-center">
                           {t("About")}
                         </p>
-                        <p className="text-primary-600 mt-5 text-base leading-normal md:text-[50px] md:leading-[70px] md:px-5 lg:text-[56px] lg:leading-[70px] xl:text-base xl:leading-normal font-semibold text-center ">
+                        <p className="text-primary-600 mt-5 text-base leading-normal lg:text-[50px] sm:text-4xl sm:leading-[70px] md:px-5 lg:text-[56px] lg:leading-[70px] xl:text-base xl:leading-normal font-semibold text-center ">
                           {t("About1")}
                         </p>
                       </>
                     ) : (
                       <>
-                        <p className="text-gray-400 text-base leading-normal md:text-[36px] md:leading-[50px] md:mt-10 md:px-5 lg:text-[40px] lg:leading-[56px] xl:text-base xl:leading-normal font-semibold text-center">
+                        <p className="text-gray-400 text-base leading-normal lg:text-[36px] sm:text-4xl sm:leading-[50px] md:mt-10 md:px-5 lg:text-[40px] lg:leading-[56px] xl:text-base xl:leading-normal font-semibold text-center">
                           {t("About")}
-                          <p className="text-primary-600 mt-5 text-base leading-normal md:text-[50px] md:leading-[70px] md:px-5 lg:text-[56px] lg:leading-[70px] xl:text-base xl:leading-normal font-semibold text-center ">
+                          <p className="text-primary-600 mt-5 text-base leading-normal lg:text-[50px] sm:text-4xl sm:leading-[70px] md:px-5 lg:text-[56px] lg:leading-[70px] xl:text-base xl:leading-normal font-semibold text-center ">
                             {t("About1")}
                           </p>
                         </p>

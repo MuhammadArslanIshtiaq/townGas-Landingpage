@@ -66,7 +66,7 @@ const BannerSection = () => {
                 </div>
               </div>
               <div className="col-span-2 lg:col-span-1">
-                <div className="space-y-4 text-gray-400 lg-text md:text-lg">
+                <div className="space-y-4 text-gray-400 lg-text sm:text-4xl md:text-lg">
                   <p>{t("Step.title")}</p>
                   <div>
                     <p>

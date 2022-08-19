@@ -141,10 +141,10 @@ const FaqSection = () => {
                           <p className="text-sm text-gray-500">
                             {faq.link ? (
                               <>
-                                <span className="text-2xl lg:text-base text-gray-500">
+                                <span className="text-2xl lg:text-base text-gray-500 sm:text-4xl">
                                   {faq.answer1}
                                 </span>
-                                <span className="text-2xl lg:text-base text-primary underline hover:opacity-80">
+                                <span className="text-2xl lg:text-base text-primary underline hover:opacity-80 sm:text-4xl">
                                   <a
                                     href={faq.link}
                                     target="_blank"
@@ -153,20 +153,20 @@ const FaqSection = () => {
                                     {faq.answer2}
                                   </a>
                                 </span>
-                                <span className="text-2xl lg:text-base text-gray-500">
+                                <span className="text-2xl lg:text-base text-gray-500 sm:text-4xl">
                                   {faq.answer3}
                                 </span>
                               </>
                             ) : (
                               <>
-                                <p className="text-2xl lg:text-base text-gray-500">
+                                <p className="text-2xl lg:text-base text-gray-500 sm:text-4xl">
                                   {faq.answer}
                                 </p>
                                 {faq.answer1}{" "}
-                                <span className="text-2xl lg:text-base text-gray-500">
+                                <span className="text-2xl lg:text-base text-gray-500 sm:text-4xl">
                                   {faq.answer2}
                                 </span>
-                                <p className="text-2xl lg:text-base text-gray-500">
+                                <p className="text-2xl lg:text-base text-gray-500 sm:text-4xl">
                                   {faq.answer3}
                                 </p>
                               </>

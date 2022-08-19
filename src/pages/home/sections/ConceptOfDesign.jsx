@@ -68,7 +68,7 @@ const ConceptOfDesign = () => {
                       </div>
                     </ScrollAnimation>
                   </div>
-                  <p className="text-gray-400 font-bold md:text-xl cod-text mt-4 ">
+                  <p className="text-gray-400 font-bold lg:text-xl sm:text-4xl mt-4 ">
                     {t("COD")}
                   </p>
                   <div className="mt-6">

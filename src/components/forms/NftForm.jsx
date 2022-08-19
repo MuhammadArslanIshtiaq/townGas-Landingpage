@@ -51,15 +51,15 @@ const NftForm = () => {
           if (response.status === 400) {
             setError(true)
           } else if (response.status === 200) {
-            if (response.error && response.error.length > 0) {
+            if (response.data.error && response.data.error.length > 0) {
               setError(true)
-              if (response.type === 1) {
+              if (response.data.error.type === 1) {
                 setNameError(true)
-              } else if (response.type === 2) {
+              } else if (response.data.error.type === 2) {
                 setEmailError(true)
-              } else if (response.type === 3) {
+              } else if (response.data.error.type === 3) {
                 setPhoneError(true)
-              } else if (response.type === 4) {
+              } else if (response.data.error.type === 4) {
                 setOrderError(true)
               }
             } else {

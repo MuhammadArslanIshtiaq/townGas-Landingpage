@@ -15,7 +15,7 @@ const PrivacyPolicyEn = () => {
         (this "Event") is organised by The Hong Kong and China Gas Company
         Limited (the "Company").
         <br />
-        2. This Event starts on 19 August 2022 at 12 a.m. (Hong Kong time) and
+        2. This Event starts on 22 August 2022 at 2 p.m. (Hong Kong time) and
         closes on 13 September 2022 at 11:59 p.m. (Hong Kong time).
         <br />
         3. For the purpose of this Event, the time recorded in Towngas system is

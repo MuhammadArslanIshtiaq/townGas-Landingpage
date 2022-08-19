@@ -107,8 +107,8 @@ export default function NavbarPrimary() {
                     <div className="flex flex-row content-center">
                       <a href="https://www.towngas.com/tc/Home" target="blank">
                         <img
-                          className="h20 lg:h-12 w-auto"
-                          src="/assets/images/logo-2.svg"
+                          className="h-16 lg:h-12 w-auto"
+                          src="/assets/images/logo-main.png"
                           alt="logo"
                         />
                       </a>
@@ -117,18 +117,18 @@ export default function NavbarPrimary() {
                         target="blank"
                       >
                         <img
-                          className="block h16 lg:h-10 w-auto ml-2"
-                          src="/assets/images/TGC.svg"
+                          className="block h-14 lg:h-10 w-auto ml-2"
+                          src="/assets/images/logo-main-2.png"
                           alt="logo"
                         />
                       </a>
                     </div>
                   ) : (
-                    <div className="flex flex-row content-center">
+                  <div className="flex flex-row content-center">
                       <a href="https://www.towngas.com/en/Home" target="blank">
                         <img
-                          className="h20 lg:h-12 w-auto"
-                          src="/assets/images/logo-2.svg"
+                          className="h-16 lg:h-12 w-auto"
+                          src="/assets/images/logo-main.png"
                           alt="logo"
                         />
                       </a>
@@ -137,8 +137,8 @@ export default function NavbarPrimary() {
                         target="blank"
                       >
                         <img
-                          className="block h16 lg:h-10 w-auto ml-2"
-                          src="/assets/images/TGC.svg"
+                          className="block h-14 lg:h-10 w-auto ml-2"
+                          src="/assets/images/logo-main-2.png"
                           alt="logo"
                         />
                       </a>

@@ -15,7 +15,7 @@ const ModalComponents = (props) => {
         show={props.show === "formModal"}
         onClose={props.onClose}
       >
-        <NftForm />
+        <NftForm onClose={props.onClose} />
       </Modal>
 
       <Modal

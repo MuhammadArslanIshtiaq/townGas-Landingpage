@@ -7,7 +7,7 @@ import i18next from 'i18next'
 import axios from 'axios'
 const url = '/user'
 
-const NftForm = () => {
+const NftForm = (props) => {
   const { t } = useTranslation()
   let cl = i18next.language
   const [isOpen, setIsOpen] = React.useState('')
@@ -70,7 +70,10 @@ const NftForm = () => {
               setOrderNum('')
               setOrderDate('')
               setIsOpen('SubmitThankYou')
-              setTimeout(() => setIsOpen(''), 3000)
+              setTimeout(() => {
+                setIsOpen('')
+                props.onClose()
+              }, 3000)
             }
           }
         })

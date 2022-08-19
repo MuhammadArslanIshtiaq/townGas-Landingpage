@@ -102,9 +102,9 @@ const HeroSection = () => {
                 <div className="col-span-3 lg:col-span-2">
                   <div className="flex items-center justify-center gap-3 animated fadeInLeft">
                     <h4 className="uppercase text-xl sm:text-2xl md:text-3x1 text-gray font-bold">
-                      2022.8.19
+                      2022.8.22
                       <br />
-                      Hkt 00:00
+                      Hkt 14:00
                     </h4>
                     <span className="w-[4rem] sm:w-[7rem]">
                       <img

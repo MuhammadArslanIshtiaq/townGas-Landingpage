@@ -51,7 +51,7 @@ const FaqSection = () => {
       answer1: t("Faq.A7a"),
       answer2: t("Faq.A7b"),
       answer3: t("Faq.A7c"),
-      link: "https://drive.google.com/file/d/1R1uA8plHIq2egAqi3-oJh5dYlOYPOe41/view?usp=sharing",
+      link: "https://drive.google.com/file/d/17AVGlx_DYNiSLR0BU_BqBiWcu7wjht2i/view?usp=drivesdk",
     },
     {
       number: "Q08",

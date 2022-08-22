@@ -3,7 +3,7 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 const { default: axios } = require('axios');
-const port = 1234;
+const port = 443;
 
 // var key = fs.readFileSync('./selfsigned.key');
 // var cert = fs.readFileSync('./selfsigned.crt');
@@ -17,6 +17,9 @@ var options = {
 app = express()
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(express.json());
+app.use((err, req, res, next) => {
+    res.send('Something broke!')
+});
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
@@ -35,7 +38,7 @@ app.post('/user', (req, res) => {
         });
     } else {
         axios.post('http://172.28.88.72:443/api/user', req.body)
-            .then((result) => res.send({ error: 'asd' }))
+            .then((result) => res.send(result.data))
             .catch((err) => res.status(400).send({
                 message: "Failed! address is already in use!"
             }));

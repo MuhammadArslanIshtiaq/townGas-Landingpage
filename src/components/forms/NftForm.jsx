@@ -285,7 +285,7 @@ const NftForm = (props) => {
                   className="block md:text-2xl font-medium text-gray-500 capitalize sm:text-4xl"
                 >
                   {t('Form.2')}
-                  <span className="text-base text-red-500 md:text-xl">
+                  <span className="md:text-base text-red-500 md:text-xl">
                     {t('Form.Required')}
                   </span>
                 </label>
@@ -339,7 +339,7 @@ const NftForm = (props) => {
                   className="block md:text-2xl font-medium text-gray-500 capitalize sm:text-4xl"
                 >
                   {t('Form.3')}
-                  <span className="text-base text-red-500 md:text-xl">
+                  <span className="md:text-base text-red-500 md:text-xl">
                     {t('Form.Required')}
                   </span>
                 </label>
@@ -526,9 +526,28 @@ const NftForm = (props) => {
                         type="date"
                         id="orderDate"
                         value={orderDate}
+                        required
+                        {...register('orderdate', {
+                          required: true,
+                          message: 'error message',
+                        })}
                         className="p-2 md:text-2xl sm:text-4xl shadow-inner shadow-gray-200 drop-shadow bg-gray-300/5 border block w-full sm:text-sm border-gray-300 focus:ring-primary-500 rounded-md"
                         onChange={(e) => setOrderDate(e.target.value)}
                       />
+                      {errors.orderdate &&
+                        errors.orderdate.type === 'required' && (
+                          <>
+                            {cl === 'ch' ? (
+                              <p className="text-red-600 mt-3 md:text-sm sm:text-4xl">
+                                請提供正確資料.
+                              </p>
+                            ) : (
+                              <p className="text-red-600 mt-3 md:text-sm sm:text-4xl">
+                                This field is required.
+                              </p>
+                            )}
+                          </>
+                        )}
                     </div>
                   </div>
                 </li>

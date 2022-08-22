@@ -109,7 +109,7 @@
     },
     "Form": {
         "Required": " *Required",
-        "1": "Name (same as HKID card):",
+        "1": "Full English Name (same as HKID card):",
         "2": "Email Address:",
         "3": "Phone Number:",
         "4": "MetaMask Wallet Address (If applicable):",

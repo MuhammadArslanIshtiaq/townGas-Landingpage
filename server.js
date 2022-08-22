@@ -3,7 +3,7 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 const { default: axios } = require('axios');
-const port = 443;
+const port = 1234;
 
 // var key = fs.readFileSync('./selfsigned.key');
 // var cert = fs.readFileSync('./selfsigned.crt');
@@ -21,11 +21,25 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 app.post('/user', (req, res) => {
-    axios.post('http://172.28.88.72:443/api/user', req.body)
-        .then((result) => res.send(result.data))
-        .catch((err) => res.status(400).send({
-            message: "Failed! address is already in use!"
-        }));
+    const ec = /^[A-Za-z ]+$/i;
+    const ecEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!ec.exec(req.body.name)) {
+        res.send({
+            error: "Failed! Illegal name value",
+            type: 1
+        });
+    } else if (!ecEmail.exec(req.body.email)) {
+        res.send({
+            error: "Failed! Illegal email value",
+            type: 2
+        });
+    } else {
+        axios.post('http://172.28.88.72:443/api/user', req.body)
+            .then((result) => res.send({ error: 'asd' }))
+            .catch((err) => res.status(400).send({
+                message: "Failed! address is already in use!"
+            }));
+    }
 });
 
 var server = https.createServer(options, app);

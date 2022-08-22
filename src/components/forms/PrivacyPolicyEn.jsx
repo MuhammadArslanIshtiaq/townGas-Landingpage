@@ -120,7 +120,7 @@ const PrivacyPolicyEn = () => {
         third-party merchant directly with the merchant.
         <br />
         18. The results of the lucky draw will be announced on Towngas Appliance
-        Facebook page, published on September 16, 2022 in The Standard and Sing
+        Facebook page, published on September 21, 2022 in The Standard and Sing
         Tao Daily.
         <br />
         19. Employees of the Company are not allowed to enter this Lucky Draw.

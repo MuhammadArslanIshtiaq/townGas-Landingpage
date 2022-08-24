@@ -253,7 +253,7 @@ const PrivacyPolicyEn = () => {
         and English versions of these Terms and Conditions, the English version
         shall prevail.
         <br />
-        18. For enquiries, please feel free to contact us via{" "}6221 2956.
+        18. For enquiries, please feel free to contact us via{" "}6221 2956 / 6580 7412.
       </p>
     </div>
   );

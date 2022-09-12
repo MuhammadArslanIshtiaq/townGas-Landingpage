@@ -11,10 +11,10 @@ const PrimaryButton = () => {
     <>
       <ModalComponents show={isOpen} onClose={() => setIsOpen("")} />
 
-      <Link
-        to
+      <a
+        target="_blank"
+        href="https://opensea.io/collection/towngas160nft"
         className="bg-primary hover:bg-primary-600 text-white inline-flex justify-center items-center gap-2 py-4 px-8 rounded-full text-2xl sm:text-4xl md:text-xl"
-        onClick={() => setIsOpen("formModal")}
       >
         <span className="block h-9 min-w-[2.5rem]">
           <img
@@ -23,11 +23,8 @@ const PrimaryButton = () => {
             alt="..."
           />
         </span>
-        <span className="line-clamp-1">{t("Button.1a")}</span>
-        <span className=" transform rotate-[16deg] font-extrabold text-5xl">
-          !
-        </span>
-      </Link>
+        <span className="line-clamp-2">{t("Button.1")}</span>
+      </a>
     </>
   );
 };

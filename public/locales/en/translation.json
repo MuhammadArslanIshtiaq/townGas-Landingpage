@@ -7,8 +7,8 @@
         "5": "FAQS"
     },
     "Button": {
-        "1": "REGISTER FOR LUCKY DRAW /",
-        "11": "REDEEM NFT! ",
+        "1": "View Towngas 160th Anniversary",
+        "11": "NFT Collection",
         "1a": "REDEEM NFT",
         "2a": "Participate lucky draw / ",
         "2b": "Redeem free Towngas 160th Anniversary NFT",
@@ -135,5 +135,9 @@
         "1": "Promotion Competition Licence No.: 55978, 55979",
         "2": "© 2022 All rights reserved.",
         "3": "The Hong Kong and China Gas Company Limited"
+    },
+    "Hero": {
+        "1": "The campaign is over.",
+        "2": "Thank you for your support"
     }
 }

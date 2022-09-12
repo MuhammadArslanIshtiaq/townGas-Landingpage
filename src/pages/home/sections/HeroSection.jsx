@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react'
 
-import ScrollAnimation from "react-animate-on-scroll";
-import PrimaryButton from "../../../components/buttons/PrimaryButton";
-import { useTranslation } from "react-i18next";
-import i18next from "i18next";
+import ScrollAnimation from 'react-animate-on-scroll'
+import PrimaryButton from '../../../components/buttons/PrimaryButton'
+import { useTranslation } from 'react-i18next'
+import i18next from 'i18next'
 
 const HeroSection = () => {
-  const { t } = useTranslation();
-  let cl = i18next.language;
+  const { t } = useTranslation()
+  let cl = i18next.language
 
   return (
     <>
@@ -35,7 +35,7 @@ const HeroSection = () => {
             {/* mobile view  */}
             <div className="col-span-5 md:block lg:hidden">
               <div className="animated fadeInDown mt-20 mb-3">
-                {cl === "ch" ? (
+                {cl === 'ch' ? (
                   <img
                     className="block h-full w-full"
                     src="/assets/images/hero-title.png"
@@ -52,7 +52,7 @@ const HeroSection = () => {
 
               <div className="mt-20 mb-0 animated fadeInLeft">
                 <div>
-                  {cl === "ch" ? (
+                  {cl === 'ch' ? (
                     <img
                       className="block h-full w-full"
                       src="/assets/images/hero-image-mb.png"
@@ -83,7 +83,7 @@ const HeroSection = () => {
             <div className="col-span-5 lg:col-span-3">
               <div className="hidden lg:block">
                 <div className="animated fadeInDown">
-                  {cl === "ch" ? (
+                  {cl === 'ch' ? (
                     <img
                       className="block h-full w-full"
                       src="/assets/images/hero-title-lg.png"
@@ -102,21 +102,9 @@ const HeroSection = () => {
                 <div className="col-span-3 lg:col-span-2">
                   <div className="flex items-center justify-center gap-3 animated fadeInLeft">
                     <h4 className="uppercase text-xl sm:text-2xl md:text-3x1 text-gray font-bold">
-                      2022.8.23
+                      {t('Hero.1')}
                       <br />
-                      Hkt 14:00
-                    </h4>
-                    <span className="w-[4rem] sm:w-[7rem]">
-                      <img
-                        className="block h-full w-full"
-                        src="/assets/images/arrow.png"
-                        alt="..."
-                      />
-                    </span>
-                    <h4 className="uppercase text-xl sm:text-2xl md:text-3x1 text-gray font-bold">
-                      2022.09.13
-                      <br />
-                      Hkt 23:59
+                      {t('Hero.2')}
                     </h4>
                   </div>
                   <div className="mt-4 flex justify-center animated fadeInLeft">
@@ -125,7 +113,7 @@ const HeroSection = () => {
                 </div>
                 <div className="col-span-3 sm:col-span-1 hidden lg:block">
                   <div className="animated fadeInRight xl:w-80 2xl:w-96">
-                    {cl === "ch" ? (
+                    {cl === 'ch' ? (
                       <img
                         className="block h-full w-full"
                         src="/assets/images/160-gift.png"
@@ -162,7 +150,7 @@ const HeroSection = () => {
               <div className="p-6 space-y-6 h-full flex flex-col justify-start lg:justify-center items-center xl:hidden">
                 <div className="mt-sm">
                   <span className="block md:w-9/12  xl:w-[12rem]  mx-auto">
-                    {cl === "ch" ? (
+                    {cl === 'ch' ? (
                       <img
                         className="block h-full w-full"
                         src="/assets/images/title-6.png"
@@ -190,21 +178,21 @@ const HeroSection = () => {
                     delay={300}
                     animateIn="fadeInUp"
                   >
-                    {cl === "ch" ? (
+                    {cl === 'ch' ? (
                       <>
                         <p className="text-gray-400 text-base leading-normal lg:text-[50px] sm:text-4xl sm:leading-[70px] md:px-5 lg:text-[56px] lg:leading-[70px] xl:text-base xl:leading-normal font-semibold text-center">
-                          {t("About")}
+                          {t('About')}
                         </p>
                         <p className="text-primary-600 mt-5 text-base leading-normal lg:text-[50px] sm:text-4xl sm:leading-[70px] md:px-5 lg:text-[56px] lg:leading-[70px] xl:text-base xl:leading-normal font-semibold text-center ">
-                          {t("About1")}
+                          {t('About1')}
                         </p>
                       </>
                     ) : (
                       <>
                         <p className="text-gray-400 text-base leading-normal lg:text-[36px] sm:text-4xl sm:leading-[50px] md:mt-10 md:px-5 lg:text-[40px] lg:leading-[56px] xl:text-base xl:leading-normal font-semibold text-center">
-                          {t("About")}
+                          {t('About')}
                           <p className="text-primary-600 mt-5 text-base leading-normal lg:text-[50px] sm:text-4xl sm:leading-[70px] md:px-5 lg:text-[56px] lg:leading-[70px] xl:text-base xl:leading-normal font-semibold text-center ">
-                            {t("About1")}
+                            {t('About1')}
                           </p>
                         </p>
                       </>
@@ -234,7 +222,7 @@ const HeroSection = () => {
                     animateIn="fadeInRight"
                   >
                     <span className="block h-24 w-[17rem]">
-                      {cl === "ch" ? (
+                      {cl === 'ch' ? (
                         <img
                           className="block h-full w-full"
                           src="/assets/images/title-6.png"
@@ -249,10 +237,10 @@ const HeroSection = () => {
                       )}
                     </span>
                     <p className="text-gray-400 md:text-base text-sm mt-4 ">
-                      {t("About")}
+                      {t('About')}
                     </p>
                     <p className="text-primary-600 md:text-base text-sm mt-4 ">
-                      {t("About1")}
+                      {t('About1')}
                     </p>
                   </ScrollAnimation>
                 </div>
@@ -262,7 +250,7 @@ const HeroSection = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default HeroSection;
+export default HeroSection
